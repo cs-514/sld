@@ -1,4 +1,4 @@
-# SecReg Portal
+# Securities Law Deskbook
 
 A static research desk for U.S. capital-markets lawyers. This is step 1: the statute hierarchy for the Securities Act of 1933 and the Securities Exchange Act of 1934, the Trust Indenture Act (so Title III of the same chapter is not mislabeled), and an EDGAR issuer search.
 
@@ -74,7 +74,7 @@ The generated JSON is committed, so a normal site build does not need Python.
 
 `data.sec.gov` does not send CORS headers reliably, and a browser cannot set the User-Agent the SEC’s [fair-access policy](https://www.sec.gov/os/webmaster-faq#developers) requires (requests with no User-Agent are rejected). The workable static approach:
 
-1. A build job downloads `company_tickers.json`, `company_tickers_exchange.json`, and each issuer’s submissions JSON, at about 8 requests per second. Every SEC request uses the User-Agent in `scripts/user-agent.mjs`: `SecReg Portal securities research (contact: GitHub cs-514)`. Change that file to change the string.
+1. A build job downloads `company_tickers.json`, `company_tickers_exchange.json`, and each issuer’s submissions JSON, at about 8 requests per second. Every SEC request uses the User-Agent in `scripts/user-agent.mjs`: `Securities Law Deskbook research portal (contact: GitHub cs-514)`. Change that file to change the string.
 2. It keeps a capped set of recent filings per form family (10-K/20-F/40-F, 10-Q, 8-K/6-K, S-1, S-3, proxy, 13D/G, Forms 3/4/5, other registration statements, and a handful of everything else). The source list is the SEC “recent” array, roughly the latest 1,000 filings. If that array has no annual report, the job reads one older submissions shard.
 3. The site serves that snapshot from the same origin. Typeahead uses `public/data/issuers.json`. Company pages are prerendered from `src/data/edgar/companies.json`.
 4. Every company page also links to the live EDGAR issuer page, the classic company index, and EDGAR full-text search with the current form and date filter filled in. Use those when you need something the cap dropped, or a filing newer than the snapshot.

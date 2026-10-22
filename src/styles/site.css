@@ -128,10 +128,13 @@ button { cursor: pointer; }
   text-decoration: none;
   font-weight: 650;
   letter-spacing: -0.02em;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   white-space: nowrap;
   flex: 0 0 auto;
 }
+.mark-name { display: inline; }
+.mark-line { display: inline; }
+.mark-line + .mark-line::before { content: " "; }
 .sigil {
   font-family: var(--serif);
   color: var(--accent);
@@ -143,7 +146,7 @@ button { cursor: pointer; }
   display: flex;
   gap: 0.15rem;
   flex: 1 1 auto;
-  min-width: 0;
+  min-width: max-content;
 }
 .primary-nav a,
 .bottom-nav a {
@@ -219,6 +222,7 @@ button { cursor: pointer; }
   border-radius: 2px;
   padding: 0.3rem 0.55rem;
   min-height: 2rem;
+  flex: 0 0 auto;
 }
 
 .bottom-nav {
@@ -624,12 +628,33 @@ details.amendments h3 {
   .header-row { gap: 0.55rem; }
   .primary-nav a { padding-inline: 0.32rem; font-size: 0.86rem; }
   .search { min-width: 7.5rem; }
+  .mark {
+    white-space: normal;
+    align-items: center;
+    font-size: 0.82rem;
+    line-height: 1.05;
+    gap: 0.28rem;
+  }
+  .mark-name { display: flex; flex-direction: column; }
+  .mark-line + .mark-line::before { content: none; }
+  .sigil { font-size: 1.2rem; }
 }
 
 @media (max-width: 860px) {
   .primary-nav { display: none; }
-  .search { width: auto; flex: 1; }
-  .header-row { gap: 0.55rem; }
+  .search { width: auto; flex: 1 1 auto; min-width: 0; }
+  .header-row { gap: 0.45rem; }
+  .mark {
+    white-space: normal;
+    align-items: center;
+    font-size: 0.78rem;
+    line-height: 1.05;
+    gap: 0.28rem;
+    letter-spacing: -0.03em;
+  }
+  .mark-name { display: flex; flex-direction: column; }
+  .mark-line + .mark-line::before { content: none; }
+  .sigil { font-size: 1.15rem; }
   .bottom-nav {
     display: flex;
     position: fixed;

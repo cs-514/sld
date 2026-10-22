@@ -54,8 +54,8 @@ jobs:
       - name: Commit refreshed snapshot
         if: github.event_name == 'schedule' || inputs.refresh_edgar
         run: |
-          git config user.name "SecReg Portal data bot"
-          git config user.email "secreg-portal@example.com"
+          git config user.name "Securities Law Deskbook data bot"
+          git config user.email "securities-law-deskbook@example.com"
           git add src/data/edgar/companies.json public/data/issuers.json
           if git diff --cached --quiet; then
             echo "No EDGAR changes"
