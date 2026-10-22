@@ -1,0 +1,22 @@
+{
+  "name": "sld",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1 --port 4477",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview --host 127.0.0.1 --port 4477",
+    "data:statutes": "python3 scripts/build_statutes.py --download",
+    "data:edgar": "node scripts/fetch_edgar.mjs",
+    "verify": "node scripts/verify.mjs",
+    "verify:links": "node scripts/verify.mjs --links"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "astro": "7.4.2",
+    "pagefind": "1.5.2"
+  }
+}

@@ -1,0 +1,124 @@
+---
+import "../styles/site.css";
+import { href } from "../lib/paths";
+
+interface Crumb {
+  href?: string;
+  label: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  crumbs?: Crumb[];
+  canonicalPath?: string;
+  noindex?: boolean;
+}
+
+const { title, description, crumbs = [], canonicalPath, noindex = false } = Astro.props;
+const canonical = new URL(canonicalPath ? href(canonicalPath) : Astro.url.pathname, Astro.site);
+const path = Astro.url.pathname;
+const current = (prefix: string) => {
+  const target = href(prefix);
+  if (!prefix) return path === target;
+  return path === target || path.startsWith(target);
+};
+const fullTitle = title === "Pinpoint" ? "Pinpoint" : `${title} · Pinpoint`;
+const nav = [
+  ["33-act/", "Securities Act"],
+  ["34-act/", "Exchange Act"],
+  ["tia/", "Trust Indenture Act"],
+  ["edgar/", "EDGAR"],
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    <link rel="icon" href={href("favicon.svg")} type="image/svg+xml" />
+    <meta name="theme-color" content="#1c4a3c" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:type" content="website" />
+    {noindex && <meta name="robots" content="noindex" />}
+    {noindex && <meta data-pagefind-ignore="all" />}
+    <script is:inline>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "light" && t !== "dark") {
+            t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="site-header" data-pagefind-ignore>
+      <div class="wrap header-row">
+        <a class="mark" href={href()}><span class="sigil" aria-hidden="true">§</span> Pinpoint</a>
+        <nav class="primary-nav" aria-label="Primary">
+          {
+            nav.map(([to, label]) => (
+              <a href={href(to)} aria-current={current(to) ? "page" : undefined}>
+                {label}
+              </a>
+            ))
+          }
+        </nav>
+        <form class="search" role="search" action={href("edgar/")} method="get">
+          <label class="sr" for="q">Search sections, citations, and issuers</label>
+          <input id="q" type="search" name="q" placeholder="Search sections, cites, issuers" autocomplete="off" enterkeyhint="search" />
+          <div id="site-results" class="results" role="listbox" hidden></div>
+        </form>
+        <button type="button" id="theme" class="theme">Dark</button>
+      </div>
+    </header>
+    <main id="content">
+      <div class="wrap">
+        {
+          crumbs.length > 0 && (
+            <nav class="crumbs" aria-label="Breadcrumb">
+              <a href={href()}>Pinpoint</a>
+              {crumbs.map((crumb) => (
+                <span>
+                  <span aria-hidden="true"> / </span>
+                  {crumb.href ? <a href={crumb.href}>{crumb.label}</a> : <span>{crumb.label}</span>}
+                </span>
+              ))}
+            </nav>
+          )
+        }
+        <slot />
+      </div>
+    </main>
+    <footer class="site-footer" data-pagefind-ignore>
+      <div class="wrap">
+        <span>U.S. Code headings from the House OLRC. Filings are an EDGAR snapshot, not a live feed.</span>
+        <span><a href={href("sources/")}>Sources and currency</a></span>
+      </div>
+    </footer>
+    <nav class="bottom-nav" aria-label="Primary" data-pagefind-ignore>
+      {
+        nav.map(([to, label]) => (
+          <a href={href(to)} aria-current={current(to) ? "page" : undefined}>
+            {label.replace("Trust Indenture Act", "TIA").replace("Securities Act", "1933").replace("Exchange Act", "1934")}
+          </a>
+        ))
+      }
+    </nav>
+    <script>
+      import "../scripts/site.ts";
+    </script>
+  </body>
+</html>

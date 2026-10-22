@@ -1,0 +1,92 @@
+---
+import Base from "../layouts/Base.astro";
+import Outline from "./Outline.astro";
+import { href } from "../lib/paths";
+import { addedLabel, citation, type ActFile, type Section } from "../lib/statutes";
+
+interface Props {
+  file: ActFile;
+  section: Section;
+}
+
+const { file, section } = Astro.props;
+const { act } = file;
+const added = addedLabel(section);
+const cite = citation(act.shortName, section);
+const laws = section.publicLaws.slice(0, 18);
+const moreLaws = section.publicLaws.length - laws.length;
+const description = section.actSection
+  ? `${act.shortName} ${section.label}, ${section.uscCite}. ${section.heading}`
+  : `${section.uscCite}. ${section.heading}`;
+const kicker = [
+  act.shortName,
+  section.actTitle && act.id !== "tia" ? `Title ${section.actTitle}` : "",
+  section.subchapter?.heading || "",
+]
+  .filter(Boolean)
+  .join(" · ");
+---
+
+<Base
+  title={`${section.label}. ${section.heading}`}
+  description={description}
+  crumbs={[
+    { href: href(act.path), label: act.titleName },
+    { label: section.label },
+  ]}
+>
+  <p class="kicker">{kicker}</p>
+  <h1 data-pagefind-weight="10">{section.label}</h1>
+  {section.heading && <p class="stat-heading" data-pagefind-weight="7">{section.heading}</p>}
+  <p class="cite-line">
+    <span class="cite" data-pagefind-weight="8">{section.uscCite}</span>
+    <button type="button" class="copy" data-copy={cite}>Copy cite</button>
+  </p>
+  {section.status !== "active" && <p class="status">{section.status}</p>}
+  <p class="link-row">
+    <a href={section.links.house} target="_blank" rel="noopener noreferrer">Official text · House OLRC</a>
+    <a href={section.links.govinfo} target="_blank" rel="noopener noreferrer">govinfo</a>
+    <a href={section.links.lii} target="_blank" rel="noopener noreferrer">Cornell LII</a>
+  </p>
+  {section.origin && <p class="note">Source credit maps this provision to {section.origin}.</p>}
+  {added && <p class="added">{added}.</p>}
+
+  {
+    section.outline.length > 0 && (
+      <section>
+        <h2>Outline</h2>
+        <Outline nodes={section.outline} actSection={section.actSection} />
+      </section>
+    )
+  }
+
+  <section>
+    <h2>Source credit</h2>
+    {
+      section.sourceCredit ? (
+        <p class="credit">{section.sourceCredit}</p>
+      ) : (
+        <p class="note">This release of the Code does not carry a source credit for this provision.</p>
+      )
+    }
+    {
+      laws.length > 0 && (
+        <p class="laws">
+          Public laws named in the credit:{" "}
+          {laws.map((law, index) => (
+            <span>
+              {index > 0 && "; "}
+              {law.popularName ? `${law.popularName} (Pub. L. ${law.pubLaw})` : `Pub. L. ${law.pubLaw}`}
+            </span>
+          ))}
+          {moreLaws > 0 && `; and ${moreLaws} more in the credit`}.
+        </p>
+      )
+    }
+  </section>
+
+  <nav class="pager" aria-label="Adjacent sections">
+    {section.prev ? <a href={href(section.prev.path)}>← {section.prev.label}</a> : <span></span>}
+    {section.next ? <a href={href(section.next.path)}>{section.next.label} →</a> : <span></span>}
+  </nav>
+</Base>

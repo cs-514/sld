@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cs-514.github.io/sld/sitemap-index.xml

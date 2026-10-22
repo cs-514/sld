@@ -1,0 +1,16 @@
+---
+import Base from "../layouts/Base.astro";
+import { href } from "../lib/paths";
+---
+
+<Base title="Not on this desk" description="That URL is not a section or an issuer in this snapshot.">
+  <p class="kicker">404</p>
+  <h1>Nothing at this address.</h1>
+  <p class="lede">The section indexes and the issuer search are the two places to start.</p>
+  <p class="link-row">
+    <a href={href("33-act/")}>Securities Act</a>
+    <a href={href("34-act/")}>Exchange Act</a>
+    <a href={href("tia/")}>Trust Indenture Act</a>
+    <a href={href("edgar/")}>EDGAR</a>
+  </p>
+</Base>

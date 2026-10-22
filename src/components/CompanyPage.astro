@@ -1,0 +1,144 @@
+---
+import Base from "../layouts/Base.astro";
+import { href } from "../lib/paths";
+import {
+  CHIP_LABELS,
+  CHIP_ORDER,
+  CHIP_TITLES,
+  classicUrl,
+  edgarSearchUrl,
+  entityUrl,
+  filingUrls,
+  fiscalYearEnd,
+  showDescription,
+} from "../lib/forms";
+import type { Company, TickerRef } from "../lib/edgar";
+
+interface Props {
+  company: Company;
+  ticker?: TickerRef;
+  generatedAt: string;
+  canonicalPath: string;
+  noindex?: boolean;
+}
+
+const { company, ticker, generatedAt, canonicalPath, noindex = false } = Astro.props;
+const primary = ticker || company.tickers[0];
+const titleBits = primary ? `${primary.ticker} — ${company.name}` : company.name;
+const fy = fiscalYearEnd(company.fiscalYearEnd);
+const counts = new Map<string, number>();
+for (const filing of company.filings) counts.set(filing.group, (counts.get(filing.group) || 0) + 1);
+const chips = CHIP_ORDER.filter((id) => id === "all" || (counts.get(id) || 0) > 0);
+const description = `${company.name}${primary ? ` (${primary.ticker})` : ""}, CIK ${company.cikPadded}. Recent EDGAR filings with direct document links.`;
+const snapshotDay = generatedAt.slice(0, 10);
+---
+
+<Base
+  title={titleBits}
+  description={description}
+  canonicalPath={canonicalPath}
+  noindex={noindex}
+  crumbs={[
+    { href: href("edgar/"), label: "EDGAR" },
+    { label: primary?.ticker || company.cikPadded },
+  ]}
+>
+  <p class="kicker">EDGAR issuer</p>
+  <h1 data-pagefind-weight="10">{company.name}</h1>
+  {
+    company.tickers.length > 0 && (
+      <p class="aka">
+        {company.tickers.map((item, index) => (
+          <span>
+            {index > 0 && " · "}
+            <a href={href(`edgar/${item.slug}/`)}>
+              <span class="ticker">{item.ticker}</span>
+            </a>
+            {item.exchange && <span> {item.exchange}</span>}
+          </span>
+        ))}
+      </p>
+    )
+  }
+  <dl class="facts">
+    <div><b>CIK</b> {company.cikPadded}</div>
+    {company.sic && <div><b>SIC</b> {company.sic}{company.sicDescription ? ` · ${company.sicDescription}` : ""}</div>}
+    {company.category && <div><b>Filer</b> {company.category}</div>}
+    {fy && <div><b>Fiscal year end</b> {fy}</div>}
+    {company.stateOfIncorporation && <div><b>Inc.</b> {company.stateOfIncorporation}</div>}
+  </dl>
+  {
+    company.formerNames.length > 0 && (
+      <p class="note">
+        Former name{company.formerNames.length > 1 ? "s" : ""}:{" "}
+        {company.formerNames.map((item) => item.name).join("; ")}.
+      </p>
+    )
+  }
+  <p class="live-row">
+    <a href={entityUrl(company.cik)} target="_blank" rel="noopener noreferrer">Issuer on EDGAR</a>
+    <a href={classicUrl(company.cikPadded)} target="_blank" rel="noopener noreferrer">Classic filing index</a>
+    <a data-live href={edgarSearchUrl(company.cikPadded, "all")} target="_blank" rel="noopener noreferrer">Open this filter on EDGAR</a>
+  </p>
+  <p class="snapshot">
+    Snapshot {snapshotDay}. Drawn from the SEC submissions feed (the latest filings, capped by form). Not a live feed.
+    <a href={href("sources/")}>Tradeoff</a>.
+  </p>
+
+  {
+    company.error && (
+      <p class="status">Snapshot incomplete</p>
+    )
+  }
+
+  {
+    company.filings.length === 0 ? (
+      <p class="note">No filings were stored for this issuer. Use the EDGAR links above for the live index.</p>
+    ) : (
+      <div data-filings data-cik={company.cikPadded}>
+        <div class="chips" role="toolbar" aria-label="Form type">
+          {chips.map((id) => (
+            <button type="button" data-chip={id} aria-pressed={id === "all" ? "true" : "false"} title={CHIP_TITLES[id]}>
+              {CHIP_LABELS[id]}
+              <span class="tag">{id === "all" ? company.filings.length : counts.get(id)}</span>
+            </button>
+          ))}
+        </div>
+        <div class="presets">
+          <button type="button" data-preset="1">Past year</button>
+          <button type="button" data-preset="5">Past 5 years</button>
+          <button type="button" data-preset="0">Any date</button>
+        </div>
+        <div class="dates">
+          <label>From <input type="date" data-from /></label>
+          <label>To <input type="date" data-to /></label>
+          <span class="snapshot"><span data-shown>{company.filings.length}</span> shown</span>
+        </div>
+        <p data-filing-empty hidden>Nothing in the snapshot matches this filter. Open it on EDGAR for the live index.</p>
+        <div class="filings" data-pagefind-ignore>
+          {company.filings.map((filing) => {
+            const urls = filingUrls(company.cik, filing.accession, filing.document);
+            const desc = showDescription(filing.form, filing.description);
+            return (
+              <article class="filing" data-filing data-group={filing.group} data-filed={filing.filed}>
+                <time datetime={filing.filed}>{filing.filed}</time>
+                <span class="form-name">{filing.form}</span>
+                <span class="desc">
+                  {desc}
+                  {filing.report && filing.report !== filing.filed && <span class="acc">Period {filing.report}</span>}
+                  <span class="acc">{filing.accession}</span>
+                </span>
+                <span class="links">
+                  {urls.document && (
+                    <a href={urls.document} target="_blank" rel="noopener noreferrer">Document</a>
+                  )}
+                  <a href={urls.index} target="_blank" rel="noopener noreferrer">Index</a>
+                </span>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    )
+  }
+</Base>

@@ -1,0 +1,82 @@
+---
+import Base from "../layouts/Base.astro";
+import { href } from "../lib/paths";
+import { loadEdgar } from "../lib/edgar";
+import { loadProvenance } from "../lib/statutes";
+
+const provenance = loadProvenance();
+const edgar = loadEdgar();
+const description = "Where the statute index and the EDGAR snapshot come from, and what this site does not copy.";
+---
+
+<Base title="Sources and currency" description={description} crumbs={[{ label: "Sources" }]}>
+  <p class="kicker">Provenance</p>
+  <h1>Sources and currency</h1>
+  <p class="lede">
+    Section numbers are read out of the House Office of the Law Revision Counsel’s USLM XML.
+    Nothing on this site is scraped from a commercial treatise.
+  </p>
+
+  <h2>United States Code</h2>
+  <p>
+    Title 15, chapters 2A and 2B, release <strong>{provenance.release.docPublicationName}</strong>,
+    {provenance.release.currencyNote.toLowerCase()}. The XML was created {provenance.release.created}.
+    The OLRC marks Title 15 <code>is-positive-law: {provenance.release.positiveLaw}</code>, so the Acts, not the Code, are the positive law.
+  </p>
+  <p>
+    File: <a href={provenance.source}>{provenance.source}</a><br />
+    SHA-256: <span class="cite">{provenance.zipSha256}</span><br />
+    Index built {provenance.generatedAt}.
+  </p>
+  <p>{provenance.method}</p>
+  <p>
+    Each section links to the
+    <a href="https://uscode.house.gov/">House OLRC</a> prelim text,
+    the <a href="https://www.govinfo.gov/link/uscode/15/77e">govinfo link service</a>,
+    and <a href="https://www.law.cornell.edu/uscode/text/15">Cornell’s Legal Information Institute</a>.
+    Headings, subsection numbers, and defined-term labels are structural.
+    The operative text of the statute stays on those official sites.
+  </p>
+  <p>
+    The Trust Indenture Act is Title III of the same chapter. It is indexed under its own section numbers
+    so a Trust Indenture Act § 304 is never presented as a Securities Act § 304.
+    Provisions codified in chapter 2B without an Exchange Act section number (several Dodd-Frank reports,
+    parts of the FCPA, transition sections) are listed separately.
+  </p>
+
+  <h2>EDGAR</h2>
+  <p>
+    Tickers come from <a href={edgar.tickerSource}>{edgar.tickerSource}</a> and the SEC exchange file.
+    Filings come from <a href="https://data.sec.gov/submissions/">data.sec.gov/submissions</a>.
+    Snapshot {edgar.generatedAt}. {edgar.companyCount.toLocaleString("en-US")} issuers,
+    {edgar.withFilings.toLocaleString("en-US")} with filings stored.
+  </p>
+  <p>{edgar.note}</p>
+  <p>
+    The bulk job sends <span class="cite">{edgar.userAgent}</span> and stays under the SEC’s
+    10-requests-per-second fair-access ceiling. A browser cannot set that User-Agent, and
+    <code>data.sec.gov</code> has not been a stable CORS source, so the filing list is prebuilt
+    and served from this site. Every company page still deep-links to the live EDGAR browse page,
+    the classic company index, and EDGAR full-text search with the form and date filter filled in.
+    Use those when the snapshot is not enough, especially for a high-volume filer whose older
+    periodic reports have fallen out of the SEC “recent” list.
+  </p>
+
+  <h2>What is not here yet</h2>
+  <ul>
+    <li>Regulation S-K, Regulation S-X, and the 1933 and 1934 Act rules (17 C.F.R. Parts 229, 210, 230, 239, 240, 249).</li>
+    <li>SEC forms, cross-linked back to the sections they implement.</li>
+    <li>Adopting, proposing, and interpretive releases, with Federal Register pinpoints.</li>
+    <li>Corporation Finance C&amp;DIs, and the amending acts as their own pages.</li>
+    <li>SIPA, the Investment Company Act, the Advisers Act, and the freestanding Sarbanes-Oxley provisions in chapter 98.</li>
+  </ul>
+  <p>
+    The section records already have empty <span class="cite">crossLinks</span> arrays
+    (<span class="cite">rules</span>, <span class="cite">forms</span>, <span class="cite">releases</span>,
+    <span class="cite">interpretations</span>, <span class="cite">amendingActs</span>) so those layers can be attached
+    without changing the section URLs. Paths reserved for them are in the README:
+    <span class="cite">/rules/</span>, <span class="cite">/forms/</span>, <span class="cite">/releases/</span>,
+    <span class="cite">/cdi/</span>, <span class="cite">/history/</span>.
+  </p>
+  <p><a href={href()}>Back to the desk</a></p>
+</Base>

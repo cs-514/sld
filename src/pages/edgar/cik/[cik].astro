@@ -1,0 +1,54 @@
+---
+import CompanyPage from "../../../components/CompanyPage.astro";
+import { companyByCik, loadEdgar } from "../../../lib/edgar";
+import { href } from "../../../lib/paths";
+
+export function getStaticPaths() {
+  const edgar = loadEdgar();
+  const sample = process.env.SLD_SAMPLE === "1";
+  return Object.values(edgar.companies)
+    .filter((company) => !sample || company.tickers.some((ticker) => ["AAPL", "MSFT", "JPM"].includes(ticker.ticker)))
+    .map((company) => ({
+      params: { cik: company.cikPadded },
+      props: { cik: company.cikPadded },
+    }));
+}
+
+const { cik } = Astro.props;
+const company = companyByCik(cik);
+if (!company) throw new Error(`Missing CIK ${cik}`);
+const edgar = loadEdgar();
+const primary = company.tickers[0];
+const target = primary ? href(`edgar/${primary.slug}/`) : "";
+const canonical = new URL(target || href(`edgar/cik/${company.cikPadded}/`), Astro.site);
+---
+
+{
+  primary ? (
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{`CIK ${company.cikPadded}`}</title>
+        <link rel="canonical" href={canonical.href} />
+        <meta name="robots" content="noindex" />
+        <meta data-pagefind-ignore="all" />
+        <meta http-equiv="refresh" content={`0; url=${target}`} />
+        <link rel="icon" href={href("favicon.svg")} type="image/svg+xml" />
+      </head>
+      <body>
+        <p>
+          <a href={target}>
+            {company.name} ({primary.ticker})
+          </a>
+        </p>
+      </body>
+    </html>
+  ) : (
+    <CompanyPage
+      company={company}
+      generatedAt={edgar.generatedAt}
+      canonicalPath={`edgar/cik/${company.cikPadded}/`}
+    />
+  )
+}

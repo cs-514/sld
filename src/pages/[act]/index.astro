@@ -1,0 +1,16 @@
+---
+import ActIndex from "../../components/ActIndex.astro";
+import { loadAct } from "../../lib/statutes";
+
+export function getStaticPaths() {
+  return ["33-act", "34-act", "tia"].map((act) => ({
+    params: { act },
+    props: { act },
+  }));
+}
+
+const { act } = Astro.props;
+const file = loadAct(act);
+---
+
+<ActIndex file={file} />

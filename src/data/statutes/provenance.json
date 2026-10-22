@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-10-22T14:46:31Z",
+  "source": "https://uscode.house.gov/download/releasepoints/us/pl/119/124/xml_usc15@119-124.zip",
+  "zipSha256": "cf1aa19428a1bebafaea6375531943d5fdabc247eb530dacab400fd4af309148",
+  "release": {
+    "docPublicationName": "Online@119-124",
+    "created": "2026-10-15T06:43:16",
+    "currencyNote": "Current through 119-124",
+    "positiveLaw": "no"
+  },
+  "downloadPage": "https://uscode.house.gov/download.html",
+  "method": "Act section numbers are the first ch. 38 or ch. 404 section citation in the OLRC source credit. Headings and outlines are structural markup only; statutory text is not reproduced.",
+  "counts": {
+    "33-act": 48,
+    "34-act": 95,
+    "tia": 28
+  }
+}

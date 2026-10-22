@@ -1,0 +1,5769 @@
+{
+  "act": {
+    "id": "33-act",
+    "shortName": "Securities Act of 1933",
+    "titleName": "Securities Act",
+    "path": "/33-act/",
+    "chapter": "2A",
+    "sessionCite": "ch. 38, 48 Stat. 74",
+    "enacted": "1933-05-27",
+    "scope": "Title I (domestic securities) and Title II (Corporation of Foreign Security Holders). Title III is the Trust Indenture Act and is indexed separately."
+  },
+  "provenance": {
+    "generatedAt": "2026-10-22T14:46:31Z",
+    "source": "https://uscode.house.gov/download/releasepoints/us/pl/119/124/xml_usc15@119-124.zip",
+    "zipSha256": "cf1aa19428a1bebafaea6375531943d5fdabc247eb530dacab400fd4af309148",
+    "release": {
+      "docPublicationName": "Online@119-124",
+      "created": "2026-10-15T06:43:16",
+      "currencyNote": "Current through 119-124",
+      "positiveLaw": "no"
+    },
+    "downloadPage": "https://uscode.house.gov/download.html",
+    "method": "Act section numbers are the first ch. 38 or ch. 404 section citation in the OLRC source credit. Headings and outlines are structural markup only; statutory text is not reproduced.",
+    "counts": {
+      "33-act": 48,
+      "34-act": 95,
+      "tia": 28
+    }
+  },
+  "sections": [
+    {
+      "usc": "77a",
+      "uscSlug": "77a",
+      "uscCite": "15 U.S.C. § 77a",
+      "heading": "Short title",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77a",
+      "order": 0,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 1, 48 Stat. 74.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77a&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77a",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77a"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "1",
+      "origin": "ch. 38, title I, § 1",
+      "schedule": null,
+      "slug": "section-1",
+      "label": "Section 1",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-1/",
+      "prev": null,
+      "next": {
+        "path": "/33-act/section-2/",
+        "label": "Section 2"
+      }
+    },
+    {
+      "usc": "77b",
+      "uscSlug": "77b",
+      "uscCite": "15 U.S.C. § 77b",
+      "heading": "Definitions; promotion of efficiency, competition, and capital formation",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77b",
+      "order": 1,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 2, 48 Stat. 74; June 6, 1934, ch. 404, title II, § 201, 48 Stat. 905; Aug. 10, 1954, ch. 667, title I, §§ 1–4, 68 Stat. 683, 684; Pub. L. 86–70, § 12(a), June 25, 1959, 73 Stat. 143; Pub. L. 86–624, § 7(a), July 12, 1960, 74 Stat. 412; Pub. L. 91–547, § 27(a), Dec. 14, 1970, 84 Stat. 1433; Pub. L. 96–477, title VI, § 603, Oct. 21, 1980, 94 Stat. 2294; Pub. L. 97–303, § 1, Oct. 13, 1982, 96 Stat. 1409; Pub. L. 100–181, title II, §§ 201, 202, Dec. 4, 1987, 101 Stat. 1252; Pub. L. 104–290, title I, § 106(a), Oct. 11, 1996, 110 Stat. 3424; Pub. L. 105–353, title III, § 301(a)(1), Nov. 3, 1998, 112 Stat. 3235; Pub. L. 106–554, § 1(a)(5) [title II, § 208(a)(1)], Dec. 21, 2000, 114 Stat. 2763, 2763A–434; Pub. L. 111–203, title VII, § 768(a), July 21, 2010, 124 Stat. 1800; Pub. L. 112–106, title I, §§ 101(a), 105(a), Apr. 5, 2012, 126 Stat. 307, 310; Pub. L. 119–27, § 17(c), July 18, 2025, 139 Stat. 463.)",
+      "publicLaws": [
+        {
+          "pubLaw": "86-70"
+        },
+        {
+          "pubLaw": "86-624"
+        },
+        {
+          "pubLaw": "91-547"
+        },
+        {
+          "pubLaw": "96-477"
+        },
+        {
+          "pubLaw": "97-303"
+        },
+        {
+          "pubLaw": "100-181"
+        },
+        {
+          "pubLaw": "104-290",
+          "popularName": "National Securities Markets Improvement Act of 1996"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        },
+        {
+          "pubLaw": "106-554"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        },
+        {
+          "pubLaw": "112-106",
+          "popularName": "JOBS Act"
+        },
+        {
+          "pubLaw": "119-27"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Definitions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1",
+              "terms": [
+                "security"
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2",
+              "terms": [
+                "person"
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3",
+              "terms": [
+                "sale",
+                "sell"
+              ]
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4",
+              "terms": [
+                "issuer"
+              ]
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5",
+              "terms": [
+                "Commission"
+              ]
+            },
+            {
+              "num": "(6)",
+              "anchor": "a-6",
+              "terms": [
+                "Territory"
+              ]
+            },
+            {
+              "num": "(7)",
+              "anchor": "a-7",
+              "terms": [
+                "interstate commerce"
+              ]
+            },
+            {
+              "num": "(8)",
+              "anchor": "a-8",
+              "terms": [
+                "registration statement"
+              ]
+            },
+            {
+              "num": "(9)",
+              "anchor": "a-9",
+              "terms": [
+                "write",
+                "written"
+              ]
+            },
+            {
+              "num": "(10)",
+              "anchor": "a-10",
+              "terms": [
+                "prospectus"
+              ]
+            },
+            {
+              "num": "(11)",
+              "anchor": "a-11",
+              "terms": [
+                "underwriter"
+              ]
+            },
+            {
+              "num": "(12)",
+              "anchor": "a-12",
+              "terms": [
+                "dealer"
+              ]
+            },
+            {
+              "num": "(13)",
+              "anchor": "a-13",
+              "terms": [
+                "insurance company"
+              ]
+            },
+            {
+              "num": "(14)",
+              "anchor": "a-14",
+              "terms": [
+                "separate account"
+              ]
+            },
+            {
+              "num": "(15)",
+              "anchor": "a-15",
+              "terms": [
+                "accredited investor"
+              ],
+              "children": [
+                {
+                  "num": "(i)",
+                  "anchor": "a-15-i"
+                },
+                {
+                  "num": "(ii)",
+                  "anchor": "a-15-ii"
+                }
+              ]
+            },
+            {
+              "num": "(16)",
+              "anchor": "a-16",
+              "terms": [
+                "security future",
+                "narrow-based security index"
+              ]
+            },
+            {
+              "num": "(17)",
+              "anchor": "a-17",
+              "terms": [
+                "swap",
+                "security-based swap"
+              ]
+            },
+            {
+              "num": "(18)",
+              "anchor": "a-18",
+              "terms": [
+                "purchase",
+                "sale"
+              ]
+            },
+            {
+              "num": "(19)",
+              "anchor": "a-19",
+              "terms": [
+                "emerging growth company"
+              ],
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-19-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-19-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "a-19-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "a-19-D"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Consideration of promotion of efficiency, competition, and capital formation"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77b&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77b",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77b"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "2",
+      "origin": "ch. 38, title I, § 2",
+      "schedule": null,
+      "slug": "section-2",
+      "label": "Section 2",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-2/",
+      "prev": {
+        "path": "/33-act/section-1/",
+        "label": "Section 1"
+      },
+      "next": {
+        "path": "/33-act/section-2a/",
+        "label": "Section 2A"
+      }
+    },
+    {
+      "usc": "77b–1",
+      "uscSlug": "77b-1",
+      "uscCite": "15 U.S.C. § 77b–1",
+      "heading": "Swap agreements",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77b–1",
+      "order": 2,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 2A, as added Pub. L. 106–554, § 1(a)(5) [title III, § 302(a)], Dec. 21, 2000, 114 Stat. 2763, 2763A–451; amended Pub. L. 111–203, title VII, § 762(c)(1), July 21, 2010, 124 Stat. 1759.)",
+      "publicLaws": [
+        {
+          "pubLaw": "106-554"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "pubLaw": "106-554",
+        "raw": "Pub. L. 106–554, § 1(a)(5) [title III, § 302(a)], Dec. 21, 2000, 114 Stat. 2763, 2763A–451"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "[Reserved]"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Security-based swap agreements",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-3-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-3-B"
+                }
+              ]
+            },
+            {
+              "num": "(4)",
+              "anchor": "b-4"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77b-1&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77b-1",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77b-1"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "2A",
+      "origin": "ch. 38, title I, § 2A",
+      "schedule": null,
+      "slug": "section-2a",
+      "label": "Section 2A",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-2a/",
+      "prev": {
+        "path": "/33-act/section-2/",
+        "label": "Section 2"
+      },
+      "next": {
+        "path": "/33-act/section-3/",
+        "label": "Section 3"
+      }
+    },
+    {
+      "usc": "77c",
+      "uscSlug": "77c",
+      "uscCite": "15 U.S.C. § 77c",
+      "heading": "Classes of securities under this subchapter",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77c",
+      "order": 3,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 3, 48 Stat. 75; June 6, 1934, ch. 404, title II, § 202, 48 Stat. 906; Feb. 4, 1887, ch. 104, title II, § 214, as added Aug. 9, 1935, ch. 498, 49 Stat. 557; amended June 29, 1938, ch. 811, § 15, 52 Stat. 1240; May 15, 1945, ch. 122, 59 Stat. 167; Aug. 10, 1954, ch. 667, title I, § 5, 68 Stat. 684; Pub. L. 85–699, title III, § 307(a), Aug. 21, 1958, 72 Stat. 694; Pub. L. 91–373, title IV, § 401(a), Aug. 10, 1970, 84 Stat. 718; Pub. L. 91–547, § 27(b), (c), Dec. 14, 1970, 84 Stat. 1434; Pub. L. 91–565, Dec. 19, 1970, 84 Stat. 1480; Pub. L. 91–567, § 6(a), Dec. 22, 1970, 84 Stat. 1498; Pub. L. 94–210, title III, § 308(a)(1), (3), Feb. 5, 1976, 90 Stat. 56, 57; Pub. L. 95–283, § 18, May 21, 1978, 92 Stat. 275; Pub. L. 95–425, § 2, Oct. 6, 1978, 92 Stat. 962; Pub. L. 95–598, title III, § 306, Nov. 6, 1978, 92 Stat. 2674; Pub. L. 96–477, title III, § 301, title VII, § 701, Oct. 21, 1980, 94 Stat. 2291, 2294; Pub. L. 97–261, § 19(d), Sept. 20, 1982, 96 Stat. 1121; Pub. L. 99–514, § 2, Oct. 22, 1986, 100 Stat. 2095; Pub. L. 100–181, title II, §§ 203, 204, Dec. 4, 1987, 101 Stat. 1252; Pub. L. 103–325, title III, § 320, Sept. 23, 1994, 108 Stat. 2225; Pub. L. 104–62, § 3, Dec. 8, 1995, 109 Stat. 684; Pub. L. 104–290, title V, § 508(b), Oct. 11, 1996, 110 Stat. 3447; Pub. L. 106–102, title II, § 221(a), Nov. 12, 1999, 113 Stat. 1401; Pub. L. 106–554, § 1(a)(5) [title II, § 208(a)(2)], Dec. 21, 2000, 114 Stat. 2763, 2763A–435; Pub. L. 108–359, § 1(b), Oct. 25, 2004, 118 Stat. 1666; Pub. L. 111–203, title IX, § 985(a)(1), July 21, 2010, 124 Stat. 1933; Pub. L. 112–106, title IV, § 401(a), Apr. 5, 2012, 126 Stat. 323; Pub. L. 112–142, § 2, July 9, 2012, 126 Stat. 989.)",
+      "publicLaws": [
+        {
+          "pubLaw": "85-699"
+        },
+        {
+          "pubLaw": "91-373"
+        },
+        {
+          "pubLaw": "91-547"
+        },
+        {
+          "pubLaw": "91-565"
+        },
+        {
+          "pubLaw": "91-567"
+        },
+        {
+          "pubLaw": "94-210"
+        },
+        {
+          "pubLaw": "95-283"
+        },
+        {
+          "pubLaw": "95-425"
+        },
+        {
+          "pubLaw": "95-598"
+        },
+        {
+          "pubLaw": "96-477"
+        },
+        {
+          "pubLaw": "97-261"
+        },
+        {
+          "pubLaw": "99-514"
+        },
+        {
+          "pubLaw": "100-181"
+        },
+        {
+          "pubLaw": "103-325"
+        },
+        {
+          "pubLaw": "104-62"
+        },
+        {
+          "pubLaw": "104-290",
+          "popularName": "National Securities Markets Improvement Act of 1996"
+        },
+        {
+          "pubLaw": "106-102"
+        },
+        {
+          "pubLaw": "106-554"
+        },
+        {
+          "pubLaw": "108-359"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        },
+        {
+          "pubLaw": "112-106",
+          "popularName": "JOBS Act"
+        },
+        {
+          "pubLaw": "112-142"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 9, 1935, ch. 498, 49 Stat. 557"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Exempted securities",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4"
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5"
+            },
+            {
+              "num": "(6)",
+              "anchor": "a-6"
+            },
+            {
+              "num": "(7)",
+              "anchor": "a-7"
+            },
+            {
+              "num": "(8)",
+              "anchor": "a-8"
+            },
+            {
+              "num": "(9)",
+              "anchor": "a-9"
+            },
+            {
+              "num": "(10)",
+              "anchor": "a-10"
+            },
+            {
+              "num": "(11)",
+              "anchor": "a-11"
+            },
+            {
+              "num": "(12)",
+              "anchor": "a-12",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-12-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-12-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "a-12-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "a-12-D"
+                }
+              ]
+            },
+            {
+              "num": "(13)",
+              "anchor": "a-13"
+            },
+            {
+              "num": "(14)",
+              "anchor": "a-14",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-14-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-14-B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Additional exemptions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "heading": "Small issues exemptive authority"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2",
+              "heading": "Additional issues",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-2-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "b-2-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "b-2-D"
+                },
+                {
+                  "num": "(E)",
+                  "anchor": "b-2-E"
+                },
+                {
+                  "num": "(F)",
+                  "anchor": "b-2-F"
+                },
+                {
+                  "num": "(G)",
+                  "anchor": "b-2-G"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3",
+              "heading": "Limitation"
+            },
+            {
+              "num": "(4)",
+              "anchor": "b-4",
+              "heading": "Periodic disclosures"
+            },
+            {
+              "num": "(5)",
+              "anchor": "b-5",
+              "heading": "Adjustment"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Securities issued by small investment company"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77c&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77c",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77c"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "3",
+      "origin": "ch. 38, title I, § 3",
+      "schedule": null,
+      "slug": "section-3",
+      "label": "Section 3",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-3/",
+      "prev": {
+        "path": "/33-act/section-2a/",
+        "label": "Section 2A"
+      },
+      "next": {
+        "path": "/33-act/section-4/",
+        "label": "Section 4"
+      }
+    },
+    {
+      "usc": "77d",
+      "uscSlug": "77d",
+      "uscCite": "15 U.S.C. § 77d",
+      "heading": "Exempted transactions",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77d",
+      "order": 4,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 4, 48 Stat. 77; June 6, 1934, ch. 404, title II, § 203, 48 Stat. 906; Aug. 10, 1954, ch. 667, title I, § 6, 68 Stat. 684; Pub. L. 88–467, § 12, Aug. 20, 1964, 78 Stat. 580; Pub. L. 94–29, § 30, June 4, 1975, 89 Stat. 169; Pub. L. 96–477, title VI, § 602, Oct. 21, 1980, 94 Stat. 2294; Pub. L. 111–203, title IX, § 944(a), July 21, 2010, 124 Stat. 1897; Pub. L. 112–106, title II, § 201(b), (c), title III, § 302(a), title IV, § 401(c), Apr. 5, 2012, 126 Stat. 314, 315, 325; Pub. L. 114–94, div. G, title LXXVI, § 76001(a), Dec. 4, 2015, 129 Stat. 1787.)",
+      "publicLaws": [
+        {
+          "pubLaw": "88-467"
+        },
+        {
+          "pubLaw": "94-29",
+          "popularName": "Securities Acts Amendments of 1975"
+        },
+        {
+          "pubLaw": "96-477"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        },
+        {
+          "pubLaw": "112-106",
+          "popularName": "JOBS Act"
+        },
+        {
+          "pubLaw": "114-94",
+          "popularName": "FAST Act"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "In general",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-3-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-3-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "a-3-C"
+                }
+              ]
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4"
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5"
+            },
+            {
+              "num": "(6)",
+              "anchor": "a-6",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-6-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-6-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "a-6-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "a-6-D"
+                }
+              ]
+            },
+            {
+              "num": "(7)",
+              "anchor": "a-7"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Offers and sales exempt under 17 CFR 230.506"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Securities offered and sold in compliance with Rule 506 of Regulation D",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-1-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "c-1-C"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-2-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "c-2-C"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "c-3",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-3-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-3-B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Certain accredited investor transactions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1",
+              "heading": "Accredited investor requirement.—"
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2",
+              "heading": "Prohibition on general solicitation or advertising.—"
+            },
+            {
+              "num": "(3)",
+              "anchor": "d-3",
+              "heading": "Information requirement.—",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-3-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-3-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "d-3-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "d-3-D"
+                },
+                {
+                  "num": "(E)",
+                  "anchor": "d-3-E"
+                },
+                {
+                  "num": "(F)",
+                  "anchor": "d-3-F"
+                },
+                {
+                  "num": "(G)",
+                  "anchor": "d-3-G"
+                },
+                {
+                  "num": "(H)",
+                  "anchor": "d-3-H"
+                },
+                {
+                  "num": "(I)",
+                  "anchor": "d-3-I"
+                },
+                {
+                  "num": "(J)",
+                  "anchor": "d-3-J"
+                },
+                {
+                  "num": "(K)",
+                  "anchor": "d-3-K"
+                }
+              ]
+            },
+            {
+              "num": "(4)",
+              "anchor": "d-4",
+              "heading": "Issuers disqualified.—"
+            },
+            {
+              "num": "(5)",
+              "anchor": "d-5",
+              "heading": "Bad actor prohibition.—"
+            },
+            {
+              "num": "(6)",
+              "anchor": "d-6",
+              "heading": "Business requirement.—"
+            },
+            {
+              "num": "(7)",
+              "anchor": "d-7",
+              "heading": "Underwriter prohibition.—"
+            },
+            {
+              "num": "(8)",
+              "anchor": "d-8",
+              "heading": "Outstanding class requirement.—"
+            }
+          ]
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Additional requirements",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "e-1",
+              "heading": "In general.—",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "e-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "e-1-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "e-1-C"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "e-2",
+              "heading": "Rule of construction.—"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77d&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77d",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77d"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "4",
+      "origin": "ch. 38, title I, § 4",
+      "schedule": null,
+      "slug": "section-4",
+      "label": "Section 4",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-4/",
+      "prev": {
+        "path": "/33-act/section-3/",
+        "label": "Section 3"
+      },
+      "next": {
+        "path": "/33-act/section-4a/",
+        "label": "Section 4A"
+      }
+    },
+    {
+      "usc": "77d–1",
+      "uscSlug": "77d-1",
+      "uscCite": "15 U.S.C. § 77d–1",
+      "heading": "Requirements with respect to certain small transactions",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77d–1",
+      "order": 5,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 4A, as added Pub. L. 112–106, title III, § 302(b), Apr. 5, 2012, 126 Stat. 315.)",
+      "publicLaws": [
+        {
+          "pubLaw": "112-106",
+          "popularName": "JOBS Act"
+        }
+      ],
+      "addedBy": {
+        "pubLaw": "112-106",
+        "popularName": "JOBS Act",
+        "raw": "Pub. L. 112–106, title III, § 302(b), Apr. 5, 2012, 126 Stat. 315"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Requirements on intermediaries",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-4-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-4-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "a-4-C"
+                }
+              ]
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5"
+            },
+            {
+              "num": "(6)",
+              "anchor": "a-6"
+            },
+            {
+              "num": "(7)",
+              "anchor": "a-7"
+            },
+            {
+              "num": "(8)",
+              "anchor": "a-8"
+            },
+            {
+              "num": "(9)",
+              "anchor": "a-9"
+            },
+            {
+              "num": "(10)",
+              "anchor": "a-10"
+            },
+            {
+              "num": "(11)",
+              "anchor": "a-11"
+            },
+            {
+              "num": "(12)",
+              "anchor": "a-12"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Requirements for issuers",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-1-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "b-1-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "b-1-D"
+                },
+                {
+                  "num": "(E)",
+                  "anchor": "b-1-E"
+                },
+                {
+                  "num": "(F)",
+                  "anchor": "b-1-F"
+                },
+                {
+                  "num": "(G)",
+                  "anchor": "b-1-G"
+                },
+                {
+                  "num": "(H)",
+                  "anchor": "b-1-H"
+                },
+                {
+                  "num": "(I)",
+                  "anchor": "b-1-I"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "b-4"
+            },
+            {
+              "num": "(5)",
+              "anchor": "b-5"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Liability for material misstatements and omissions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1",
+              "heading": "Actions authorized",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-1-A",
+                  "heading": "In general"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-1-B",
+                  "heading": "Liability"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2",
+              "heading": "Applicability",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-2-B"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "c-3",
+              "heading": "Definition"
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Information available to States"
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Restrictions on sales",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "e-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "e-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "e-1-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "e-1-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "e-1-D"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "e-2"
+            }
+          ]
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Applicability",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "f-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "f-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "f-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "f-4"
+            }
+          ]
+        },
+        {
+          "num": "(g)",
+          "anchor": "g",
+          "heading": "Rule of construction"
+        },
+        {
+          "num": "(h)",
+          "anchor": "h",
+          "heading": "Certain calculations",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "h-1",
+              "heading": "Dollar amounts"
+            },
+            {
+              "num": "(2)",
+              "anchor": "h-2",
+              "heading": "Income and net worth"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77d-1&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77d-1",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77d-1"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "4A",
+      "origin": "ch. 38, title I, § 4A",
+      "schedule": null,
+      "slug": "section-4a",
+      "label": "Section 4A",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-4a/",
+      "prev": {
+        "path": "/33-act/section-4/",
+        "label": "Section 4"
+      },
+      "next": {
+        "path": "/33-act/section-5/",
+        "label": "Section 5"
+      }
+    },
+    {
+      "usc": "77e",
+      "uscSlug": "77e",
+      "uscCite": "15 U.S.C. § 77e",
+      "heading": "Prohibitions relating to interstate commerce and the mails",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77e",
+      "order": 6,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 5, 48 Stat. 77; June 6, 1934, ch. 404, title II, § 204, 48 Stat. 906; Aug. 10, 1954, ch. 667, title I, § 7, 68 Stat. 684; Pub. L. 111–203, title VII, § 768(b), July 21, 2010, 124 Stat. 1801; Pub. L. 112–106, title I, § 105(c), Apr. 5, 2012, 126 Stat. 311.)",
+      "publicLaws": [
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        },
+        {
+          "pubLaw": "112-106",
+          "popularName": "JOBS Act"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Sale or delivery after sale of unregistered securities",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Necessity of prospectus meeting requirements of section 77j of this title",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Necessity of filing registration statement"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Limitation"
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Security-based swaps"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77e&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77e",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77e"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "5",
+      "origin": "ch. 38, title I, § 5",
+      "schedule": null,
+      "slug": "section-5",
+      "label": "Section 5",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-5/",
+      "prev": {
+        "path": "/33-act/section-4a/",
+        "label": "Section 4A"
+      },
+      "next": {
+        "path": "/33-act/section-6/",
+        "label": "Section 6"
+      }
+    },
+    {
+      "usc": "77f",
+      "uscSlug": "77f",
+      "uscCite": "15 U.S.C. § 77f",
+      "heading": "Registration of securities",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77f",
+      "order": 7,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 6, 48 Stat. 78; Pub. L. 89–289, § 1, Oct. 22, 1965, 79 Stat. 1051; Pub. L. 100–181, title II, § 205, Dec. 4, 1987, 101 Stat. 1252; Pub. L. 104–290, title IV, § 404, Oct. 11, 1996, 110 Stat. 3441; Pub. L. 107–123, § 4, Jan. 16, 2002, 115 Stat. 2393; Pub. L. 111–203, title IX, § 991(b)(1), July 21, 2010, 124 Stat. 1951; Pub. L. 112–106, title I, § 106(a), Apr. 5, 2012, 126 Stat. 312; Pub. L. 114–94, div. G, title LXXI, §§ 71001, 71002, Dec. 4, 2015, 129 Stat. 1783.)",
+      "publicLaws": [
+        {
+          "pubLaw": "89-289"
+        },
+        {
+          "pubLaw": "100-181"
+        },
+        {
+          "pubLaw": "104-290",
+          "popularName": "National Securities Markets Improvement Act of 1996"
+        },
+        {
+          "pubLaw": "107-123"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        },
+        {
+          "pubLaw": "112-106",
+          "popularName": "JOBS Act"
+        },
+        {
+          "pubLaw": "114-94",
+          "popularName": "FAST Act"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Method of registration"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Registration fee",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "heading": "Fee payment required"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2",
+              "heading": "Annual adjustment"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3",
+              "heading": "Pro rata application"
+            },
+            {
+              "num": "(4)",
+              "anchor": "b-4",
+              "heading": "Review and effective date"
+            },
+            {
+              "num": "(5)",
+              "anchor": "b-5",
+              "heading": "Publication"
+            },
+            {
+              "num": "(6)",
+              "anchor": "b-6",
+              "heading": "Definitions",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-6-A",
+                  "heading": "Target fee collection amount"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-6-B",
+                  "heading": "Baseline estimate of the aggregate maximum offering prices"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Time registration effective"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Information available to public"
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Emerging growth companies",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "e-1",
+              "heading": "In general"
+            },
+            {
+              "num": "(2)",
+              "anchor": "e-2",
+              "heading": "Confidentiality"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77f&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77f",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77f"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "6",
+      "origin": "ch. 38, title I, § 6",
+      "schedule": null,
+      "slug": "section-6",
+      "label": "Section 6",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-6/",
+      "prev": {
+        "path": "/33-act/section-5/",
+        "label": "Section 5"
+      },
+      "next": {
+        "path": "/33-act/section-7/",
+        "label": "Section 7"
+      }
+    },
+    {
+      "usc": "77g",
+      "uscSlug": "77g",
+      "uscCite": "15 U.S.C. § 77g",
+      "heading": "Information required in registration statement",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77g",
+      "order": 8,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 7, 48 Stat. 78; Pub. L. 101–429, title V, § 508, Oct. 15, 1990, 104 Stat. 956; Pub. L. 111–203, title IX, §§ 942(b), 945, July 21, 2010, 124 Stat. 1897, 1898; Pub. L. 112–106, title I, § 102(b)(1), Apr. 5, 2012, 126 Stat. 309; Pub. L. 117–263, div. E, title LVIII, § 5821(d), Dec. 23, 2022, 136 Stat. 3425.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-429",
+          "popularName": "Securities Enforcement Remedies and Penny Stock Reform Act of 1990"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        },
+        {
+          "pubLaw": "112-106",
+          "popularName": "JOBS Act"
+        },
+        {
+          "pubLaw": "117-263",
+          "popularName": "Financial Data Transparency Act (NDAA FY2023 § 5821)"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Information required in registration statement",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1",
+              "heading": "In general"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2",
+              "heading": "Treatment of emerging growth companies",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-2-B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Registration statement for blank check companies",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-1-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "b-1-C"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-3-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-3-B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Disclosure requirements",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1",
+              "heading": "In general"
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2",
+              "heading": "Content of regulations",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-2-B"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "c-3",
+              "heading": "Data standards for asset-backed securities disclosures",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-3-A",
+                  "heading": "Requirement"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-3-B",
+                  "heading": "Consistency"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Registration statement for asset-backed securities",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77g&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77g",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77g"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "7",
+      "origin": "ch. 38, title I, § 7",
+      "schedule": null,
+      "slug": "section-7",
+      "label": "Section 7",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-7/",
+      "prev": {
+        "path": "/33-act/section-6/",
+        "label": "Section 6"
+      },
+      "next": {
+        "path": "/33-act/section-8/",
+        "label": "Section 8"
+      }
+    },
+    {
+      "usc": "77h",
+      "uscSlug": "77h",
+      "uscCite": "15 U.S.C. § 77h",
+      "heading": "Taking effect of registration statements and amendments thereto",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77h",
+      "order": 9,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 8, 48 Stat. 79; Aug. 22, 1940, ch. 686, title III, § 301, 54 Stat. 857.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Effective date of registration statement"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Incomplete or inaccurate registration statement"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Effective date of amendment to registration statement"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Untrue statements or omissions in registration statement"
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Examination for issuance of stop order"
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Notice requirements"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77h&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77h",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77h"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "8",
+      "origin": "ch. 38, title I, § 8",
+      "schedule": null,
+      "slug": "section-8",
+      "label": "Section 8",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-8/",
+      "prev": {
+        "path": "/33-act/section-7/",
+        "label": "Section 7"
+      },
+      "next": {
+        "path": "/33-act/section-8a/",
+        "label": "Section 8A"
+      }
+    },
+    {
+      "usc": "77h–1",
+      "uscSlug": "77h-1",
+      "uscCite": "15 U.S.C. § 77h–1",
+      "heading": "Cease-and-desist proceedings",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77h–1",
+      "order": 10,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 8A, as added Pub. L. 101–429, title I, § 102, Oct. 15, 1990, 104 Stat. 933; amended Pub. L. 107–204, title XI, § 1105(b), July 30, 2002, 116 Stat. 809; Pub. L. 111–203, title IX, § 929P(a)(1), July 21, 2010, 124 Stat. 1862.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-429",
+          "popularName": "Securities Enforcement Remedies and Penny Stock Reform Act of 1990"
+        },
+        {
+          "pubLaw": "107-204",
+          "popularName": "Sarbanes-Oxley Act of 2002"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "pubLaw": "101-429",
+        "popularName": "Securities Enforcement Remedies and Penny Stock Reform Act of 1990",
+        "raw": "Pub. L. 101–429, title I, § 102, Oct. 15, 1990, 104 Stat. 933"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Authority of Commission"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Hearing"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Temporary order",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1",
+              "heading": "In general"
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2",
+              "heading": "Applicability"
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Review of temporary orders",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1",
+              "heading": "Commission review"
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2",
+              "heading": "Judicial review",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-2-B"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "d-3",
+              "heading": "No automatic stay of temporary order"
+            },
+            {
+              "num": "(4)",
+              "anchor": "d-4",
+              "heading": "Exclusive review"
+            }
+          ]
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Authority to enter order requiring accounting and disgorgement"
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Authority of the Commission to prohibit persons from serving as officers or directors"
+        },
+        {
+          "num": "(g)",
+          "anchor": "g",
+          "heading": "Authority to impose money penalties",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "g-1",
+              "heading": "Grounds",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "g-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "g-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "g-2",
+              "heading": "Maximum amount of penalty",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "g-2-A",
+                  "heading": "First tier"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "g-2-B",
+                  "heading": "Second tier"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "g-2-C",
+                  "heading": "Third tier"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "g-3",
+              "heading": "Evidence concerning ability to pay"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77h-1&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77h-1",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77h-1"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "8A",
+      "origin": "ch. 38, title I, § 8A",
+      "schedule": null,
+      "slug": "section-8a",
+      "label": "Section 8A",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-8a/",
+      "prev": {
+        "path": "/33-act/section-8/",
+        "label": "Section 8"
+      },
+      "next": {
+        "path": "/33-act/section-9/",
+        "label": "Section 9"
+      }
+    },
+    {
+      "usc": "77i",
+      "uscSlug": "77i",
+      "uscCite": "15 U.S.C. § 77i",
+      "heading": "Court review of orders",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77i",
+      "order": 11,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 9, 48 Stat. 80; Pub. L. 85–791, § 9, Aug. 28, 1958, 72 Stat. 945; Pub. L. 100–181, title II, § 206, Dec. 4, 1987, 101 Stat. 1252.)",
+      "publicLaws": [
+        {
+          "pubLaw": "85-791"
+        },
+        {
+          "pubLaw": "100-181"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77i&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77i",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77i"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "9",
+      "origin": "ch. 38, title I, § 9",
+      "schedule": null,
+      "slug": "section-9",
+      "label": "Section 9",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-9/",
+      "prev": {
+        "path": "/33-act/section-8a/",
+        "label": "Section 8A"
+      },
+      "next": {
+        "path": "/33-act/section-10/",
+        "label": "Section 10"
+      }
+    },
+    {
+      "usc": "77j",
+      "uscSlug": "77j",
+      "uscCite": "15 U.S.C. § 77j",
+      "heading": "Information required in prospectus",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77j",
+      "order": 12,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 10, 48 Stat. 81; June 6, 1934, ch. 404, title II, § 205, 48 Stat. 906; Aug. 10, 1954, ch. 667, title I, § 8, 68 Stat. 685.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Information in registration statement; documents not required",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Summarizations and omissions allowed by rules and regulations"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Additional information required by rules and regulations"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Classification of prospectuses"
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Information in conspicuous part of prospectus"
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Prospectus consisting of radio or television broadcast"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77j&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77j",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77j"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "10",
+      "origin": "ch. 38, title I, § 10",
+      "schedule": null,
+      "slug": "section-10",
+      "label": "Section 10",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-10/",
+      "prev": {
+        "path": "/33-act/section-9/",
+        "label": "Section 9"
+      },
+      "next": {
+        "path": "/33-act/section-11/",
+        "label": "Section 11"
+      }
+    },
+    {
+      "usc": "77k",
+      "uscSlug": "77k",
+      "uscCite": "15 U.S.C. § 77k",
+      "heading": "Civil liabilities on account of false registration statement",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77k",
+      "order": 13,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 11, 48 Stat. 82; June 6, 1934, ch. 404, title II, § 206, 48 Stat. 907; Pub. L. 104–67, title II, § 201(b), Dec. 22, 1995, 109 Stat. 762; Pub. L. 105–353, title III, § 301(a)(2), Nov. 3, 1998, 112 Stat. 3235.)",
+      "publicLaws": [
+        {
+          "pubLaw": "104-67",
+          "popularName": "Private Securities Litigation Reform Act of 1995"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Persons possessing cause of action; persons liable",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4"
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Persons exempt from liability upon proof of issues",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Standard of reasonableness"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Effective date of registration statement with regard to underwriters"
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Measure of damages; undertaking for payment of costs"
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Joint and several liability; liability of outside director",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "f-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "f-2",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "f-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "f-2-B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(g)",
+          "anchor": "g",
+          "heading": "Offering price to public as maximum amount recoverable"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77k&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77k",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77k"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "11",
+      "origin": "ch. 38, title I, § 11",
+      "schedule": null,
+      "slug": "section-11",
+      "label": "Section 11",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-11/",
+      "prev": {
+        "path": "/33-act/section-10/",
+        "label": "Section 10"
+      },
+      "next": {
+        "path": "/33-act/section-12/",
+        "label": "Section 12"
+      }
+    },
+    {
+      "usc": "77l",
+      "uscSlug": "77l",
+      "uscCite": "15 U.S.C. § 77l",
+      "heading": "Civil liabilities arising in connection with prospectuses and communications",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77l",
+      "order": 14,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 12, 48 Stat. 84; Aug. 10, 1954, ch. 667, title I, § 9, 68 Stat. 686; Pub. L. 104–67, title I, § 105, Dec. 22, 1995, 109 Stat. 757; Pub. L. 106–554, § 1(a)(5) [title II, § 208(a)(3)], Dec. 21, 2000, 114 Stat. 2763, 2763A–435.)",
+      "publicLaws": [
+        {
+          "pubLaw": "104-67",
+          "popularName": "Private Securities Litigation Reform Act of 1995"
+        },
+        {
+          "pubLaw": "106-554"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "In general",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Loss causation"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77l&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77l",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77l"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "12",
+      "origin": "ch. 38, title I, § 12",
+      "schedule": null,
+      "slug": "section-12",
+      "label": "Section 12",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-12/",
+      "prev": {
+        "path": "/33-act/section-11/",
+        "label": "Section 11"
+      },
+      "next": {
+        "path": "/33-act/section-13/",
+        "label": "Section 13"
+      }
+    },
+    {
+      "usc": "77m",
+      "uscSlug": "77m",
+      "uscCite": "15 U.S.C. § 77m",
+      "heading": "Limitation of actions",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77m",
+      "order": 15,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 13, 48 Stat. 84; June 6, 1934, ch. 404, title II, § 207, 48 Stat. 908; Pub. L. 105–353, title III, § 301(a)(3), Nov. 3, 1998, 112 Stat. 3235.)",
+      "publicLaws": [
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        }
+      ],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77m&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77m",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77m"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "13",
+      "origin": "ch. 38, title I, § 13",
+      "schedule": null,
+      "slug": "section-13",
+      "label": "Section 13",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-13/",
+      "prev": {
+        "path": "/33-act/section-12/",
+        "label": "Section 12"
+      },
+      "next": {
+        "path": "/33-act/section-14/",
+        "label": "Section 14"
+      }
+    },
+    {
+      "usc": "77n",
+      "uscSlug": "77n",
+      "uscCite": "15 U.S.C. § 77n",
+      "heading": "Contrary stipulations void",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77n",
+      "order": 16,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 14, 48 Stat. 84.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77n&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77n",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77n"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "14",
+      "origin": "ch. 38, title I, § 14",
+      "schedule": null,
+      "slug": "section-14",
+      "label": "Section 14",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-14/",
+      "prev": {
+        "path": "/33-act/section-13/",
+        "label": "Section 13"
+      },
+      "next": {
+        "path": "/33-act/section-15/",
+        "label": "Section 15"
+      }
+    },
+    {
+      "usc": "77o",
+      "uscSlug": "77o",
+      "uscCite": "15 U.S.C. § 77o",
+      "heading": "Liability of controlling persons",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77o",
+      "order": 17,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 15, 48 Stat. 84; June 6, 1934, ch. 404, title II, § 208, 48 Stat. 908; Pub. L. 111–203, title IX, § 929M(a), July 21, 2010, 124 Stat. 1861.)",
+      "publicLaws": [
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Controlling persons"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Prosecution of persons who aid and abet violations"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77o&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77o",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77o"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "15",
+      "origin": "ch. 38, title I, § 15",
+      "schedule": null,
+      "slug": "section-15",
+      "label": "Section 15",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-15/",
+      "prev": {
+        "path": "/33-act/section-14/",
+        "label": "Section 14"
+      },
+      "next": {
+        "path": "/33-act/section-16/",
+        "label": "Section 16"
+      }
+    },
+    {
+      "usc": "77p",
+      "uscSlug": "77p",
+      "uscCite": "15 U.S.C. § 77p",
+      "heading": "Additional remedies; limitation on remedies",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77p",
+      "order": 18,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 16, 48 Stat. 84; Pub. L. 105–353, title I, § 101(a)(1), Nov. 3, 1998, 112 Stat. 3227.)",
+      "publicLaws": [
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Remedies additional"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Class action limitations",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Removal of covered class actions"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Preservation of certain actions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1",
+              "heading": "Actions under State law of State of incorporation",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-1-A",
+                  "heading": "Actions preserved"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-1-B",
+                  "heading": "Permissible actions"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2",
+              "heading": "State actions",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-2-A",
+                  "heading": "In general"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-2-B",
+                  "heading": "“State pension plan” defined"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "d-3",
+              "heading": "Actions under contractual agreements between issuers and indenture trustees"
+            },
+            {
+              "num": "(4)",
+              "anchor": "d-4",
+              "heading": "Remand of removed actions"
+            }
+          ]
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Preservation of State jurisdiction"
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Definitions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "f-1",
+              "heading": "Affiliate of the issuer",
+              "terms": [
+                "affiliate of the issuer"
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "f-2",
+              "heading": "Covered class action",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "f-2-A",
+                  "heading": "In general",
+                  "terms": [
+                    "covered class action"
+                  ]
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "f-2-B",
+                  "heading": "Exception for derivative actions"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "f-2-C",
+                  "heading": "Counting of certain class members"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "f-2-D",
+                  "heading": "Rule of construction"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "f-3",
+              "heading": "Covered security",
+              "terms": [
+                "covered security"
+              ]
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77p&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77p",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77p"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "16",
+      "origin": "ch. 38, title I, § 16",
+      "schedule": null,
+      "slug": "section-16",
+      "label": "Section 16",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-16/",
+      "prev": {
+        "path": "/33-act/section-15/",
+        "label": "Section 15"
+      },
+      "next": {
+        "path": "/33-act/section-17/",
+        "label": "Section 17"
+      }
+    },
+    {
+      "usc": "77q",
+      "uscSlug": "77q",
+      "uscCite": "15 U.S.C. § 77q",
+      "heading": "Fraudulent interstate transactions",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77q",
+      "order": 19,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 17, 48 Stat. 84; Aug. 10, 1954, ch. 667, title I, § 10, 68 Stat. 686; Pub. L. 106–554, § 1(a)(5) [title III, § 302(b), (c)], Dec. 21, 2000, 114 Stat. 2763, 2763A–452; Pub. L. 111–203, title VII, § 762(c)(2), July 21, 2010, 124 Stat. 1759.)",
+      "publicLaws": [
+        {
+          "pubLaw": "106-554"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Use of interstate commerce for purpose of fraud or deceit",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Use of interstate commerce for purpose of offering for sale"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Exemptions of section 77c not applicable to this section"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Authority with respect to security-based swap agreements"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77q&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77q",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77q"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "17",
+      "origin": "ch. 38, title I, § 17",
+      "schedule": null,
+      "slug": "section-17",
+      "label": "Section 17",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-17/",
+      "prev": {
+        "path": "/33-act/section-16/",
+        "label": "Section 16"
+      },
+      "next": {
+        "path": "/33-act/section-18/",
+        "label": "Section 18"
+      }
+    },
+    {
+      "usc": "77r",
+      "uscSlug": "77r",
+      "uscCite": "15 U.S.C. § 77r",
+      "heading": "Exemption from State regulation of securities offerings",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77r",
+      "order": 20,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 18, 48 Stat. 85; Pub. L. 104–290, title I, § 102(a), Oct. 11, 1996, 110 Stat. 3417; Pub. L. 105–353, title III, §§ 301(a)(4), 302, Nov. 3, 1998, 112 Stat. 3235, 3237; Pub. L. 111–203, title IX, § 985(a)(2), July 21, 2010, 124 Stat. 1933; Pub. L. 112–106, title III, § 305(a), (b)(2), (c), (d)(2), title IV, § 401(b), Apr. 5, 2012, 126 Stat. 322, 323, 325; Pub. L. 114–94, div. G, title LXXVI, § 76001(b), Dec. 4, 2015, 129 Stat. 1789; Pub. L. 115–174, title V, § 501, May 24, 2018, 132 Stat. 1361.)",
+      "publicLaws": [
+        {
+          "pubLaw": "104-290",
+          "popularName": "National Securities Markets Improvement Act of 1996"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        },
+        {
+          "pubLaw": "112-106",
+          "popularName": "JOBS Act"
+        },
+        {
+          "pubLaw": "114-94",
+          "popularName": "FAST Act"
+        },
+        {
+          "pubLaw": "115-174"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Scope of exemption",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-2-B"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Covered securities",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "heading": "Exclusive Federal registration of nationally traded securities",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2",
+              "heading": "Exclusive Federal registration of investment companies"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3",
+              "heading": "Sales to qualified purchasers"
+            },
+            {
+              "num": "(4)",
+              "anchor": "b-4",
+              "heading": "Exemption in connection with certain exempt offerings",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-4-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-4-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "b-4-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "b-4-D"
+                },
+                {
+                  "num": "(E)",
+                  "anchor": "b-4-E"
+                },
+                {
+                  "num": "(F)",
+                  "anchor": "b-4-F"
+                },
+                {
+                  "num": "(G)",
+                  "anchor": "b-4-G"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Preservation of authority",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1",
+              "heading": "Fraud authority",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2",
+              "heading": "Preservation of filing requirements",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-2-A",
+                  "heading": "Notice filings permitted"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-2-B",
+                  "heading": "Preservation of fees"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "c-2-C",
+                  "heading": "Availability of preemption contingent on payment of fees"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "c-2-D",
+                  "heading": "Fees not permitted on listed securities"
+                },
+                {
+                  "num": "(F)",
+                  "anchor": "c-2-F",
+                  "heading": "44 So in original. No subpar. (E) has been enacted. Fees not permitted on crowdfunded securities"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "c-3",
+              "heading": "Enforcement of requirements"
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Definitions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1",
+              "heading": "Offering document",
+              "terms": [
+                "offering document"
+              ],
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2",
+              "heading": "Prepared by or on behalf of the issuer"
+            },
+            {
+              "num": "(3)",
+              "anchor": "d-3",
+              "heading": "State",
+              "terms": [
+                "State"
+              ]
+            },
+            {
+              "num": "(4)",
+              "anchor": "d-4",
+              "heading": "Senior security",
+              "terms": [
+                "senior security"
+              ]
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77r&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77r",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77r"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "18",
+      "origin": "ch. 38, title I, § 18",
+      "schedule": null,
+      "slug": "section-18",
+      "label": "Section 18",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-18/",
+      "prev": {
+        "path": "/33-act/section-17/",
+        "label": "Section 17"
+      },
+      "next": {
+        "path": "/33-act/usc-77r-1/",
+        "label": "15 U.S.C. § 77r–1"
+      }
+    },
+    {
+      "usc": "77r–1",
+      "uscSlug": "77r-1",
+      "uscCite": "15 U.S.C. § 77r–1",
+      "heading": "Preemption of State law",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77r–1",
+      "order": 21,
+      "sourceCredit": "(Pub. L. 98–440, title I, § 106, Oct. 3, 1984, 98 Stat. 1691; Pub. L. 103–325, title II, § 207, Sept. 23, 1994, 108 Stat. 2199.)",
+      "publicLaws": [
+        {
+          "pubLaw": "98-440"
+        },
+        {
+          "pubLaw": "103-325"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Authority to purchase, hold, and invest in securities; securities considered as obligations of United States",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-1-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "a-1-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "a-1-D"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-2-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "a-2-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "a-2-D"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Exception; validity of contracts under prior law"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Registration and qualification requirements; exemption; subsequent enactment by State"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Implementation",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1",
+              "heading": "Limitation"
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2",
+              "heading": "State registration or qualification requirements"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77r-1&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77r-1",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77r-1"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": null,
+      "actTitle": null,
+      "actSection": null,
+      "schedule": null,
+      "origin": null,
+      "slug": "usc-77r-1",
+      "label": "15 U.S.C. § 77r–1",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/usc-77r-1/",
+      "prev": {
+        "path": "/33-act/section-18/",
+        "label": "Section 18"
+      },
+      "next": {
+        "path": "/33-act/section-19/",
+        "label": "Section 19"
+      }
+    },
+    {
+      "usc": "77s",
+      "uscSlug": "77s",
+      "uscCite": "15 U.S.C. § 77s",
+      "heading": "Special powers of Commission",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77s",
+      "order": 22,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 19, 48 Stat. 85; June 6, 1934, ch. 404, title II, § 209, 48 Stat. 908; Pub. L. 94–210, title III, § 308(a)(2), Feb. 5, 1976, 90 Stat. 57; Pub. L. 96–477, title V, § 505, Oct. 21, 1980, 94 Stat. 2292; Pub. L. 100–181, title II, § 207, Dec. 4, 1987, 101 Stat. 1252; Pub. L. 107–204, title I, § 108(a), July 30, 2002, 116 Stat. 768; Pub. L. 111–203, title IX, §§ 912, 978(a), 985(a)(3), July 21, 2010, 124 Stat. 1824, 1924, 1933.)",
+      "publicLaws": [
+        {
+          "pubLaw": "94-210"
+        },
+        {
+          "pubLaw": "96-477"
+        },
+        {
+          "pubLaw": "100-181"
+        },
+        {
+          "pubLaw": "107-204",
+          "popularName": "Sarbanes-Oxley Act of 2002"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Rules and regulations"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Recognition of accounting standards",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "heading": "In general",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2",
+              "heading": "Annual report"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Production of evidence"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Federal and State cooperation",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-2-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "d-2-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "d-2-D"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "d-3",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-3-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-3-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "d-3-C"
+                }
+              ]
+            },
+            {
+              "num": "(4)",
+              "anchor": "d-4"
+            },
+            {
+              "num": "(5)",
+              "anchor": "d-5"
+            },
+            {
+              "num": "(6)",
+              "anchor": "d-6",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-6-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-6-B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Evaluation of rules or programs",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "e-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "e-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "e-3"
+            }
+          ]
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Rule of construction"
+        },
+        {
+          "num": "(g)",
+          "anchor": "g",
+          "heading": "Funding for the GASB",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "g-1",
+              "heading": "In general",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "g-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "g-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "g-2",
+              "heading": "Annual budget"
+            },
+            {
+              "num": "(3)",
+              "anchor": "g-3",
+              "heading": "Use of funds"
+            },
+            {
+              "num": "(4)",
+              "anchor": "g-4",
+              "heading": "Limitation on fee"
+            },
+            {
+              "num": "(5)",
+              "anchor": "g-5",
+              "heading": "Rules of construction",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "g-5-A",
+                  "heading": "Fees not public monies"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "g-5-B",
+                  "heading": "Limitation on authority of the Commission"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "g-5-C",
+                  "heading": "Noninterference with States"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77s&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77s",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77s"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "19",
+      "origin": "ch. 38, title I, § 19",
+      "schedule": null,
+      "slug": "section-19",
+      "label": "Section 19",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-19/",
+      "prev": {
+        "path": "/33-act/usc-77r-1/",
+        "label": "15 U.S.C. § 77r–1"
+      },
+      "next": {
+        "path": "/33-act/section-20/",
+        "label": "Section 20"
+      }
+    },
+    {
+      "usc": "77t",
+      "uscSlug": "77t",
+      "uscCite": "15 U.S.C. § 77t",
+      "heading": "Injunctions and prosecution of offenses",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77t",
+      "order": 23,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 20, 48 Stat. 86; Pub. L. 100–181, title II, § 208, Dec. 4, 1987, 101 Stat. 1253; Pub. L. 101–429, title I, § 101, Oct. 15, 1990, 104 Stat. 932; Pub. L. 104–67, title I, § 103(b)(1), Dec. 22, 1995, 109 Stat. 756; Pub. L. 107–204, title III, §§ 305(a)(2), 308(d)(3), title VI, § 603(b), July 30, 2002, 116 Stat. 779, 785, 795; Pub. L. 111–203, title IX, § 923(a)(1), July 21, 2010, 124 Stat. 1849.)",
+      "publicLaws": [
+        {
+          "pubLaw": "100-181"
+        },
+        {
+          "pubLaw": "101-429",
+          "popularName": "Securities Enforcement Remedies and Penny Stock Reform Act of 1990"
+        },
+        {
+          "pubLaw": "104-67",
+          "popularName": "Private Securities Litigation Reform Act of 1995"
+        },
+        {
+          "pubLaw": "107-204",
+          "popularName": "Sarbanes-Oxley Act of 2002"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Investigation of violations"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Action for injunction or criminal prosecution in district court"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Writ of mandamus"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Money penalties in civil actions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1",
+              "heading": "Authority of Commission"
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2",
+              "heading": "Amount of penalty",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-2-A",
+                  "heading": "First tier"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-2-B",
+                  "heading": "Second tier"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "d-2-C",
+                  "heading": "Third tier"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "d-3",
+              "heading": "Procedures for collection",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-3-A",
+                  "heading": "Payment of penalty to Treasury"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-3-B",
+                  "heading": "Collection of penalties"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "d-3-C",
+                  "heading": "Remedy not exclusive"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "d-3-D",
+                  "heading": "Jurisdiction and venue"
+                }
+              ]
+            },
+            {
+              "num": "(4)",
+              "anchor": "d-4",
+              "heading": "Special provisions relating to a violation of a cease-and-desist order"
+            }
+          ]
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Authority of court to prohibit persons from serving as officers and directors"
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Prohibition of attorneys’ fees paid from Commission disgorgement funds"
+        },
+        {
+          "num": "(g)",
+          "anchor": "g",
+          "heading": "Authority of a court to prohibit persons from participating in an offering of penny stock",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "g-1",
+              "heading": "In general"
+            },
+            {
+              "num": "(2)",
+              "anchor": "g-2",
+              "heading": "Definition"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77t&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77t",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77t"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "20",
+      "origin": "ch. 38, title I, § 20",
+      "schedule": null,
+      "slug": "section-20",
+      "label": "Section 20",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-20/",
+      "prev": {
+        "path": "/33-act/section-19/",
+        "label": "Section 19"
+      },
+      "next": {
+        "path": "/33-act/section-21/",
+        "label": "Section 21"
+      }
+    },
+    {
+      "usc": "77u",
+      "uscSlug": "77u",
+      "uscCite": "15 U.S.C. § 77u",
+      "heading": "Hearings by Commission",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77u",
+      "order": 24,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 21, 48 Stat. 86.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77u&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77u",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77u"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "21",
+      "origin": "ch. 38, title I, § 21",
+      "schedule": null,
+      "slug": "section-21",
+      "label": "Section 21",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-21/",
+      "prev": {
+        "path": "/33-act/section-20/",
+        "label": "Section 20"
+      },
+      "next": {
+        "path": "/33-act/section-22/",
+        "label": "Section 22"
+      }
+    },
+    {
+      "usc": "77v",
+      "uscSlug": "77v",
+      "uscCite": "15 U.S.C. § 77v",
+      "heading": "Jurisdiction of offenses and suits",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77v",
+      "order": 25,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 22, 48 Stat. 86; June 25, 1936, ch. 804, 49 Stat. 1921; June 25, 1948, ch. 646, § 32(b), 62 Stat. 991; May 24, 1949, ch. 139, § 127, 63 Stat. 107; Aug. 10, 1954, ch. 667, title I, § 11, 68 Stat. 686; Pub. L. 91–452, title II, § 213, Oct. 15, 1970, 84 Stat. 929; Pub. L. 100–181, title II, § 209, Dec. 4, 1987, 101 Stat. 1253; Pub. L. 105–353, title I, § 101(a)(3), Nov. 3, 1998, 112 Stat. 3230; Pub. L. 111–203, title IX, §§ 929E(a), 929P(b)(1), July 21, 2010, 124 Stat. 1853, 1864.)",
+      "publicLaws": [
+        {
+          "pubLaw": "91-452"
+        },
+        {
+          "pubLaw": "100-181"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Federal and State courts; venue; service of process; review; removal; costs"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Contumacy or refusal to obey subpena; contempt"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Extraterritorial jurisdiction",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77v&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77v",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77v"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "22",
+      "origin": "ch. 38, title I, § 22",
+      "schedule": null,
+      "slug": "section-22",
+      "label": "Section 22",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-22/",
+      "prev": {
+        "path": "/33-act/section-21/",
+        "label": "Section 21"
+      },
+      "next": {
+        "path": "/33-act/section-23/",
+        "label": "Section 23"
+      }
+    },
+    {
+      "usc": "77w",
+      "uscSlug": "77w",
+      "uscCite": "15 U.S.C. § 77w",
+      "heading": "Unlawful representations",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77w",
+      "order": 26,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 23, 48 Stat. 87.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77w&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77w",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77w"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "23",
+      "origin": "ch. 38, title I, § 23",
+      "schedule": null,
+      "slug": "section-23",
+      "label": "Section 23",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-23/",
+      "prev": {
+        "path": "/33-act/section-22/",
+        "label": "Section 22"
+      },
+      "next": {
+        "path": "/33-act/section-24/",
+        "label": "Section 24"
+      }
+    },
+    {
+      "usc": "77x",
+      "uscSlug": "77x",
+      "uscCite": "15 U.S.C. § 77x",
+      "heading": "Penalties",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77x",
+      "order": 27,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 24, 48 Stat. 87; Pub. L. 94–29, § 27(a), June 4, 1975, 89 Stat. 163.)",
+      "publicLaws": [
+        {
+          "pubLaw": "94-29",
+          "popularName": "Securities Acts Amendments of 1975"
+        }
+      ],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77x&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77x",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77x"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "24",
+      "origin": "ch. 38, title I, § 24",
+      "schedule": null,
+      "slug": "section-24",
+      "label": "Section 24",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-24/",
+      "prev": {
+        "path": "/33-act/section-23/",
+        "label": "Section 23"
+      },
+      "next": {
+        "path": "/33-act/section-25/",
+        "label": "Section 25"
+      }
+    },
+    {
+      "usc": "77y",
+      "uscSlug": "77y",
+      "uscCite": "15 U.S.C. § 77y",
+      "heading": "Jurisdiction of other Government agencies over securities",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77y",
+      "order": 28,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 25, 48 Stat. 87.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77y&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77y",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77y"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "25",
+      "origin": "ch. 38, title I, § 25",
+      "schedule": null,
+      "slug": "section-25",
+      "label": "Section 25",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-25/",
+      "prev": {
+        "path": "/33-act/section-24/",
+        "label": "Section 24"
+      },
+      "next": {
+        "path": "/33-act/section-26/",
+        "label": "Section 26"
+      }
+    },
+    {
+      "usc": "77z",
+      "uscSlug": "77z",
+      "uscCite": "15 U.S.C. § 77z",
+      "heading": "Separability",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77z",
+      "order": 29,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 26, 48 Stat. 88.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77z&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77z",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77z"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "26",
+      "origin": "ch. 38, title I, § 26",
+      "schedule": null,
+      "slug": "section-26",
+      "label": "Section 26",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-26/",
+      "prev": {
+        "path": "/33-act/section-25/",
+        "label": "Section 25"
+      },
+      "next": {
+        "path": "/33-act/section-27/",
+        "label": "Section 27"
+      }
+    },
+    {
+      "usc": "77z–1",
+      "uscSlug": "77z-1",
+      "uscCite": "15 U.S.C. § 77z–1",
+      "heading": "Private securities litigation",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77z–1",
+      "order": 30,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 27, as added Pub. L. 104–67, title I, § 101(a), Dec. 22, 1995, 109 Stat. 737; amended Pub. L. 105–353, title I, § 101(a)(2), title III, § 301(a)(5), Nov. 3, 1998, 112 Stat. 3230, 3235.)",
+      "publicLaws": [
+        {
+          "pubLaw": "104-67",
+          "popularName": "Private Securities Litigation Reform Act of 1995"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        }
+      ],
+      "addedBy": {
+        "pubLaw": "104-67",
+        "popularName": "Private Securities Litigation Reform Act of 1995",
+        "raw": "Pub. L. 104–67, title I, § 101(a), Dec. 22, 1995, 109 Stat. 737"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Private class actions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1",
+              "heading": "In general"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2",
+              "heading": "Certification filed with complaint",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-2-A",
+                  "heading": "In general"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-2-B",
+                  "heading": "Nonwaiver of attorney-client privilege"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3",
+              "heading": "Appointment of lead plaintiff",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-3-A",
+                  "heading": "Early notice to class members"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-3-B",
+                  "heading": "Appointment of lead plaintiff"
+                }
+              ]
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4",
+              "heading": "Recovery by plaintiffs"
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5",
+              "heading": "Restrictions on settlements under seal"
+            },
+            {
+              "num": "(6)",
+              "anchor": "a-6",
+              "heading": "Restrictions on payment of attorneys’ fees and expenses"
+            },
+            {
+              "num": "(7)",
+              "anchor": "a-7",
+              "heading": "Disclosure of settlement terms to class members",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-7-A",
+                  "heading": "Statement of plaintiff recovery"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-7-B",
+                  "heading": "Statement of potential outcome of case"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "a-7-C",
+                  "heading": "Statement of attorneys’ fees or costs sought"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "a-7-D",
+                  "heading": "Identification of lawyers’ representatives"
+                },
+                {
+                  "num": "(E)",
+                  "anchor": "a-7-E",
+                  "heading": "Reasons for settlement"
+                },
+                {
+                  "num": "(F)",
+                  "anchor": "a-7-F",
+                  "heading": "Other information"
+                }
+              ]
+            },
+            {
+              "num": "(8)",
+              "anchor": "a-8",
+              "heading": "Attorney conflict of interest"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Stay of discovery; preservation of evidence",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "heading": "In general"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2",
+              "heading": "Preservation of evidence"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3",
+              "heading": "Sanction for willful violation"
+            },
+            {
+              "num": "(4)",
+              "anchor": "b-4",
+              "heading": "Circumvention of stay of discovery"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Sanctions for abusive litigation",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1",
+              "heading": "Mandatory review by court"
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2",
+              "heading": "Mandatory sanctions"
+            },
+            {
+              "num": "(3)",
+              "anchor": "c-3",
+              "heading": "Presumption in favor of attorneys’ fees and costs",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-3-A",
+                  "heading": "In general"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-3-B",
+                  "heading": "Rebuttal evidence"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "c-3-C",
+                  "heading": "Sanctions"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Defendant’s right to written interrogatories"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77z-1&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77z-1",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77z-1"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "27",
+      "origin": "ch. 38, title I, § 27",
+      "schedule": null,
+      "slug": "section-27",
+      "label": "Section 27",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-27/",
+      "prev": {
+        "path": "/33-act/section-26/",
+        "label": "Section 26"
+      },
+      "next": {
+        "path": "/33-act/section-27a/",
+        "label": "Section 27A"
+      }
+    },
+    {
+      "usc": "77z–2",
+      "uscSlug": "77z-2",
+      "uscCite": "15 U.S.C. § 77z–2",
+      "heading": "Application of safe harbor for forward-looking statements",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77z–2",
+      "order": 31,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 27A, as added Pub. L. 104–67, title I, § 102(a), Dec. 22, 1995, 109 Stat. 749; amended Pub. L. 105–353, title III, § 301(a)(5), Nov. 3, 1998, 112 Stat. 3235; Pub. L. 111–203, title IX, § 985(a)(4), July 21, 2010, 124 Stat. 1933.)",
+      "publicLaws": [
+        {
+          "pubLaw": "104-67",
+          "popularName": "Private Securities Litigation Reform Act of 1995"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "pubLaw": "104-67",
+        "popularName": "Private Securities Litigation Reform Act of 1995",
+        "raw": "Pub. L. 104–67, title I, § 102(a), Dec. 22, 1995, 109 Stat. 749"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Applicability",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Exclusions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-1-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "b-1-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "b-1-D"
+                },
+                {
+                  "num": "(E)",
+                  "anchor": "b-1-E"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-2-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "b-2-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "b-2-D"
+                },
+                {
+                  "num": "(E)",
+                  "anchor": "b-2-E"
+                },
+                {
+                  "num": "(F)",
+                  "anchor": "b-2-F"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Safe harbor",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1",
+              "heading": "In general",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2",
+              "heading": "Oral forward-looking statements",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-2-B"
+                }
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "c-3",
+              "heading": "Availability"
+            },
+            {
+              "num": "(4)",
+              "anchor": "c-4",
+              "heading": "Effect on other safe harbors"
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Duty to update"
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Dispositive motion"
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Stay pending decision on motion",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "f-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "f-2"
+            }
+          ]
+        },
+        {
+          "num": "(g)",
+          "anchor": "g",
+          "heading": "Exemption authority"
+        },
+        {
+          "num": "(h)",
+          "anchor": "h",
+          "heading": "Effect on other authority of Commission"
+        },
+        {
+          "num": "(i)",
+          "anchor": "i",
+          "heading": "Definitions",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "i-1",
+              "heading": "Forward-looking statement",
+              "terms": [
+                "forward-looking statement"
+              ],
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "i-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "i-1-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "i-1-C"
+                },
+                {
+                  "num": "(D)",
+                  "anchor": "i-1-D"
+                },
+                {
+                  "num": "(E)",
+                  "anchor": "i-1-E"
+                },
+                {
+                  "num": "(F)",
+                  "anchor": "i-1-F"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "i-2",
+              "heading": "Investment company",
+              "terms": [
+                "investment company"
+              ]
+            },
+            {
+              "num": "(3)",
+              "anchor": "i-3",
+              "heading": "Penny stock",
+              "terms": [
+                "penny stock"
+              ]
+            },
+            {
+              "num": "(4)",
+              "anchor": "i-4",
+              "heading": "Going private transaction",
+              "terms": [
+                "going private transaction"
+              ]
+            },
+            {
+              "num": "(5)",
+              "anchor": "i-5",
+              "heading": "Securities laws",
+              "terms": [
+                "securities laws"
+              ]
+            },
+            {
+              "num": "(6)",
+              "anchor": "i-6",
+              "heading": "Person acting on behalf of an issuer",
+              "terms": [
+                "person acting on behalf of an issuer"
+              ]
+            },
+            {
+              "num": "(7)",
+              "anchor": "i-7",
+              "heading": "Other terms",
+              "terms": [
+                "blank check company",
+                "rollup transaction",
+                "partnership",
+                "limited liability company",
+                "executive officer of an entity",
+                "direct participation investment program"
+              ]
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77z-2&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77z-2",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77z-2"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "27A",
+      "origin": "ch. 38, title I, § 27A",
+      "schedule": null,
+      "slug": "section-27a",
+      "label": "Section 27A",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-27a/",
+      "prev": {
+        "path": "/33-act/section-27/",
+        "label": "Section 27"
+      },
+      "next": {
+        "path": "/33-act/section-27b/",
+        "label": "Section 27B"
+      }
+    },
+    {
+      "usc": "77z–2a",
+      "uscSlug": "77z-2a",
+      "uscCite": "15 U.S.C. § 77z–2a",
+      "heading": "Conflicts of interest relating to certain securitizations",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77z–2a",
+      "order": 32,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 27B, as added Pub. L. 111–203, title VI, § 621(a), July 21, 2010, 124 Stat. 1631.)",
+      "publicLaws": [
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "pubLaw": "111-203",
+        "popularName": "Dodd-Frank Act",
+        "raw": "Pub. L. 111–203, title VI, § 621(a), July 21, 2010, 124 Stat. 1631"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "In general"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Rulemaking"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Exception",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "c-2-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "c-2-B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Rule of construction"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77z-2a&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77z-2a",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77z-2a"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "27B",
+      "origin": "ch. 38, title I, § 27B",
+      "schedule": null,
+      "slug": "section-27b",
+      "label": "Section 27B",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-27b/",
+      "prev": {
+        "path": "/33-act/section-27a/",
+        "label": "Section 27A"
+      },
+      "next": {
+        "path": "/33-act/section-28/",
+        "label": "Section 28"
+      }
+    },
+    {
+      "usc": "77z–3",
+      "uscSlug": "77z-3",
+      "uscCite": "15 U.S.C. § 77z–3",
+      "heading": "General exemptive authority",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77z–3",
+      "order": 33,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 28, as added Pub. L. 104–290, title I, § 105(a), Oct. 11, 1996, 110 Stat. 3424; amended Pub. L. 105–353, title III, § 301(a)(5), Nov. 3, 1998, 112 Stat. 3235.)",
+      "publicLaws": [
+        {
+          "pubLaw": "104-290",
+          "popularName": "National Securities Markets Improvement Act of 1996"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        }
+      ],
+      "addedBy": {
+        "pubLaw": "104-290",
+        "popularName": "National Securities Markets Improvement Act of 1996",
+        "raw": "Pub. L. 104–290, title I, § 105(a), Oct. 11, 1996, 110 Stat. 3424"
+      },
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77z-3&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77z-3",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77z-3"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "28",
+      "origin": "ch. 38, title I, § 28",
+      "schedule": null,
+      "slug": "section-28",
+      "label": "Section 28",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-28/",
+      "prev": {
+        "path": "/33-act/section-27b/",
+        "label": "Section 27B"
+      },
+      "next": {
+        "path": "/33-act/section-29/",
+        "label": "Section 29"
+      }
+    },
+    {
+      "usc": "77z–4",
+      "uscSlug": "77z-4",
+      "uscCite": "15 U.S.C. § 77z–4",
+      "heading": "Data standards",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77z–4",
+      "order": 34,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, § 29, as added Pub. L. 117–263, div. E, title LVIII, § 5821(e), Dec. 23, 2022, 136 Stat. 3426.)",
+      "publicLaws": [
+        {
+          "pubLaw": "117-263",
+          "popularName": "Financial Data Transparency Act (NDAA FY2023 § 5821)"
+        }
+      ],
+      "addedBy": {
+        "pubLaw": "117-263",
+        "popularName": "Financial Data Transparency Act (NDAA FY2023 § 5821)",
+        "raw": "Pub. L. 117–263, div. E, title LVIII, § 5821(e), Dec. 23, 2022, 136 Stat. 3426"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Requirement"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Consistency"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77z-4&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77z-4",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77z-4"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": "29",
+      "origin": "ch. 38, title I, § 29",
+      "schedule": null,
+      "slug": "section-29",
+      "label": "Section 29",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-29/",
+      "prev": {
+        "path": "/33-act/section-28/",
+        "label": "Section 28"
+      },
+      "next": {
+        "path": "/33-act/schedule-a/",
+        "label": "Schedules A and B"
+      }
+    },
+    {
+      "usc": "77aa",
+      "uscSlug": "77aa",
+      "uscCite": "15 U.S.C. § 77aa",
+      "heading": "Schedule of information required in registration statement",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77aa",
+      "order": 35,
+      "sourceCredit": "(May 27, 1933, ch. 38, title I, schedules A, B, 48 Stat. 88, 91; Pub. L. 105–353, title III, § 301(a)(6), Nov. 3, 1998, 112 Stat. 3235.)",
+      "publicLaws": [
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        }
+      ],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(1)",
+          "anchor": "1"
+        },
+        {
+          "num": "(2)",
+          "anchor": "2"
+        },
+        {
+          "num": "(3)",
+          "anchor": "3"
+        },
+        {
+          "num": "(4)",
+          "anchor": "4"
+        },
+        {
+          "num": "(5)",
+          "anchor": "5"
+        },
+        {
+          "num": "(6)",
+          "anchor": "6"
+        },
+        {
+          "num": "(7)",
+          "anchor": "7"
+        },
+        {
+          "num": "(8)",
+          "anchor": "8"
+        },
+        {
+          "num": "(9)",
+          "anchor": "9"
+        },
+        {
+          "num": "(10)",
+          "anchor": "10"
+        },
+        {
+          "num": "(11)",
+          "anchor": "11"
+        },
+        {
+          "num": "(12)",
+          "anchor": "12"
+        },
+        {
+          "num": "(13)",
+          "anchor": "13"
+        },
+        {
+          "num": "(14)",
+          "anchor": "14"
+        },
+        {
+          "num": "(15)",
+          "anchor": "15"
+        },
+        {
+          "num": "(16)",
+          "anchor": "16"
+        },
+        {
+          "num": "(17)",
+          "anchor": "17"
+        },
+        {
+          "num": "(18)",
+          "anchor": "18"
+        },
+        {
+          "num": "(19)",
+          "anchor": "19"
+        },
+        {
+          "num": "(20)",
+          "anchor": "20"
+        },
+        {
+          "num": "(21)",
+          "anchor": "21"
+        },
+        {
+          "num": "(22)",
+          "anchor": "22"
+        },
+        {
+          "num": "(23)",
+          "anchor": "23"
+        },
+        {
+          "num": "(24)",
+          "anchor": "24"
+        },
+        {
+          "num": "(25)",
+          "anchor": "25"
+        },
+        {
+          "num": "(26)",
+          "anchor": "26"
+        },
+        {
+          "num": "(27)",
+          "anchor": "27"
+        },
+        {
+          "num": "(28)",
+          "anchor": "28"
+        },
+        {
+          "num": "(29)",
+          "anchor": "29"
+        },
+        {
+          "num": "(30)",
+          "anchor": "30"
+        },
+        {
+          "num": "(31)",
+          "anchor": "31"
+        },
+        {
+          "num": "(32)",
+          "anchor": "32"
+        },
+        {
+          "num": "(1)",
+          "anchor": "1"
+        },
+        {
+          "num": "(2)",
+          "anchor": "2"
+        },
+        {
+          "num": "(3)",
+          "anchor": "3"
+        },
+        {
+          "num": "(4)",
+          "anchor": "4"
+        },
+        {
+          "num": "(5)",
+          "anchor": "5"
+        },
+        {
+          "num": "(6)",
+          "anchor": "6"
+        },
+        {
+          "num": "(7)",
+          "anchor": "7"
+        },
+        {
+          "num": "(8)",
+          "anchor": "8"
+        },
+        {
+          "num": "(9)",
+          "anchor": "9"
+        },
+        {
+          "num": "(10)",
+          "anchor": "10"
+        },
+        {
+          "num": "(11)",
+          "anchor": "11"
+        },
+        {
+          "num": "(12)",
+          "anchor": "12"
+        },
+        {
+          "num": "(13)",
+          "anchor": "13"
+        },
+        {
+          "num": "(14)",
+          "anchor": "14"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77aa&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77aa",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77aa"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schI",
+        "heading": "DOMESTIC SECURITIES",
+        "num": "SUBCHAPTER I—"
+      },
+      "actId": "33-act",
+      "actTitle": "I",
+      "actSection": null,
+      "schedule": [
+        "A",
+        "B"
+      ],
+      "origin": "ch. 38, title I, schedules A, B",
+      "slug": "schedule-a",
+      "label": "Schedules A and B",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/schedule-a/",
+      "prev": {
+        "path": "/33-act/section-29/",
+        "label": "Section 29"
+      },
+      "next": {
+        "path": "/33-act/section-201/",
+        "label": "Section 201"
+      }
+    },
+    {
+      "usc": "77bb",
+      "uscSlug": "77bb",
+      "uscCite": "15 U.S.C. § 77bb",
+      "heading": "“Corporation of Foreign Security Holders”; creation; principal office; branch offices",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77bb",
+      "order": 36,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 201, 48 Stat. 92.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77bb&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77bb",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77bb"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "201",
+      "origin": "ch. 38, title II, § 201",
+      "schedule": null,
+      "slug": "section-201",
+      "label": "Section 201",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-201/",
+      "prev": {
+        "path": "/33-act/schedule-a/",
+        "label": "Schedules A and B"
+      },
+      "next": {
+        "path": "/33-act/section-202/",
+        "label": "Section 202"
+      }
+    },
+    {
+      "usc": "77cc",
+      "uscSlug": "77cc",
+      "uscCite": "15 U.S.C. § 77cc",
+      "heading": "Directors of Corporation; appointment, term of office, and removal",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77cc",
+      "order": 37,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 202, 48 Stat. 93.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77cc&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77cc",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77cc"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "202",
+      "origin": "ch. 38, title II, § 202",
+      "schedule": null,
+      "slug": "section-202",
+      "label": "Section 202",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-202/",
+      "prev": {
+        "path": "/33-act/section-201/",
+        "label": "Section 201"
+      },
+      "next": {
+        "path": "/33-act/section-203/",
+        "label": "Section 203"
+      }
+    },
+    {
+      "usc": "77dd",
+      "uscSlug": "77dd",
+      "uscCite": "15 U.S.C. § 77dd",
+      "heading": "Powers and duties of Corporation, generally",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77dd",
+      "order": 38,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 203, 48 Stat. 93.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77dd&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77dd",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77dd"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "203",
+      "origin": "ch. 38, title II, § 203",
+      "schedule": null,
+      "slug": "section-203",
+      "label": "Section 203",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-203/",
+      "prev": {
+        "path": "/33-act/section-202/",
+        "label": "Section 202"
+      },
+      "next": {
+        "path": "/33-act/section-204/",
+        "label": "Section 204"
+      }
+    },
+    {
+      "usc": "77ee",
+      "uscSlug": "77ee",
+      "uscCite": "15 U.S.C. § 77ee",
+      "heading": "Directors of Corporation, powers and duties generally",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ee",
+      "order": 39,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 204, 48 Stat. 94.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(1)",
+          "anchor": "1"
+        },
+        {
+          "num": "(2)",
+          "anchor": "2"
+        },
+        {
+          "num": "(3)",
+          "anchor": "3"
+        },
+        {
+          "num": "(4)",
+          "anchor": "4"
+        },
+        {
+          "num": "(5)",
+          "anchor": "5"
+        },
+        {
+          "num": "(6)",
+          "anchor": "6"
+        },
+        {
+          "num": "(7)",
+          "anchor": "7"
+        },
+        {
+          "num": "(8)",
+          "anchor": "8"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ee&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ee",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ee"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "204",
+      "origin": "ch. 38, title II, § 204",
+      "schedule": null,
+      "slug": "section-204",
+      "label": "Section 204",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-204/",
+      "prev": {
+        "path": "/33-act/section-203/",
+        "label": "Section 203"
+      },
+      "next": {
+        "path": "/33-act/section-205/",
+        "label": "Section 205"
+      }
+    },
+    {
+      "usc": "77ff",
+      "uscSlug": "77ff",
+      "uscCite": "15 U.S.C. § 77ff",
+      "heading": "Accounts and annual balance sheet of Corporation; audits",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ff",
+      "order": 40,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 205, 48 Stat. 94.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ff&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ff",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ff"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "205",
+      "origin": "ch. 38, title II, § 205",
+      "schedule": null,
+      "slug": "section-205",
+      "label": "Section 205",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-205/",
+      "prev": {
+        "path": "/33-act/section-204/",
+        "label": "Section 204"
+      },
+      "next": {
+        "path": "/33-act/section-206/",
+        "label": "Section 206"
+      }
+    },
+    {
+      "usc": "77gg",
+      "uscSlug": "77gg",
+      "uscCite": "15 U.S.C. § 77gg",
+      "heading": "Annual report by Corporation; printing and distribution",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77gg",
+      "order": 41,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 206, 48 Stat. 95.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77gg&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77gg",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77gg"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "206",
+      "origin": "ch. 38, title II, § 206",
+      "schedule": null,
+      "slug": "section-206",
+      "label": "Section 206",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-206/",
+      "prev": {
+        "path": "/33-act/section-205/",
+        "label": "Section 205"
+      },
+      "next": {
+        "path": "/33-act/section-207/",
+        "label": "Section 207"
+      }
+    },
+    {
+      "usc": "77hh",
+      "uscSlug": "77hh",
+      "uscCite": "15 U.S.C. § 77hh",
+      "heading": "Assessments by Corporation on holders of foreign securities",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77hh",
+      "order": 42,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 207, 48 Stat. 95.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77hh&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77hh",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77hh"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "207",
+      "origin": "ch. 38, title II, § 207",
+      "schedule": null,
+      "slug": "section-207",
+      "label": "Section 207",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-207/",
+      "prev": {
+        "path": "/33-act/section-206/",
+        "label": "Section 206"
+      },
+      "next": {
+        "path": "/33-act/section-208/",
+        "label": "Section 208"
+      }
+    },
+    {
+      "usc": "77ii",
+      "uscSlug": "77ii",
+      "uscCite": "15 U.S.C. § 77ii",
+      "heading": "Subscriptions accepted by Corporation as loans; repayment",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ii",
+      "order": 43,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 208, 48 Stat. 95.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ii&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ii",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ii"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "208",
+      "origin": "ch. 38, title II, § 208",
+      "schedule": null,
+      "slug": "section-208",
+      "label": "Section 208",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-208/",
+      "prev": {
+        "path": "/33-act/section-207/",
+        "label": "Section 207"
+      },
+      "next": {
+        "path": "/33-act/section-209/",
+        "label": "Section 209"
+      }
+    },
+    {
+      "usc": "77jj",
+      "uscSlug": "77jj",
+      "uscCite": "15 U.S.C. § 77jj",
+      "heading": "Loans to Corporation from Reconstruction Finance Corporation authorized",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77jj",
+      "order": 44,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 209, 48 Stat. 95.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77jj&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77jj",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77jj"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "209",
+      "origin": "ch. 38, title II, § 209",
+      "schedule": null,
+      "slug": "section-209",
+      "label": "Section 209",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-209/",
+      "prev": {
+        "path": "/33-act/section-208/",
+        "label": "Section 208"
+      },
+      "next": {
+        "path": "/33-act/section-210/",
+        "label": "Section 210"
+      }
+    },
+    {
+      "usc": "77kk",
+      "uscSlug": "77kk",
+      "uscCite": "15 U.S.C. § 77kk",
+      "heading": "Representations by Corporation as acting for Department of State or United States forbidden; interference with foreign negotiations forbidden",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77kk",
+      "order": 45,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 210, 48 Stat. 95.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77kk&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77kk",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77kk"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "210",
+      "origin": "ch. 38, title II, § 210",
+      "schedule": null,
+      "slug": "section-210",
+      "label": "Section 210",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-210/",
+      "prev": {
+        "path": "/33-act/section-209/",
+        "label": "Section 209"
+      },
+      "next": {
+        "path": "/33-act/section-211/",
+        "label": "Section 211"
+      }
+    },
+    {
+      "usc": "77ll",
+      "uscSlug": "77ll",
+      "uscCite": "15 U.S.C. § 77ll",
+      "heading": "Effective date of subchapter",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ll",
+      "order": 46,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 211, 48 Stat. 95.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ll&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ll",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ll"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "211",
+      "origin": "ch. 38, title II, § 211",
+      "schedule": null,
+      "slug": "section-211",
+      "label": "Section 211",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-211/",
+      "prev": {
+        "path": "/33-act/section-210/",
+        "label": "Section 210"
+      },
+      "next": {
+        "path": "/33-act/section-212/",
+        "label": "Section 212"
+      }
+    },
+    {
+      "usc": "77mm",
+      "uscSlug": "77mm",
+      "uscCite": "15 U.S.C. § 77mm",
+      "heading": "Short title",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77mm",
+      "order": 47,
+      "sourceCredit": "(May 27, 1933, ch. 38, title II, § 212, 48 Stat. 95.)",
+      "publicLaws": [],
+      "addedBy": null,
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77mm&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77mm",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77mm"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schII",
+        "heading": "FOREIGN SECURITIES",
+        "num": "SUBCHAPTER II—"
+      },
+      "actId": "33-act",
+      "actTitle": "II",
+      "actSection": "212",
+      "origin": "ch. 38, title II, § 212",
+      "schedule": null,
+      "slug": "section-212",
+      "label": "Section 212",
+      "homeAct": "33-act",
+      "chapter": "2A",
+      "path": "/33-act/section-212/",
+      "prev": {
+        "path": "/33-act/section-211/",
+        "label": "Section 211"
+      },
+      "next": null
+    }
+  ]
+}

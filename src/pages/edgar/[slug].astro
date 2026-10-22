@@ -1,0 +1,33 @@
+---
+import CompanyPage from "../../components/CompanyPage.astro";
+import { companyBySlug, loadEdgar } from "../../lib/edgar";
+
+export function getStaticPaths() {
+  const edgar = loadEdgar();
+  const sample = process.env.SLD_SAMPLE === "1" ? new Set(["aapl", "msft", "jpm", "brk-b"]) : null;
+  const paths = [];
+  for (const company of Object.values(edgar.companies)) {
+    for (const ticker of company.tickers) {
+      if (sample && !sample.has(ticker.slug)) continue;
+      paths.push({
+        params: { slug: ticker.slug },
+        props: { slug: ticker.slug },
+      });
+    }
+  }
+  return paths;
+}
+
+const { slug } = Astro.props;
+const found = companyBySlug(slug);
+if (!found) throw new Error(`Missing issuer ${slug}`);
+const { company, ticker } = found;
+const edgar = loadEdgar();
+---
+
+<CompanyPage
+  company={company}
+  ticker={ticker}
+  generatedAt={edgar.generatedAt}
+  canonicalPath={`edgar/${ticker.slug}/`}
+/>

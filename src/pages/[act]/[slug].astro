@@ -1,0 +1,20 @@
+---
+import SectionPage from "../../components/SectionPage.astro";
+import { findSection, loadAct } from "../../lib/statutes";
+
+export function getStaticPaths() {
+  return ["33-act", "34-act", "tia"].flatMap((act) =>
+    loadAct(act).sections.map((section) => ({
+      params: { act, slug: section.slug },
+      props: { act, slug: section.slug },
+    })),
+  );
+}
+
+const { act, slug } = Astro.props;
+const file = loadAct(act);
+const section = findSection(act, slug);
+if (!section) throw new Error(`Missing ${act}/${slug}`);
+---
+
+<SectionPage file={file} section={section} />

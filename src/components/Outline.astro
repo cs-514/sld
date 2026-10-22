@@ -1,0 +1,35 @@
+---
+import Outline from "./Outline.astro";
+import type { OutlineNode } from "../lib/statutes";
+
+interface Props {
+  nodes: OutlineNode[];
+  actSection: string | null;
+  chain?: string[];
+}
+
+const { nodes, actSection, chain = [] } = Astro.props;
+---
+
+<ul class="outline">
+  {
+    nodes.map((node) => {
+      const next = node.num ? [...chain, node.num] : chain;
+      const alias = actSection && node.num ? `§ ${actSection}${next.join("")}` : null;
+      return (
+        <li id={node.anchor || undefined}>
+          {alias ? (
+            <a class="alias" href={`#${node.anchor}`}>{alias}</a>
+          ) : (
+            <a class="num" href={`#${node.anchor}`}>{node.num}</a>
+          )}
+          {node.heading && <span class="hd">{node.heading}</span>}
+          {node.terms && node.terms.length > 0 && <span class="term">{node.terms.join("; ")}</span>}
+          {node.children && node.children.length > 0 && (
+            <Outline nodes={node.children} actSection={actSection} chain={next} />
+          )}
+        </li>
+      );
+    })
+  }
+</ul>

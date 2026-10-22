@@ -1,0 +1,54 @@
+---
+import Base from "../../layouts/Base.astro";
+import { href } from "../../lib/paths";
+import { loadEdgar } from "../../lib/edgar";
+
+const edgar = loadEdgar();
+const examples = ["AAPL", "MSFT", "JPM", "BRK-B"]
+  .map((ticker) => {
+    const company = Object.values(edgar.companies).find((item) =>
+      item.tickers.some((row) => row.ticker === ticker),
+    );
+    const ref = company?.tickers.find((row) => row.ticker === ticker);
+    return company && ref ? { company, ref } : null;
+  })
+  .filter((item) => item !== null);
+const description = "Search EDGAR issuers by name or ticker and open recent filings with direct document links.";
+---
+
+<Base title="EDGAR issuers" description={description} crumbs={[{ label: "EDGAR" }]}>
+  <p class="kicker">company_tickers.json</p>
+  <h1>Issuers</h1>
+  <p class="lede">
+    Type a name, ticker, or CIK. {edgar.companyCount.toLocaleString("en-US")} issuers in this snapshot
+    ({edgar.withFilings.toLocaleString("en-US")} with filings stored).
+  </p>
+  <form id="issuer-search" class="issuer" action="https://www.sec.gov/cgi-bin/browse-edgar" method="get" role="search">
+    <input type="hidden" name="action" value="getcompany" />
+    <input type="hidden" name="owner" value="exclude" />
+    <input type="hidden" name="count" value="40" />
+    <label for="issuer">Name, ticker, or CIK</label>
+    <div class="issuer-row">
+      <input id="issuer" name="company" type="search" placeholder="Apple, AAPL, or 320193" autocomplete="off" enterkeyhint="search" />
+      <button type="submit">Search</button>
+    </div>
+    <div id="issuer-results" class="issuer-results" role="listbox" hidden></div>
+  </form>
+  <noscript>
+    <p class="note">Without JavaScript this form searches EDGAR’s own company index. The ticker links below still open filing pages on this site.</p>
+  </noscript>
+  <ul class="examples">
+    {
+      examples.map(({ company, ref }) => (
+        <li>
+          <a href={href(`edgar/${ref.slug}/`)}>{ref.ticker}</a>
+          <span> {company.name}</span>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="note">
+    Filing lists are built ahead of time from <code>data.sec.gov</code> and served with the site.
+    Each company page also links to the live EDGAR index, because the browser cannot send the User-Agent the SEC asks for.
+  </p>
+</Base>

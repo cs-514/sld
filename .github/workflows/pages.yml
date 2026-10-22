@@ -1,0 +1,80 @@
+name: Deploy GitHub Pages
+
+# Publishes the project site at https://cs-514.github.io/sld/
+# The /sld base path is set in astro.config.mjs. This workflow uploads dist/
+# as the Pages artifact; GitHub serves that artifact at /sld/ because the
+# repository is cs-514/sld (a project site, not a user site).
+# In the repo: Settings → Pages → Build and deployment → Source: GitHub Actions.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Monday 11:30 UTC. Refreshes the EDGAR snapshot, then deploys.
+    - cron: "30 11 * * 1"
+  workflow_dispatch:
+    inputs:
+      refresh_edgar:
+        description: Refresh the EDGAR snapshot before deploying
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Refresh EDGAR snapshot
+        if: github.event_name == 'schedule' || inputs.refresh_edgar
+        run: node scripts/fetch_edgar.mjs
+
+      - name: Commit refreshed snapshot
+        if: github.event_name == 'schedule' || inputs.refresh_edgar
+        run: |
+          git config user.name "Pinpoint data bot"
+          git config user.email "pinpoint-research@example.com"
+          git add src/data/edgar/companies.json public/data/issuers.json
+          if git diff --cached --quiet; then
+            echo "No EDGAR changes"
+          else
+            git commit -m "Refresh EDGAR issuer snapshot"
+            git push || echo "Could not push the snapshot. The deploy still uses the files just fetched. Grant this workflow contents: write."
+          fi
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

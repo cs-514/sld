@@ -1,0 +1,64 @@
+---
+import Base from "../layouts/Base.astro";
+import { href } from "../lib/paths";
+import { findSection, loadActs, loadProvenance, PINS } from "../lib/statutes";
+
+const acts = loadActs();
+const provenance = loadProvenance();
+const pins = PINS.map((pin) => {
+  const file = acts.find((item) => item.act.id === pin.act);
+  const section = file && findSection(pin.act, pin.slug);
+  return { pin, file, section };
+}).filter((item) => item.section && item.file);
+const description =
+  "Section index for the Securities Act of 1933 and the Securities Exchange Act of 1934, with the Act-to-U.S.C. map and an EDGAR issuer search.";
+---
+
+<Base title="Pinpoint" description={description}>
+  <p class="kicker">Securities Act · Exchange Act · EDGAR</p>
+  <h1>Find the section, then the filing.</h1>
+  <p class="lede">
+    A desk copy of the 1933 and 1934 Acts: Act section, U.S. Code cite, heading, and the official text.
+    Issuer search sits next to it. Rules, forms, releases, and C&amp;DIs are the next layers, not this one.
+  </p>
+  <p class="note">
+    Code release {provenance.release.docPublicationName}, {provenance.release.currencyNote.toLowerCase()}.
+    Title 15 is not positive law. The Act section number comes from the source credit.
+  </p>
+
+  <div class="cards">
+    {
+      acts.map((file) => (
+        <a class="card" href={href(file.act.path)}>
+          <strong>{file.act.shortName}</strong>
+          <span>{file.act.scope}</span>
+          <em>{file.sections.length} provisions in ch. {file.act.chapter}</em>
+        </a>
+      ))
+    }
+    <a class="card" href={href("edgar/")}>
+      <strong>EDGAR issuers</strong>
+      <span>Search by name or ticker. Open a capped snapshot of recent filings, or the live EDGAR index.</span>
+      <em>AAPL · MSFT · JPM</em>
+    </a>
+  </div>
+
+  <h2>Sections people actually open</h2>
+  <div class="pins">
+    {
+      pins.map(({ pin, file, section }) => (
+        <a class="pin" href={`${href(section!.path)}${pin.hash ? `#${pin.hash}` : ""}`}>
+          <b>
+            {file!.act.titleName} {pin.hash ? `${section!.label}(${pin.hash})` : section!.label}
+          </b>
+          <span>
+            {section!.heading}
+            <small>
+              {section!.uscCite} · {pin.note}
+            </small>
+          </span>
+        </a>
+      ))
+    }
+  </div>
+</Base>

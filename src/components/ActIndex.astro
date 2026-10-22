@@ -1,0 +1,87 @@
+---
+import Base from "../layouts/Base.astro";
+import SectionRows from "./SectionRows.astro";
+import { href } from "../lib/paths";
+import { byCodeOrder, groupSections, loadProvenance, type ActFile } from "../lib/statutes";
+
+interface Props {
+  file: ActFile;
+}
+
+const { file } = Astro.props;
+const { act, sections } = file;
+const groups = groupSections(sections);
+const codeOrder = byCodeOrder(sections);
+const provenance = loadProvenance();
+const actSections = sections.filter((section) => section.actSection || section.schedule?.length).length;
+const description = `${act.shortName}: Act section, U.S.C. cite, and official text. ${act.scope}`;
+---
+
+<Base title={act.shortName} description={description} crumbs={[{ label: act.titleName }]}>
+  <p class="kicker">15 U.S.C. chapter {act.chapter}</p>
+  <h1>{act.shortName}</h1>
+  <p class="lede">{act.scope}</p>
+  <p class="note">
+    {actSections} Act sections{groups.related.length ? `, plus ${groups.related.length} related provisions codified in the chapter` : ""}.
+    Mapping is taken from the OLRC source credit. A letter suffix is its own section: § 10A is not § 10(a), and § 10(b) is a subsection of § 10.
+    Release {provenance.release.docPublicationName}, {provenance.release.currencyNote.toLowerCase()}.
+    <a href={href("sources/")}>How this was built</a>.
+  </p>
+  <div class="filter-line">
+    <label class="sr" for="act-filter">Filter sections</label>
+    <input id="act-filter" data-act-filter type="search" placeholder="Filter by section, cite, heading, or term" autocomplete="off" />
+    <p class="snapshot" data-filter-count></p>
+  </div>
+
+  <div class="order">
+    <input type="radio" name={`order-${act.id}`} id="order-act" checked />
+    <input type="radio" name={`order-${act.id}`} id="order-usc" />
+    <div class="order-switch" role="radiogroup" aria-label="Sort">
+      <label for="order-act">Act order</label>
+      <label for="order-usc">U.S.C. order</label>
+    </div>
+
+    <div class="view-act">
+      {
+        groups.titleI.length > 0 && (
+          <section data-filter-group>
+            <h2 class="group-label">{act.id === "tia" ? "Act sections" : "Title I"}</h2>
+            <SectionRows sections={groups.titleI} />
+          </section>
+        )
+      }
+      {
+        groups.schedules.length > 0 && (
+          <section data-filter-group>
+            <h2 class="group-label">Schedules</h2>
+            <SectionRows sections={groups.schedules} />
+          </section>
+        )
+      }
+      {
+        groups.titleII.length > 0 && (
+          <section data-filter-group>
+            <h2 class="group-label">Title II — Corporation of Foreign Security Holders</h2>
+            <SectionRows sections={groups.titleII} />
+          </section>
+        )
+      }
+      {
+        groups.related.length > 0 && (
+          <section data-filter-group>
+            <h2 class="group-label">Codified in this chapter, not an Act section</h2>
+            <p class="note">These provisions sit in the same chapter but the source credit does not assign them an Act section number.</p>
+            <SectionRows sections={groups.related} />
+          </section>
+        )
+      }
+    </div>
+
+    <div class="view-usc">
+      <section data-filter-group>
+        <h2 class="group-label">United States Code order</h2>
+        <SectionRows sections={codeOrder} />
+      </section>
+    </div>
+  </div>
+</Base>

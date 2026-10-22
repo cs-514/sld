@@ -1,0 +1,36 @@
+---
+import { href } from "../lib/paths";
+import { addedLabel, filterText, type Section } from "../lib/statutes";
+
+interface Props {
+  sections: Section[];
+}
+
+const { sections } = Astro.props;
+---
+
+<div class="rows">
+  {
+    sections.map((section) => {
+      const added = addedLabel(section);
+      return (
+        <div class="act-row" data-filter-item data-filter-text={filterText(section)}>
+          <a class="act-main" href={href(section.path)}>
+            <span class="sec">{section.label}</span>
+            <span class="usc">{section.uscCite}</span>
+            <span class="hd">
+              {section.heading}
+              {section.status !== "active" && <span class="tag bad">{section.status}</span>}
+              {added && <span class="tag">{added.replace("Added by the ", "").replace("Added by ", "")}</span>}
+            </span>
+          </a>
+          <span class="ext">
+            <a href={section.links.house} target="_blank" rel="noopener noreferrer">OLRC</a>
+            <a href={section.links.govinfo} target="_blank" rel="noopener noreferrer">govinfo</a>
+            <a href={section.links.lii} target="_blank" rel="noopener noreferrer">LII</a>
+          </span>
+        </div>
+      );
+    })
+  }
+</div>

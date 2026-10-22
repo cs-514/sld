@@ -1,0 +1,2614 @@
+{
+  "act": {
+    "id": "tia",
+    "shortName": "Trust Indenture Act of 1939",
+    "titleName": "Trust Indenture Act",
+    "path": "/tia/",
+    "chapter": "2A",
+    "sessionCite": "ch. 411, 53 Stat. 1149 (codified as Title III of ch. 38)",
+    "enacted": "1939-08-03",
+    "scope": "Title III of the Securities Act chapter. Cited as Trust Indenture Act sections, not as Securities Act sections."
+  },
+  "provenance": {
+    "generatedAt": "2026-10-22T14:46:31Z",
+    "source": "https://uscode.house.gov/download/releasepoints/us/pl/119/124/xml_usc15@119-124.zip",
+    "zipSha256": "cf1aa19428a1bebafaea6375531943d5fdabc247eb530dacab400fd4af309148",
+    "release": {
+      "docPublicationName": "Online@119-124",
+      "created": "2026-10-15T06:43:16",
+      "currencyNote": "Current through 119-124",
+      "positiveLaw": "no"
+    },
+    "downloadPage": "https://uscode.house.gov/download.html",
+    "method": "Act section numbers are the first ch. 38 or ch. 404 section citation in the OLRC source credit. Headings and outlines are structural markup only; statutory text is not reproduced.",
+    "counts": {
+      "33-act": 48,
+      "34-act": 95,
+      "tia": 28
+    }
+  },
+  "sections": [
+    {
+      "usc": "77aaa",
+      "uscSlug": "77aaa",
+      "uscCite": "15 U.S.C. § 77aaa",
+      "heading": "Short title",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77aaa",
+      "order": 48,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 301, as added Aug. 3, 1939, ch. 411, 53 Stat. 1149.)",
+      "publicLaws": [],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1149"
+      },
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77aaa&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77aaa",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77aaa"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "301",
+      "origin": "ch. 38, title III, § 301",
+      "schedule": null,
+      "slug": "section-301",
+      "label": "Section 301",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-301/",
+      "prev": null,
+      "next": {
+        "path": "/tia/section-302/",
+        "label": "Section 302"
+      }
+    },
+    {
+      "usc": "77bbb",
+      "uscSlug": "77bbb",
+      "uscCite": "15 U.S.C. § 77bbb",
+      "heading": "Necessity for regulation",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77bbb",
+      "order": 49,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 302, as added Aug. 3, 1939, ch. 411, 53 Stat. 1150.)",
+      "publicLaws": [],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1150"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Practices adversely affecting public",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4"
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5"
+            },
+            {
+              "num": "(6)",
+              "anchor": "a-6"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Declaration of policy"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77bbb&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77bbb",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77bbb"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "302",
+      "origin": "ch. 38, title III, § 302",
+      "schedule": null,
+      "slug": "section-302",
+      "label": "Section 302",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-302/",
+      "prev": {
+        "path": "/tia/section-301/",
+        "label": "Section 301"
+      },
+      "next": {
+        "path": "/tia/section-303/",
+        "label": "Section 303"
+      }
+    },
+    {
+      "usc": "77ccc",
+      "uscSlug": "77ccc",
+      "uscCite": "15 U.S.C. § 77ccc",
+      "heading": "Definitions",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ccc",
+      "order": 50,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 303, as added Aug. 3, 1939, ch. 411, 53 Stat. 1151; amended Aug. 10, 1954, ch. 667, title III, § 301, 68 Stat. 686; Pub. L. 95–598, title III, § 307, Nov. 6, 1978, 92 Stat. 2674; Pub. L. 100–181, title V, §§ 501, 502, Dec. 4, 1987, 101 Stat. 1260; Pub. L. 101–550, title IV, § 402, Nov. 15, 1990, 104 Stat. 2722; Pub. L. 105–353, title III, § 301(e)(1), Nov. 3, 1998, 112 Stat. 3237; Pub. L. 111–203, title IX, § 986(b)(1), July 21, 2010, 124 Stat. 1935.)",
+      "publicLaws": [
+        {
+          "pubLaw": "95-598"
+        },
+        {
+          "pubLaw": "100-181"
+        },
+        {
+          "pubLaw": "101-550"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1151"
+      },
+      "outline": [
+        {
+          "num": "(1)",
+          "anchor": "1"
+        },
+        {
+          "num": "(2)",
+          "anchor": "2",
+          "terms": [
+            "sale",
+            "sell",
+            "offer to sell",
+            "offer for sale"
+          ]
+        },
+        {
+          "num": "(3)",
+          "anchor": "3",
+          "terms": [
+            "prospectus"
+          ]
+        },
+        {
+          "num": "(4)",
+          "anchor": "4",
+          "terms": [
+            "underwriter"
+          ]
+        },
+        {
+          "num": "(5)",
+          "anchor": "5",
+          "terms": [
+            "director"
+          ]
+        },
+        {
+          "num": "(6)",
+          "anchor": "6",
+          "terms": [
+            "executive officer"
+          ]
+        },
+        {
+          "num": "(7)",
+          "anchor": "7",
+          "terms": [
+            "indenture"
+          ]
+        },
+        {
+          "num": "(8)",
+          "anchor": "8",
+          "terms": [
+            "application",
+            "application for qualification"
+          ]
+        },
+        {
+          "num": "(9)",
+          "anchor": "9",
+          "terms": [
+            "indenture to be qualified"
+          ]
+        },
+        {
+          "num": "(10)",
+          "anchor": "10",
+          "terms": [
+            "indenture trustee"
+          ]
+        },
+        {
+          "num": "(11)",
+          "anchor": "11",
+          "terms": [
+            "indenture security"
+          ]
+        },
+        {
+          "num": "(12)",
+          "anchor": "12",
+          "terms": [
+            "obligor"
+          ]
+        },
+        {
+          "num": "(13)",
+          "anchor": "13",
+          "terms": [
+            "paying agent"
+          ]
+        },
+        {
+          "num": "(14)",
+          "anchor": "14",
+          "terms": [
+            "State"
+          ]
+        },
+        {
+          "num": "(15)",
+          "anchor": "15",
+          "terms": [
+            "Commission"
+          ]
+        },
+        {
+          "num": "(16)",
+          "anchor": "16",
+          "terms": [
+            "voting security"
+          ]
+        },
+        {
+          "num": "(17)",
+          "anchor": "17",
+          "terms": [
+            "Securities Act of 1933"
+          ]
+        },
+        {
+          "num": "(18)",
+          "anchor": "18",
+          "terms": [
+            "Bankruptcy Act"
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ccc&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ccc",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ccc"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "303",
+      "origin": "ch. 38, title III, § 303",
+      "schedule": null,
+      "slug": "section-303",
+      "label": "Section 303",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-303/",
+      "prev": {
+        "path": "/tia/section-302/",
+        "label": "Section 302"
+      },
+      "next": {
+        "path": "/tia/section-304/",
+        "label": "Section 304"
+      }
+    },
+    {
+      "usc": "77ddd",
+      "uscSlug": "77ddd",
+      "uscCite": "15 U.S.C. § 77ddd",
+      "heading": "Exempted securities and transactions",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ddd",
+      "order": 51,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 304, as added Aug. 3, 1939, ch. 411, 53 Stat. 1153; amended Aug. 10, 1954, ch. 667, title III, § 302, 68 Stat. 687; Pub. L. 85–699, title III, § 307(b), Aug. 21, 1958, 72 Stat. 694; Pub. L. 86–760, Sept. 13, 1960, 74 Stat. 902; Pub. L. 89–754, title V, § 504(b), Nov. 3, 1966, 80 Stat. 1278; Pub. L. 91–567, § 6(c), Dec. 22, 1970, 84 Stat. 1499; Pub. L. 96–477, title III, § 302, Oct. 21, 1980, 94 Stat. 2291; Pub. L. 101–550, title IV, § 403, Nov. 15, 1990, 104 Stat. 2722; Pub. L. 104–290, title V, § 508(e), Oct. 11, 1996, 110 Stat. 3448; Pub. L. 105–353, title III, § 301(e)(2), Nov. 3, 1998, 112 Stat. 3237; Pub. L. 111–203, title IX, § 985(c)(1), July 21, 2010, 124 Stat. 1934.)",
+      "publicLaws": [
+        {
+          "pubLaw": "85-699"
+        },
+        {
+          "pubLaw": "86-760"
+        },
+        {
+          "pubLaw": "89-754"
+        },
+        {
+          "pubLaw": "91-567"
+        },
+        {
+          "pubLaw": "96-477"
+        },
+        {
+          "pubLaw": "101-550"
+        },
+        {
+          "pubLaw": "104-290",
+          "popularName": "National Securities Markets Improvement Act of 1996"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1153"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Specific securities exempted",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "a-4-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "a-4-B"
+                }
+              ]
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5"
+            },
+            {
+              "num": "(6)",
+              "anchor": "a-6"
+            },
+            {
+              "num": "(7)",
+              "anchor": "a-7"
+            },
+            {
+              "num": "(8)",
+              "anchor": "a-8"
+            },
+            {
+              "num": "(9)",
+              "anchor": "a-9"
+            },
+            {
+              "num": "(10)",
+              "anchor": "a-10"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Application of sections 77eee and 77fff"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Securities issued or proposed to be issued under indenture",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2"
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Exemptions in public interest"
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Securities issued by small investment company"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ddd&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ddd",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ddd"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "304",
+      "origin": "ch. 38, title III, § 304",
+      "schedule": null,
+      "slug": "section-304",
+      "label": "Section 304",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-304/",
+      "prev": {
+        "path": "/tia/section-303/",
+        "label": "Section 303"
+      },
+      "next": {
+        "path": "/tia/section-305/",
+        "label": "Section 305"
+      }
+    },
+    {
+      "usc": "77eee",
+      "uscSlug": "77eee",
+      "uscCite": "15 U.S.C. § 77eee",
+      "heading": "Securities required to be registered under Securities Act",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77eee",
+      "order": 52,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 305, as added Aug. 3, 1939, ch. 411, 53 Stat. 1154; amended Aug. 10, 1954, ch. 667, title III, § 303, 68 Stat. 687; Pub. L. 101–550, title IV, § 404, Nov. 15, 1990, 104 Stat. 2722.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1154"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Information required",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Refusal of registration statement",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-1-B"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Information required in prospectus"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Applicability of other statutory provisions"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77eee&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77eee",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77eee"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "305",
+      "origin": "ch. 38, title III, § 305",
+      "schedule": null,
+      "slug": "section-305",
+      "label": "Section 305",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-305/",
+      "prev": {
+        "path": "/tia/section-304/",
+        "label": "Section 304"
+      },
+      "next": {
+        "path": "/tia/section-306/",
+        "label": "Section 306"
+      }
+    },
+    {
+      "usc": "77fff",
+      "uscSlug": "77fff",
+      "uscCite": "15 U.S.C. § 77fff",
+      "heading": "Securities not registered under Securities Act",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77fff",
+      "order": 53,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 306, as added Aug. 3, 1939, ch. 411, 53 Stat. 1155; amended Aug. 10, 1954, ch. 667, title III, § 304, 68 Stat. 687.)",
+      "publicLaws": [],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1155"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Prohibitions affecting unregistered securities not issued under indenture",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Prohibitions affecting unregistered securities issued under indenture",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Necessity of issuance under indenture; application for qualification"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77fff&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77fff",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77fff"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "306",
+      "origin": "ch. 38, title III, § 306",
+      "schedule": null,
+      "slug": "section-306",
+      "label": "Section 306",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-306/",
+      "prev": {
+        "path": "/tia/section-305/",
+        "label": "Section 305"
+      },
+      "next": {
+        "path": "/tia/section-307/",
+        "label": "Section 307"
+      }
+    },
+    {
+      "usc": "77ggg",
+      "uscSlug": "77ggg",
+      "uscCite": "15 U.S.C. § 77ggg",
+      "heading": "Qualification of indentures covering securities not required to be registered",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ggg",
+      "order": 54,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 307, as added Aug. 3, 1939, ch. 411, 53 Stat. 1156; amended Pub. L. 107–123, § 7, Jan. 16, 2002, 115 Stat. 2397.)",
+      "publicLaws": [
+        {
+          "pubLaw": "107-123"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1156"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Application; information required; availability of information to public"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Filing of application"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Applicability of other statutory provisions"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ggg&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ggg",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ggg"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "307",
+      "origin": "ch. 38, title III, § 307",
+      "schedule": null,
+      "slug": "section-307",
+      "label": "Section 307",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-307/",
+      "prev": {
+        "path": "/tia/section-306/",
+        "label": "Section 306"
+      },
+      "next": {
+        "path": "/tia/section-308/",
+        "label": "Section 308"
+      }
+    },
+    {
+      "usc": "77hhh",
+      "uscSlug": "77hhh",
+      "uscCite": "15 U.S.C. § 77hhh",
+      "heading": "Integration of procedure with Securities Act and other Acts",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77hhh",
+      "order": 55,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 308, as added Aug. 3, 1939, ch. 411, 53 Stat. 1156; amended Pub. L. 111–203, title IX, § 986(b)(2), July 21, 2010, 124 Stat. 1936.)",
+      "publicLaws": [
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1156"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Incorporation by reference"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Consolidation of applications, reports, etc."
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77hhh&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77hhh",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77hhh"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "308",
+      "origin": "ch. 38, title III, § 308",
+      "schedule": null,
+      "slug": "section-308",
+      "label": "Section 308",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-308/",
+      "prev": {
+        "path": "/tia/section-307/",
+        "label": "Section 307"
+      },
+      "next": {
+        "path": "/tia/section-309/",
+        "label": "Section 309"
+      }
+    },
+    {
+      "usc": "77iii",
+      "uscSlug": "77iii",
+      "uscCite": "15 U.S.C. § 77iii",
+      "heading": "Effective time of qualification",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77iii",
+      "order": 56,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 309, as added Aug. 3, 1939, ch. 411, 53 Stat. 1157; amended Pub. L. 101–550, title IV, § 405, Nov. 15, 1990, 104 Stat. 2723.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1157"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Effective time of registration or application for qualification of indenture",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Stop orders after effective time of qualification"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Effect of subsequent rule or regulation on qualification"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Liability of trustee under qualified indenture"
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Power of Commission to conduct investigation"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77iii&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77iii",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77iii"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "309",
+      "origin": "ch. 38, title III, § 309",
+      "schedule": null,
+      "slug": "section-309",
+      "label": "Section 309",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-309/",
+      "prev": {
+        "path": "/tia/section-308/",
+        "label": "Section 308"
+      },
+      "next": {
+        "path": "/tia/section-310/",
+        "label": "Section 310"
+      }
+    },
+    {
+      "usc": "77jjj",
+      "uscSlug": "77jjj",
+      "uscCite": "15 U.S.C. § 77jjj",
+      "heading": "Eligibility and disqualification of trustee",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77jjj",
+      "order": 57,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 310, as added Aug. 3, 1939, ch. 411, 53 Stat. 1157; amended Pub. L. 101–550, title IV, §§ 406–408, Nov. 15, 1990, 104 Stat. 2723, 2724; Pub. L. 111–203, title IX, § 986(b)(3), July 21, 2010, 124 Stat. 1936.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1157"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Persons eligible for appointment as trustee",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4"
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Disqualification of trustee",
+          "children": [
+            {
+              "num": "(i)",
+              "anchor": "b-i"
+            },
+            {
+              "num": "(ii)",
+              "anchor": "b-ii"
+            },
+            {
+              "num": "(iii)",
+              "anchor": "b-iii"
+            },
+            {
+              "num": "(1)",
+              "anchor": "b-1",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-1-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-1-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "b-1-C"
+                },
+                {
+                  "num": "(i)",
+                  "anchor": "b-1-i"
+                },
+                {
+                  "num": "(ii)",
+                  "anchor": "b-1-ii"
+                }
+              ]
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "b-4",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-4-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-4-B"
+                },
+                {
+                  "num": "(C)",
+                  "anchor": "b-4-C"
+                }
+              ]
+            },
+            {
+              "num": "(5)",
+              "anchor": "b-5"
+            },
+            {
+              "num": "(6)",
+              "anchor": "b-6",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "b-6-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "b-6-B"
+                }
+              ]
+            },
+            {
+              "num": "(7)",
+              "anchor": "b-7"
+            },
+            {
+              "num": "(8)",
+              "anchor": "b-8"
+            },
+            {
+              "num": "(9)",
+              "anchor": "b-9"
+            },
+            {
+              "num": "(10)",
+              "anchor": "b-10"
+            },
+            {
+              "num": "(A)",
+              "anchor": "b-A",
+              "terms": [
+                "security",
+                "securities"
+              ]
+            },
+            {
+              "num": "(B)",
+              "anchor": "b-B"
+            },
+            {
+              "num": "(C)",
+              "anchor": "b-C"
+            },
+            {
+              "num": "(i)",
+              "anchor": "b-i"
+            },
+            {
+              "num": "(ii)",
+              "anchor": "b-ii"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77jjj&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77jjj",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77jjj"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "310",
+      "origin": "ch. 38, title III, § 310",
+      "schedule": null,
+      "slug": "section-310",
+      "label": "Section 310",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-310/",
+      "prev": {
+        "path": "/tia/section-309/",
+        "label": "Section 309"
+      },
+      "next": {
+        "path": "/tia/section-311/",
+        "label": "Section 311"
+      }
+    },
+    {
+      "usc": "77kkk",
+      "uscSlug": "77kkk",
+      "uscCite": "15 U.S.C. § 77kkk",
+      "heading": "Preferential collection of claims against obligor",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77kkk",
+      "order": 58,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 311, as added Aug. 3, 1939, ch. 411, 53 Stat. 1161; amended Pub. L. 101–550, title IV, § 409, Nov. 15, 1990, 104 Stat. 2728; Pub. L. 111–203, title IX, § 986(b)(4), July 21, 2010, 124 Stat. 1936.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1161"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Trustee as creditor of obligor",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(A)",
+              "anchor": "a-A"
+            },
+            {
+              "num": "(B)",
+              "anchor": "a-B"
+            },
+            {
+              "num": "(C)",
+              "anchor": "a-C"
+            },
+            {
+              "num": "(D)",
+              "anchor": "a-D"
+            },
+            {
+              "num": "(i)",
+              "anchor": "a-i"
+            },
+            {
+              "num": "(ii)",
+              "anchor": "a-ii"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Exclusion of creditor relationship arising from specified classes",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "b-4"
+            },
+            {
+              "num": "(5)",
+              "anchor": "b-5"
+            },
+            {
+              "num": "(6)",
+              "anchor": "b-6"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77kkk&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77kkk",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77kkk"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "311",
+      "origin": "ch. 38, title III, § 311",
+      "schedule": null,
+      "slug": "section-311",
+      "label": "Section 311",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-311/",
+      "prev": {
+        "path": "/tia/section-310/",
+        "label": "Section 310"
+      },
+      "next": {
+        "path": "/tia/section-312/",
+        "label": "Section 312"
+      }
+    },
+    {
+      "usc": "77lll",
+      "uscSlug": "77lll",
+      "uscCite": "15 U.S.C. § 77lll",
+      "heading": "Bondholders’ lists",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77lll",
+      "order": 59,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 312, as added Aug. 3, 1939, ch. 411, 53 Stat. 1164; amended Pub. L. 101–550, title IV, § 410, Nov. 15, 1990, 104 Stat. 2728.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1164"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Periodic filing of information by obligor with trustee"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Access of information to security holders",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Disclosure of information deemed not violative of any law"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77lll&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77lll",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77lll"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "312",
+      "origin": "ch. 38, title III, § 312",
+      "schedule": null,
+      "slug": "section-312",
+      "label": "Section 312",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-312/",
+      "prev": {
+        "path": "/tia/section-311/",
+        "label": "Section 311"
+      },
+      "next": {
+        "path": "/tia/section-313/",
+        "label": "Section 313"
+      }
+    },
+    {
+      "usc": "77mmm",
+      "uscSlug": "77mmm",
+      "uscCite": "15 U.S.C. § 77mmm",
+      "heading": "Reports by indenture trustee",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77mmm",
+      "order": 60,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 313, as added Aug. 3, 1939, ch. 411, 53 Stat. 1165; amended Pub. L. 101–550, title IV, §§ 411, 412, Nov. 15, 1990, 104 Stat. 2729; Pub. L. 105–353, title III, § 301(e)(3), Nov. 3, 1998, 112 Stat. 3237.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        },
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1165"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Report to security holders; time; contents",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4"
+            },
+            {
+              "num": "(5)",
+              "anchor": "a-5"
+            },
+            {
+              "num": "(6)",
+              "anchor": "a-6"
+            },
+            {
+              "num": "(7)",
+              "anchor": "a-7"
+            },
+            {
+              "num": "(8)",
+              "anchor": "a-8"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Additional reports to security holders",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Additional parties to whom reports to be transmitted",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "c-3"
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Filing of report with stock exchanges"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77mmm&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77mmm",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77mmm"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "313",
+      "origin": "ch. 38, title III, § 313",
+      "schedule": null,
+      "slug": "section-313",
+      "label": "Section 313",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-313/",
+      "prev": {
+        "path": "/tia/section-312/",
+        "label": "Section 312"
+      },
+      "next": {
+        "path": "/tia/section-314/",
+        "label": "Section 314"
+      }
+    },
+    {
+      "usc": "77nnn",
+      "uscSlug": "77nnn",
+      "uscCite": "15 U.S.C. § 77nnn",
+      "heading": "Reports by obligor; evidence of compliance with indenture provisions",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77nnn",
+      "order": 61,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 314, as added Aug. 3, 1939, ch. 411, 53 Stat. 1167; amended Pub. L. 101–550, title IV, § 413, Nov. 15, 1990, 104 Stat. 2729.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1167"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Periodic reports",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "a-3"
+            },
+            {
+              "num": "(4)",
+              "anchor": "a-4"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Evidence of recording of indenture",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Evidence of compliance with conditions precedent",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "c-3"
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Certificates of fair value",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "d-3",
+              "children": [
+                {
+                  "num": "(A)",
+                  "anchor": "d-3-A"
+                },
+                {
+                  "num": "(B)",
+                  "anchor": "d-3-B"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Recitals as to basis of certificate or opinion"
+        },
+        {
+          "num": "(f)",
+          "anchor": "f",
+          "heading": "Parties may provide for additional evidence"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77nnn&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77nnn",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77nnn"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "314",
+      "origin": "ch. 38, title III, § 314",
+      "schedule": null,
+      "slug": "section-314",
+      "label": "Section 314",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-314/",
+      "prev": {
+        "path": "/tia/section-313/",
+        "label": "Section 313"
+      },
+      "next": {
+        "path": "/tia/section-315/",
+        "label": "Section 315"
+      }
+    },
+    {
+      "usc": "77ooo",
+      "uscSlug": "77ooo",
+      "uscCite": "15 U.S.C. § 77ooo",
+      "heading": "Duties and responsibility of the trustee",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ooo",
+      "order": 62,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 315, as added Aug. 3, 1939, ch. 411, 53 Stat. 1171; amended Pub. L. 101–550, title IV, § 414, Nov. 15, 1990, 104 Stat. 2730.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1171"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Duties prior to default",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Notice of defaults"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Duties of the trustee in case of default"
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Responsibility of the trustee",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "d-3"
+            }
+          ]
+        },
+        {
+          "num": "(e)",
+          "anchor": "e",
+          "heading": "Undertaking for costs"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ooo&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ooo",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ooo"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "315",
+      "origin": "ch. 38, title III, § 315",
+      "schedule": null,
+      "slug": "section-315",
+      "label": "Section 315",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-315/",
+      "prev": {
+        "path": "/tia/section-314/",
+        "label": "Section 314"
+      },
+      "next": {
+        "path": "/tia/section-316/",
+        "label": "Section 316"
+      }
+    },
+    {
+      "usc": "77ppp",
+      "uscSlug": "77ppp",
+      "uscCite": "15 U.S.C. § 77ppp",
+      "heading": "Directions and waivers by bondholders; prohibition of impairment of holder’s right to payment; record date",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ppp",
+      "order": 63,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 316, as added Aug. 3, 1939, ch. 411, 53 Stat. 1172; amended Pub. L. 101–550, title IV, § 415, Nov. 15, 1990, 104 Stat. 2731; Pub. L. 117–103, div. U, § 108, Mar. 15, 2022, 136 Stat. 832.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        },
+        {
+          "pubLaw": "117-103"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1172"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Directions and waivers by bondholders",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Prohibition of impairment of holder’s right to payment",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "b-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "b-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "b-3"
+            }
+          ]
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Record date"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ppp&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ppp",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ppp"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "316",
+      "origin": "ch. 38, title III, § 316",
+      "schedule": null,
+      "slug": "section-316",
+      "label": "Section 316",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-316/",
+      "prev": {
+        "path": "/tia/section-315/",
+        "label": "Section 315"
+      },
+      "next": {
+        "path": "/tia/section-317/",
+        "label": "Section 317"
+      }
+    },
+    {
+      "usc": "77qqq",
+      "uscSlug": "77qqq",
+      "uscCite": "15 U.S.C. § 77qqq",
+      "heading": "Special powers of trustee; duties of paying agents",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77qqq",
+      "order": 64,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 317, as added Aug. 3, 1939, ch. 411, 53 Stat. 1173; amended Pub. L. 101–550, title IV, § 416, Nov. 15, 1990, 104 Stat. 2731; Pub. L. 111–203, title IX, § 985(c)(2), July 21, 2010, 124 Stat. 1934.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        },
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1173"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "a-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "a-2"
+            }
+          ]
+        },
+        {
+          "num": "(b)",
+          "anchor": "b"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77qqq&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77qqq",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77qqq"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "317",
+      "origin": "ch. 38, title III, § 317",
+      "schedule": null,
+      "slug": "section-317",
+      "label": "Section 317",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-317/",
+      "prev": {
+        "path": "/tia/section-316/",
+        "label": "Section 316"
+      },
+      "next": {
+        "path": "/tia/section-318/",
+        "label": "Section 318"
+      }
+    },
+    {
+      "usc": "77rrr",
+      "uscSlug": "77rrr",
+      "uscCite": "15 U.S.C. § 77rrr",
+      "heading": "Effect of prescribed indenture provisions",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77rrr",
+      "order": 65,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 318, as added Aug. 3, 1939, ch. 411, 53 Stat. 1173; amended Pub. L. 101–550, title IV, § 417, Nov. 15, 1990, 104 Stat. 2731.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1173"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Imposed duties to control"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Additional provisions"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Provisions governing qualified indentures"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77rrr&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77rrr",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77rrr"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "318",
+      "origin": "ch. 38, title III, § 318",
+      "schedule": null,
+      "slug": "section-318",
+      "label": "Section 318",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-318/",
+      "prev": {
+        "path": "/tia/section-317/",
+        "label": "Section 317"
+      },
+      "next": {
+        "path": "/tia/section-319/",
+        "label": "Section 319"
+      }
+    },
+    {
+      "usc": "77sss",
+      "uscSlug": "77sss",
+      "uscCite": "15 U.S.C. § 77sss",
+      "heading": "Rules, regulations, and orders",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77sss",
+      "order": 66,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 319, as added Aug. 3, 1939, ch. 411, 53 Stat. 1173; Pub. L. 105–353, title III, § 301(e)(4), Nov. 3, 1998, 112 Stat. 3237.)",
+      "publicLaws": [
+        {
+          "pubLaw": "105-353",
+          "popularName": "Securities Litigation Uniform Standards Act of 1998"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1173"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Authority of Commission; subject matter of rules, etc."
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Rules and regulations effective upon publication"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Exemption from liability for any acts taken in good faith in conformity with rules, etc."
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77sss&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77sss",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77sss"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "319",
+      "origin": "ch. 38, title III, § 319",
+      "schedule": null,
+      "slug": "section-319",
+      "label": "Section 319",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-319/",
+      "prev": {
+        "path": "/tia/section-318/",
+        "label": "Section 318"
+      },
+      "next": {
+        "path": "/tia/section-320/",
+        "label": "Section 320"
+      }
+    },
+    {
+      "usc": "77ttt",
+      "uscSlug": "77ttt",
+      "uscCite": "15 U.S.C. § 77ttt",
+      "heading": "Hearings by Commission",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77ttt",
+      "order": 67,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 320, as added Aug. 3, 1939, ch. 411, 53 Stat. 1174.)",
+      "publicLaws": [],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1174"
+      },
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77ttt&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77ttt",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77ttt"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "320",
+      "origin": "ch. 38, title III, § 320",
+      "schedule": null,
+      "slug": "section-320",
+      "label": "Section 320",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-320/",
+      "prev": {
+        "path": "/tia/section-319/",
+        "label": "Section 319"
+      },
+      "next": {
+        "path": "/tia/section-321/",
+        "label": "Section 321"
+      }
+    },
+    {
+      "usc": "77uuu",
+      "uscSlug": "77uuu",
+      "uscCite": "15 U.S.C. § 77uuu",
+      "heading": "Special powers of the Commission",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77uuu",
+      "order": 68,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 321, as added Aug. 3, 1939, ch. 411, 53 Stat. 1174; amended Pub. L. 101–550, title I, § 104(b), Nov. 15, 1990, 104 Stat. 2714.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1174"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Investigatory powers"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Availability of reports from other offices; restrictions"
+        },
+        {
+          "num": "(c)",
+          "anchor": "c",
+          "heading": "Investigation of prospective trustees",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "c-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "c-2"
+            },
+            {
+              "num": "(3)",
+              "anchor": "c-3"
+            }
+          ]
+        },
+        {
+          "num": "(d)",
+          "anchor": "d",
+          "heading": "Appointment and compensation of employees; lease and allocation of real property",
+          "children": [
+            {
+              "num": "(1)",
+              "anchor": "d-1"
+            },
+            {
+              "num": "(2)",
+              "anchor": "d-2"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77uuu&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77uuu",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77uuu"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "321",
+      "origin": "ch. 38, title III, § 321",
+      "schedule": null,
+      "slug": "section-321",
+      "label": "Section 321",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-321/",
+      "prev": {
+        "path": "/tia/section-320/",
+        "label": "Section 320"
+      },
+      "next": {
+        "path": "/tia/section-322/",
+        "label": "Section 322"
+      }
+    },
+    {
+      "usc": "77vvv",
+      "uscSlug": "77vvv",
+      "uscCite": "15 U.S.C. § 77vvv",
+      "heading": "Judicial review",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77vvv",
+      "order": 69,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 322, as added Aug. 3, 1939, ch. 411, 53 Stat. 1175; amended Pub. L. 101–550, title IV, § 418, Nov. 15, 1990, 104 Stat. 2732.)",
+      "publicLaws": [
+        {
+          "pubLaw": "101-550"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1175"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a",
+          "heading": "Review of orders"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b",
+          "heading": "Jurisdiction of offenses and suits"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77vvv&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77vvv",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77vvv"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "322",
+      "origin": "ch. 38, title III, § 322",
+      "schedule": null,
+      "slug": "section-322",
+      "label": "Section 322",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-322/",
+      "prev": {
+        "path": "/tia/section-321/",
+        "label": "Section 321"
+      },
+      "next": {
+        "path": "/tia/section-323/",
+        "label": "Section 323"
+      }
+    },
+    {
+      "usc": "77www",
+      "uscSlug": "77www",
+      "uscCite": "15 U.S.C. § 77www",
+      "heading": "Liability for misleading statements",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77www",
+      "order": 70,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 323, as added Aug. 3, 1939, ch. 411, 53 Stat. 1176; amended Pub. L. 111–203, title IX, § 986(b)(5), July 21, 2010, 124 Stat. 1936.)",
+      "publicLaws": [
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1176"
+      },
+      "outline": [
+        {
+          "num": "(a)",
+          "anchor": "a"
+        },
+        {
+          "num": "(b)",
+          "anchor": "b"
+        }
+      ],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77www&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77www",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77www"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "323",
+      "origin": "ch. 38, title III, § 323",
+      "schedule": null,
+      "slug": "section-323",
+      "label": "Section 323",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-323/",
+      "prev": {
+        "path": "/tia/section-322/",
+        "label": "Section 322"
+      },
+      "next": {
+        "path": "/tia/section-324/",
+        "label": "Section 324"
+      }
+    },
+    {
+      "usc": "77xxx",
+      "uscSlug": "77xxx",
+      "uscCite": "15 U.S.C. § 77xxx",
+      "heading": "Unlawful representations",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77xxx",
+      "order": 71,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 324, as added Aug. 3, 1939, ch. 411, 53 Stat. 1176; amended Aug. 10, 1954, ch. 667, title III, § 305, 68 Stat. 688.)",
+      "publicLaws": [],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1176"
+      },
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77xxx&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77xxx",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77xxx"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "324",
+      "origin": "ch. 38, title III, § 324",
+      "schedule": null,
+      "slug": "section-324",
+      "label": "Section 324",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-324/",
+      "prev": {
+        "path": "/tia/section-323/",
+        "label": "Section 323"
+      },
+      "next": {
+        "path": "/tia/section-325/",
+        "label": "Section 325"
+      }
+    },
+    {
+      "usc": "77yyy",
+      "uscSlug": "77yyy",
+      "uscCite": "15 U.S.C. § 77yyy",
+      "heading": "Penalties",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77yyy",
+      "order": 72,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 325, as added Aug. 3, 1939, ch. 411, 53 Stat. 1177; amended Pub. L. 94–29, § 27(d), June 4, 1975, 89 Stat. 163.)",
+      "publicLaws": [
+        {
+          "pubLaw": "94-29",
+          "popularName": "Securities Acts Amendments of 1975"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1177"
+      },
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77yyy&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77yyy",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77yyy"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "325",
+      "origin": "ch. 38, title III, § 325",
+      "schedule": null,
+      "slug": "section-325",
+      "label": "Section 325",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-325/",
+      "prev": {
+        "path": "/tia/section-324/",
+        "label": "Section 324"
+      },
+      "next": {
+        "path": "/tia/section-326/",
+        "label": "Section 326"
+      }
+    },
+    {
+      "usc": "77zzz",
+      "uscSlug": "77zzz",
+      "uscCite": "15 U.S.C. § 77zzz",
+      "heading": "Effect on existing law",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77zzz",
+      "order": 73,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 326, as added Aug. 3, 1939, ch. 411, 53 Stat. 1177; amended Pub. L. 111–203, title IX, § 986(b)(6), July 21, 2010, 124 Stat. 1936.)",
+      "publicLaws": [
+        {
+          "pubLaw": "111-203",
+          "popularName": "Dodd-Frank Act"
+        }
+      ],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1177"
+      },
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77zzz&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77zzz",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77zzz"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "326",
+      "origin": "ch. 38, title III, § 326",
+      "schedule": null,
+      "slug": "section-326",
+      "label": "Section 326",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-326/",
+      "prev": {
+        "path": "/tia/section-325/",
+        "label": "Section 325"
+      },
+      "next": {
+        "path": "/tia/section-327/",
+        "label": "Section 327"
+      }
+    },
+    {
+      "usc": "77aaaa",
+      "uscSlug": "77aaaa",
+      "uscCite": "15 U.S.C. § 77aaaa",
+      "heading": "Contrary stipulations void",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77aaaa",
+      "order": 74,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 327, as added Aug. 3, 1939, ch. 411, 53 Stat. 1177.)",
+      "publicLaws": [],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1177"
+      },
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77aaaa&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77aaaa",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77aaaa"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "327",
+      "origin": "ch. 38, title III, § 327",
+      "schedule": null,
+      "slug": "section-327",
+      "label": "Section 327",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-327/",
+      "prev": {
+        "path": "/tia/section-326/",
+        "label": "Section 326"
+      },
+      "next": {
+        "path": "/tia/section-328/",
+        "label": "Section 328"
+      }
+    },
+    {
+      "usc": "77bbbb",
+      "uscSlug": "77bbbb",
+      "uscCite": "15 U.S.C. § 77bbbb",
+      "heading": "Separability",
+      "status": "active",
+      "identifier": "/us/usc/t15/s77bbbb",
+      "order": 75,
+      "sourceCredit": "(May 27, 1933, ch. 38, title III, § 328, as added Aug. 3, 1939, ch. 411, 53 Stat. 1177.)",
+      "publicLaws": [],
+      "addedBy": {
+        "raw": "Aug. 3, 1939, ch. 411, 53 Stat. 1177"
+      },
+      "outline": [],
+      "links": {
+        "house": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77bbbb&num=0&edition=prelim",
+        "govinfo": "https://www.govinfo.gov/link/uscode/15/77bbbb",
+        "lii": "https://www.law.cornell.edu/uscode/text/15/77bbbb"
+      },
+      "crossLinks": {
+        "rules": [],
+        "forms": [],
+        "releases": [],
+        "interpretations": [],
+        "amendingActs": []
+      },
+      "subchapter": {
+        "id": "schIII",
+        "heading": "TRUST INDENTURES",
+        "num": "SUBCHAPTER III—"
+      },
+      "actId": "tia",
+      "actTitle": "III",
+      "actSection": "328",
+      "origin": "ch. 38, title III, § 328",
+      "schedule": null,
+      "slug": "section-328",
+      "label": "Section 328",
+      "homeAct": "tia",
+      "chapter": "2A",
+      "path": "/tia/section-328/",
+      "prev": {
+        "path": "/tia/section-327/",
+        "label": "Section 327"
+      },
+      "next": null
+    }
+  ]
+}
