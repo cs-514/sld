@@ -3,5 +3,6 @@ dist/
 .astro/
 data/cache/
 agent-tools/
+__pycache__/
 *.log
 .DS_Store
