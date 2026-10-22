@@ -8,6 +8,7 @@
 import { readFileSync, existsSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { SEC_USER_AGENT } from "./user-agent.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const links = process.argv.includes("--links");
@@ -165,7 +166,7 @@ if (links) {
     const response = await fetch(url, {
       method: "GET",
       redirect: "follow",
-      headers: { "User-Agent": "PinpointResearchBot/1.0 (link check; contact: pinpoint-research@example.com)" },
+      headers: { "User-Agent": SEC_USER_AGENT },
       signal: AbortSignal.timeout(30000),
     });
     assert(response.ok, `${response.status} ${url}`);

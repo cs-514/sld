@@ -12,6 +12,7 @@
 import { mkdir, readFile, writeFile, appendFile, access } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { SEC_USER_AGENT } from "./user-agent.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CACHE = path.join(ROOT, "data", "cache");
@@ -19,8 +20,7 @@ const OUT_DIR = path.join(ROOT, "src", "data", "edgar");
 const PUBLIC_DIR = path.join(ROOT, "public", "data");
 const JSONL = path.join(CACHE, "edgar-filings.jsonl");
 
-const UA =
-  "PinpointResearchBot/1.0 (securities research desk; contact: pinpoint-research@example.com)";
+const UA = SEC_USER_AGENT;
 const TICKER_URL = "https://www.sec.gov/files/company_tickers.json";
 const EXCHANGE_URL = "https://www.sec.gov/files/company_tickers_exchange.json";
 const RATE_PER_SEC = 8;

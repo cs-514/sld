@@ -44,6 +44,9 @@ jobs:
           node-version: 22
           cache: npm
 
+      # Weekly (and manual) refresh. The SEC User-Agent lives only in
+      # scripts/user-agent.mjs. This step rewrites the ticker list and the
+      # filings snapshot; the later build and deploy publish that snapshot.
       - name: Refresh EDGAR snapshot
         if: github.event_name == 'schedule' || inputs.refresh_edgar
         run: node scripts/fetch_edgar.mjs

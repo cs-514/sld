@@ -74,7 +74,7 @@ The generated JSON is committed, so a normal site build does not need Python.
 
 `data.sec.gov` does not send CORS headers reliably, and a browser cannot set the User-Agent the SEC’s [fair-access policy](https://www.sec.gov/os/webmaster-faq#developers) requires (requests with no User-Agent are rejected). The workable static approach:
 
-1. A build job with a declared User-Agent downloads `company_tickers.json`, `company_tickers_exchange.json`, and each issuer’s submissions JSON, at about 8 requests per second.
+1. A build job downloads `company_tickers.json`, `company_tickers_exchange.json`, and each issuer’s submissions JSON, at about 8 requests per second. Every SEC request uses the User-Agent in `scripts/user-agent.mjs`: `Pinpoint securities research portal (contact: GitHub cs-514)`. Change that file to change the string.
 2. It keeps a capped set of recent filings per form family (10-K/20-F/40-F, 10-Q, 8-K/6-K, S-1, S-3, proxy, 13D/G, Forms 3/4/5, other registration statements, and a handful of everything else). The source list is the SEC “recent” array, roughly the latest 1,000 filings. If that array has no annual report, the job reads one older submissions shard.
 3. The site serves that snapshot from the same origin. Typeahead uses `public/data/issuers.json`. Company pages are prerendered from `src/data/edgar/companies.json`.
 4. Every company page also links to the live EDGAR issuer page, the classic company index, and EDGAR full-text search with the current form and date filter filled in. Use those when you need something the cap dropped, or a filing newer than the snapshot.
@@ -106,7 +106,7 @@ The repository this site is meant to live in is `cs-514/sld`.
 3. The workflow `.github/workflows/pages.yml` builds `dist/` and deploys it. GitHub serves a project site at `https://cs-514.github.io/sld/`. The files inside the artifact are not nested in an `sld/` folder; the `/sld` prefix is in the HTML, from `base: "/sld"` in `astro.config.mjs`.
 4. If the repository name ever changes, change `base` and `site` in `astro.config.mjs` to match, or every asset 404s.
 
-The same workflow refreshes the EDGAR snapshot on Monday (11:30 UTC) and when you run it by hand with “Refresh the EDGAR snapshot” checked. The refresh sends the User-Agent recorded in the snapshot file. A scheduled run commits the new snapshot and deploys it. The default `GITHUB_TOKEN` must be allowed to write contents (Settings → Actions → General → Workflow permissions).
+The same workflow refreshes the EDGAR ticker list and filings snapshot every Monday at 11:30 UTC, then rebuilds and redeploys Pages. Run it by hand with “Refresh the EDGAR snapshot” checked to do the same immediately. Those requests send the User-Agent in `scripts/user-agent.mjs`. A scheduled run commits the new snapshot and deploys the site it just built. The default `GITHUB_TOKEN` must be allowed to write contents (Settings → Actions → General → Workflow permissions).
 
 Statute refreshes are deliberate. Run `npm run data:statutes`, read the mapping check, and commit the JSON.
 
