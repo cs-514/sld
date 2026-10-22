@@ -33,7 +33,7 @@ OUT_DIR = ROOT / "src" / "data" / "statutes"
 NS = {"u": "http://xml.house.gov/schemas/uslm/1.0"}
 U = "{http://xml.house.gov/schemas/uslm/1.0}"
 DOWNLOAD_PAGE = "https://uscode.house.gov/download.html"
-UA = "SecReg Portal/1.0 (securities statute research; contact: GitHub cs-514)"
+UA = "Securities Law Deskbook/1.0 (securities statute research; contact: GitHub cs-514)"
 
 STRUCT = {
     "subsection",

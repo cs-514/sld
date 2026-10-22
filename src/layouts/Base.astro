@@ -29,6 +29,7 @@ const current = (prefix: string) => {
 };
 const onHome = current("");
 const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
+const markLines = SITE_NAME.split(/ (?=[^ ]+$)/);
 const nav = [
   ["", "Home"],
   ["33-act/", "Securities Act"],
@@ -72,7 +73,12 @@ const nav = [
     <a class="skip" href="#content" data-pagefind-ignore>Skip to content</a>
     <header class="site-header" data-pagefind-ignore>
       <div class="wrap header-row">
-        <a class="mark" href={href()}><span class="sigil" aria-hidden="true">§</span> {SITE_NAME}</a>
+        <a class="mark" href={href()}>
+          <span class="sigil" aria-hidden="true">§</span>
+          <span class="mark-name">
+            {markLines.map((line) => <span class="mark-line">{line}</span>)}
+          </span>
+        </a>
         <nav class="primary-nav" aria-label="Primary">
           {
             nav.map(([to, label]) => (
