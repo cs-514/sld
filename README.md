@@ -1,8 +1,8 @@
-# Pinpoint
+# SecReg Portal
 
 A static research desk for U.S. capital-markets lawyers. This is step 1: the statute hierarchy for the Securities Act of 1933 and the Securities Exchange Act of 1934, the Trust Indenture Act (so Title III of the same chapter is not mislabeled), and an EDGAR issuer search.
 
-The site is built to be published at [https://cs-514.github.io/sld/](https://cs-514.github.io/sld/). Every link, asset, and search index is prefixed with `/sld/`.
+The site is built to be published at [https://cs-514.github.io/sld/](https://cs-514.github.io/sld/). Every link, asset, and search index is prefixed with `/sld/`. The name in the header is `SITE_NAME` in `src/lib/site.ts`.
 
 ## What you can do
 
@@ -74,7 +74,7 @@ The generated JSON is committed, so a normal site build does not need Python.
 
 `data.sec.gov` does not send CORS headers reliably, and a browser cannot set the User-Agent the SEC’s [fair-access policy](https://www.sec.gov/os/webmaster-faq#developers) requires (requests with no User-Agent are rejected). The workable static approach:
 
-1. A build job downloads `company_tickers.json`, `company_tickers_exchange.json`, and each issuer’s submissions JSON, at about 8 requests per second. Every SEC request uses the User-Agent in `scripts/user-agent.mjs`: `Pinpoint securities research portal (contact: GitHub cs-514)`. Change that file to change the string.
+1. A build job downloads `company_tickers.json`, `company_tickers_exchange.json`, and each issuer’s submissions JSON, at about 8 requests per second. Every SEC request uses the User-Agent in `scripts/user-agent.mjs`: `SecReg Portal securities research (contact: GitHub cs-514)`. Change that file to change the string.
 2. It keeps a capped set of recent filings per form family (10-K/20-F/40-F, 10-Q, 8-K/6-K, S-1, S-3, proxy, 13D/G, Forms 3/4/5, other registration statements, and a handful of everything else). The source list is the SEC “recent” array, roughly the latest 1,000 filings. If that array has no annual report, the job reads one older submissions shard.
 3. The site serves that snapshot from the same origin. Typeahead uses `public/data/issuers.json`. Company pages are prerendered from `src/data/edgar/companies.json`.
 4. Every company page also links to the live EDGAR issuer page, the classic company index, and EDGAR full-text search with the current form and date filter filled in. Use those when you need something the cap dropped, or a filing newer than the snapshot.
@@ -115,4 +115,4 @@ Statute refreshes are deliberate. Run `npm run data:statutes`, read the mapping 
 - Sticky search. Press `/` to focus it. Issuers resolve from the local ticker file; sections resolve from the Pagefind index.
 - Act indexes toggle between Act order and U.S. Code order without JavaScript.
 - Light and dark follow the system until you toggle them.
-- On a phone, the four sections sit in a bottom bar so they can be reached with one hand. Filing filters wrap; they are not a horizontal scroller you have to chase.
+- On a phone, Home and the four sections sit in a bottom bar so they can be reached with one hand. Filing filters wrap; they are not a horizontal scroller you have to chase.

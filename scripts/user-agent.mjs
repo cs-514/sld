@@ -3,4 +3,4 @@
  * this repo makes. Change this string and nowhere else.
  * https://www.sec.gov/os/webmaster-faq#developers
  */
-export const SEC_USER_AGENT = "Pinpoint securities research portal (contact: GitHub cs-514)";
+export const SEC_USER_AGENT = "SecReg Portal securities research (contact: GitHub cs-514)";

@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import SearchForm from "../components/SearchForm.astro";
 import { href } from "../lib/paths";
+import { SITE_NAME } from "../lib/site";
 import { findSection, loadActs, loadProvenance, PINS } from "../lib/statutes";
 
 const acts = loadActs();
@@ -16,9 +17,9 @@ const description =
 const soon = ["Rules and Regulations", "Forms", "SEC Releases", "Staff interpretations (C&DIs)"];
 ---
 
-<Base title="Pinpoint" description={description} hideHeaderSearch>
+<Base title="Home" description={description} hideHeaderSearch>
   <p class="kicker">Securities Act · Exchange Act · Trust Indenture Act · EDGAR</p>
-  <h1>Pinpoint</h1>
+  <h1>{SITE_NAME}</h1>
   <p class="lede">
     Read a section of the Securities Act, the Exchange Act, or the Trust Indenture Act, or look up a company’s EDGAR filings.
   </p>
