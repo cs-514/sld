@@ -176,6 +176,7 @@ function initSiteSearch(): void {
       const pages = await Promise.all(slice.map((result) => result.data()));
       for (const page of pages) {
         const url = resultUrl(page.url);
+        if (url.includes("/edgar/cik/")) continue;
         if (hits.some((hit) => hit.href === url)) continue;
         hits.push({
           href: url,

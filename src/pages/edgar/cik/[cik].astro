@@ -36,7 +36,7 @@ const canonical = new URL(target || href(`edgar/cik/${company.cikPadded}/`), Ast
         <meta http-equiv="refresh" content={`0; url=${target}`} />
         <link rel="icon" href={href("favicon.svg")} type="image/svg+xml" />
       </head>
-      <body>
+      <body data-pagefind-ignore="all">
         <p>
           <a href={target}>
             {company.name} ({primary.ticker})

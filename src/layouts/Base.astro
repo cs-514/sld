@@ -63,7 +63,7 @@ const nav = [
     </script>
   </head>
   <body>
-    <a class="skip" href="#content">Skip to content</a>
+    <a class="skip" href="#content" data-pagefind-ignore>Skip to content</a>
     <header class="site-header" data-pagefind-ignore>
       <div class="wrap header-row">
         <a class="mark" href={href()}><span class="sigil" aria-hidden="true">§</span> Pinpoint</a>
@@ -84,7 +84,7 @@ const nav = [
         <button type="button" id="theme" class="theme">Dark</button>
       </div>
     </header>
-    <main id="content">
+    <main id="content" data-pagefind-body>
       <div class="wrap">
         {
           crumbs.length > 0 && (
