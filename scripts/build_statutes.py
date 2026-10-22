@@ -6,8 +6,8 @@ The XML is the current House download (release point encoded in the file).
 Section numbers of the Acts are taken from the official source credit
 (for example "ch. 38, title I, § 5"), not from an external crosswalk.
 
-Statutory text is not written to the output. The index keeps headings,
-subsection numbers, defined-term labels, and source credits.
+Operative text is rendered from the USLM. Source credits and amendment
+notes are kept separate so a section page can collapse them under the text.
 """
 
 from __future__ import annotations
@@ -23,6 +23,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from lxml import etree
+
+from statute_text import render_statute, resolve_usc_links
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "cache"
@@ -370,6 +372,8 @@ def build_section(sec, order: int, subchapter: dict | None) -> dict:
         "publicLaws": laws,
         "addedBy": added,
         "outline": build_outline(sec, 0, []),
+        "textHtml": "",
+        "notesHtml": "",
         "links": links_for(slug_usc),
         # Empty on purpose. Step 2–4 append rules, forms, releases, and C&DIs.
         "crossLinks": {
@@ -498,6 +502,9 @@ def main() -> None:
                     "num": text(parent.find(f"{U}num")),
                 }
             record = build_section(sec, order, sub)
+            text_html, notes_html = render_statute(sec)
+            record["textHtml"] = text_html
+            record["notesHtml"] = notes_html
             order += 1
             home = assign_home(record, chapter_num)
             record["homeAct"] = home
@@ -522,6 +529,17 @@ def main() -> None:
             )
         sections.sort(key=lambda s: (0 if s.get("actSection") or s.get("schedule") else 1, act_sort_key(s)))
 
+    ident_to_path = {
+        section["identifier"]: section["path"]
+        for sections in buckets.values()
+        for section in sections
+        if section.get("identifier")
+    }
+    for sections in buckets.values():
+        for section in sections:
+            section["textHtml"] = resolve_usc_links(section["textHtml"], ident_to_path)
+            section["notesHtml"] = resolve_usc_links(section["notesHtml"], ident_to_path)
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     provenance = {
@@ -530,7 +548,7 @@ def main() -> None:
         "zipSha256": digest,
         "release": meta,
         "downloadPage": DOWNLOAD_PAGE,
-        "method": "Act section numbers are the first ch. 38 or ch. 404 section citation in the OLRC source credit. Headings and outlines are structural markup only; statutory text is not reproduced.",
+        "method": "Act section numbers are the first ch. 38 or ch. 404 section citation in the OLRC source credit. Operative text, subdivision anchors, source credits, and amendment notes are rendered from the same USLM file.",
         "counts": {act_id: len(sections) for act_id, sections in buckets.items()},
     }
     (OUT_DIR / "provenance.json").write_text(json.dumps(provenance, indent=2, ensure_ascii=False) + "\n")
@@ -598,6 +616,17 @@ def main() -> None:
     headings = [s["heading"] for sections in buckets.values() for s in sections]
     if any("SAFE HARBOR FOR INVESTMENT FUND RESEARCH" in h for h in headings):
         print("Nested statutory note was indexed as a section", file=sys.stderr)
+        failed = True
+    section5 = next(s for s in buckets["33-act"] if s.get("actSection") == "5")
+    section10 = next(s for s in buckets["34-act"] if s.get("actSection") == "10")
+    if "registration statement" not in section5["textHtml"] or 'id="a-1"' not in section5["textHtml"]:
+        print("Section 5 text missing", file=sys.stderr)
+        failed = True
+    if 'id="b"' not in section10["textHtml"] or "purchase or sale" not in section10["textHtml"]:
+        print("Section 10(b) text missing", file=sys.stderr)
+        failed = True
+    if not any('id="' in s["textHtml"] and re.search(r'id="[a-z]+-\d+-[A-Z]', s["textHtml"]) for sections in buckets.values() for s in sections):
+        print("No subparagraph anchor such as #b-2-A", file=sys.stderr)
         failed = True
     if failed:
         raise SystemExit(1)

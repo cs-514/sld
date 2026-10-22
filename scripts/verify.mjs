@@ -133,6 +133,12 @@ if (existsSync(dist)) {
   assert(section.includes("15 U.S.C. § 77e"), "section 5 cite");
   assert(section.includes("uscode.house.gov"), "section 5 official link");
   assert(section.includes('id="b"') || section.includes('href="#b"'), "section 5 subsection anchor");
+  assert(section.includes("registration statement"), "section 5 operative text");
+  assert(section.includes("<details"), "section 5 notes are collapsed");
+  const section10 = readFileSync(path.join(dist, "34-act/section-10/index.html"), "utf8");
+  assert(section10.includes('id="b"'), "Exchange Act § 10(b) anchor");
+  assert(section10.includes("purchase or sale"), "Exchange Act § 10(b) text");
+  assert(section10.includes('href="/sld/33-act/section-17/#a"'), "section 10 cross-reference stays under /sld/");
   assert(existsSync(path.join(dist, "pagefind/pagefind.js")), "pagefind bundle");
   assert(existsSync(path.join(dist, "edgar/aapl/index.html")), "AAPL page");
   assert(existsSync(path.join(dist, "34-act/section-10/index.html")), "Exchange Act § 10");

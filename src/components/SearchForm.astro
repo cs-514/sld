@@ -1,0 +1,22 @@
+---
+import { href } from "../lib/paths";
+
+interface Props {
+  prominent?: boolean;
+}
+
+const { prominent = false } = Astro.props;
+---
+
+<form class:list={["search", prominent && "search-prominent"]} role="search" action={href("edgar/")} method="get">
+  <label class="sr" for="q">Search sections, citations, and issuers</label>
+  <input
+    id="q"
+    type="search"
+    name="q"
+    placeholder="Search sections, citations, and issuers"
+    autocomplete="off"
+    enterkeyhint="search"
+  />
+  <div id="site-results" class="results" role="listbox" hidden></div>
+</form>

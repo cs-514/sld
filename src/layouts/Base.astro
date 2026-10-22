@@ -1,5 +1,6 @@
 ---
 import "../styles/site.css";
+import SearchForm from "../components/SearchForm.astro";
 import { href } from "../lib/paths";
 
 interface Crumb {
@@ -13,9 +14,10 @@ interface Props {
   crumbs?: Crumb[];
   canonicalPath?: string;
   noindex?: boolean;
+  hideHeaderSearch?: boolean;
 }
 
-const { title, description, crumbs = [], canonicalPath, noindex = false } = Astro.props;
+const { title, description, crumbs = [], canonicalPath, noindex = false, hideHeaderSearch = false } = Astro.props;
 const canonical = new URL(canonicalPath ? href(canonicalPath) : Astro.url.pathname, Astro.site);
 const path = Astro.url.pathname;
 const current = (prefix: string) => {
@@ -76,11 +78,7 @@ const nav = [
             ))
           }
         </nav>
-        <form class="search" role="search" action={href("edgar/")} method="get">
-          <label class="sr" for="q">Search sections, citations, and issuers</label>
-          <input id="q" type="search" name="q" placeholder="Search sections, cites, issuers" autocomplete="off" enterkeyhint="search" />
-          <div id="site-results" class="results" role="listbox" hidden></div>
-        </form>
+        {!hideHeaderSearch && <SearchForm />}
         <button type="button" id="theme" class="theme">Dark</button>
       </div>
     </header>
@@ -104,7 +102,7 @@ const nav = [
     </main>
     <footer class="site-footer" data-pagefind-ignore>
       <div class="wrap">
-        <span>U.S. Code headings from the House OLRC. Filings are an EDGAR snapshot, not a live feed.</span>
+        <span>Statutory text from the House OLRC. Filings are an EDGAR snapshot, not a live feed.</span>
         <span><a href={href("sources/")}>Sources and currency</a></span>
       </div>
     </footer>

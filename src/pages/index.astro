@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import SearchForm from "../components/SearchForm.astro";
 import { href } from "../lib/paths";
 import { findSection, loadActs, loadProvenance, PINS } from "../lib/statutes";
 
@@ -11,20 +12,17 @@ const pins = PINS.map((pin) => {
   return { pin, file, section };
 }).filter((item) => item.section && item.file);
 const description =
-  "Section index for the Securities Act of 1933 and the Securities Exchange Act of 1934, with the Act-to-U.S.C. map and an EDGAR issuer search.";
+  "Read the Securities Act, the Exchange Act, and the Trust Indenture Act, and look up a company’s recent EDGAR filings.";
+const soon = ["Rules and Regulations", "Forms", "SEC Releases", "Staff interpretations (C&DIs)"];
 ---
 
-<Base title="Pinpoint" description={description}>
-  <p class="kicker">Securities Act · Exchange Act · EDGAR</p>
-  <h1>Find the section, then the filing.</h1>
+<Base title="Pinpoint" description={description} hideHeaderSearch>
+  <p class="kicker">Securities Act · Exchange Act · Trust Indenture Act · EDGAR</p>
+  <h1>Pinpoint</h1>
   <p class="lede">
-    A desk copy of the 1933 and 1934 Acts: Act section, U.S. Code cite, heading, and the official text.
-    Issuer search sits next to it. Rules, forms, releases, and C&amp;DIs are the next layers, not this one.
+    Read a section of the Securities Act, the Exchange Act, or the Trust Indenture Act, or look up a company’s EDGAR filings.
   </p>
-  <p class="note">
-    Code release {provenance.release.docPublicationName}, {provenance.release.currencyNote.toLowerCase()}.
-    Title 15 is not positive law. The Act section number comes from the source credit.
-  </p>
+  <SearchForm prominent />
 
   <div class="cards">
     {
@@ -32,18 +30,30 @@ const description =
         <a class="card" href={href(file.act.path)}>
           <strong>{file.act.shortName}</strong>
           <span>{file.act.scope}</span>
-          <em>{file.sections.length} provisions in ch. {file.act.chapter}</em>
+          <em>
+            {file.sections.length} sections · 15 U.S.C. ch. {file.act.chapter}
+          </em>
         </a>
       ))
     }
     <a class="card" href={href("edgar/")}>
-      <strong>EDGAR issuers</strong>
-      <span>Search by name or ticker. Open a capped snapshot of recent filings, or the live EDGAR index.</span>
+      <strong>EDGAR company search</strong>
+      <span>Search by name or ticker. Open a snapshot of recent filings, or the live EDGAR index.</span>
       <em>AAPL · MSFT · JPM</em>
     </a>
   </div>
 
-  <h2>Sections people actually open</h2>
+  <h2>Coming soon</h2>
+  <ul class="soon">
+    {soon.map((label) => (
+      <li>
+        <span>{label}</span>
+        <span class="tag">Coming soon</span>
+      </li>
+    ))}
+  </ul>
+
+  <h2>Often opened</h2>
   <div class="pins">
     {
       pins.map(({ pin, file, section }) => (
@@ -61,4 +71,9 @@ const description =
       ))
     }
   </div>
+
+  <p class="note">
+    Text from the House Office of the Law Revision Counsel, {provenance.release.docPublicationName},{" "}
+    {provenance.release.currencyNote.toLowerCase()}. Title 15 is not positive law. The Act section number comes from the source credit.
+  </p>
 </Base>

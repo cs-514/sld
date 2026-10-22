@@ -183,7 +183,7 @@ function initSiteSearch(): void {
           title: page.meta?.title || url,
           meta: "",
           excerpt: page.excerpt,
-          kind: "On this desk",
+          kind: "On this site",
         });
       }
     }

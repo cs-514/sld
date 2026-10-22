@@ -7,10 +7,10 @@ The site is built to be published at [https://cs-514.github.io/sld/](https://cs-
 ## What you can do
 
 - Look up an Act section and its U.S. Code cite. [Securities Act § 5](https://cs-514.github.io/sld/33-act/section-5/) is [15 U.S.C. § 77e](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section77e&num=0&edition=prelim). [Exchange Act § 10(b)](https://cs-514.github.io/sld/34-act/section-10/#b) is a subsection of § 10, not a separate section. § 10A is.
-- Open the official text at the House Office of the Law Revision Counsel, govinfo, or Cornell LII.
+- Read the operative text on the section page, with an anchor on every subdivision, and open the same text at the House Office of the Law Revision Counsel, govinfo, or Cornell LII.
 - Search issuers by name or ticker and open a snapshot of recent filings, with direct document links and a one-click jump to the live EDGAR index.
 
-Statutory text is not republished. Headings, subsection numbers, and defined-term labels are taken from the OLRC’s structural markup.
+Operative text is rendered from the OLRC USLM XML (United States government work). Source credits and amendment notes are collapsed under the text. The site does not copy commercial treatises.
 
 ## Stack
 

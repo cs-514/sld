@@ -37,6 +37,8 @@ export interface Section {
   publicLaws: PublicLaw[];
   addedBy: AddedBy | null;
   outline: OutlineNode[];
+  textHtml: string;
+  notesHtml: string;
   links: { house: string; govinfo: string; lii: string };
   crossLinks: {
     rules: unknown[];

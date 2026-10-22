@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T14:46:31Z",
+  "generatedAt": "2026-10-22T20:37:52Z",
   "source": "https://uscode.house.gov/download/releasepoints/us/pl/119/124/xml_usc15@119-124.zip",
   "zipSha256": "cf1aa19428a1bebafaea6375531943d5fdabc247eb530dacab400fd4af309148",
   "release": {
@@ -9,7 +9,7 @@
     "positiveLaw": "no"
   },
   "downloadPage": "https://uscode.house.gov/download.html",
-  "method": "Act section numbers are the first ch. 38 or ch. 404 section citation in the OLRC source credit. Headings and outlines are structural markup only; statutory text is not reproduced.",
+  "method": "Act section numbers are the first ch. 38 or ch. 404 section citation in the OLRC source credit. Operative text, subdivision anchors, source credits, and amendment notes are rendered from the same USLM file.",
   "counts": {
     "33-act": 48,
     "34-act": 95,
