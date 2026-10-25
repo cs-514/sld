@@ -157,6 +157,11 @@ button { cursor: pointer; }
   border-radius: 2px;
   white-space: nowrap;
 }
+.nav-short { display: none; }
+@media (max-width: 1440px) {
+  .nav-full { display: none; }
+  .nav-short { display: inline; }
+}
 .primary-nav a[aria-current="page"],
 .bottom-nav a[aria-current="page"] {
   color: var(--ink);
@@ -409,6 +414,80 @@ h2 {
   font-size: 0.82rem;
 }
 .jump a { text-decoration: none; }
+.jump p {
+  flex: 1 0 100%;
+  font-family: var(--sans);
+  color: var(--muted);
+  margin: 0 0 0.35rem;
+}
+.split {
+  flex: 1 0 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+.split li { padding: 0.16rem 0; }
+.split span { color: var(--muted); }
+
+.rule-toc { list-style: none; margin: 0.2rem 0 0.4rem; padding: 0; }
+.rule-toc li {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 0.35rem 0.8rem;
+  padding: 0.32rem 0;
+  border-top: 1px solid var(--line);
+}
+.rule-toc a { text-decoration: none; font-weight: 650; }
+.rule-toc a:hover { text-decoration: underline; }
+.rule-toc span { color: var(--muted); }
+
+.impl {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+  margin: 0.35rem 0 0.6rem;
+  padding: 0;
+  max-width: 46rem;
+}
+.related h2 { margin-bottom: 0.35rem; }
+
+.reading {
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  padding: 0.75rem 0.9rem 0.85rem;
+  margin-top: 1.4rem;
+  max-width: 42rem;
+}
+.reading h2 { margin-top: 0; }
+.reading ul { list-style: none; margin: 0; padding: 0; }
+.reading li { padding: 0.2rem 0; }
+.reading span { color: var(--faint); margin-left: 0.4rem; font-size: 0.82rem; }
+
+.position { max-width: 42rem; }
+.position p { max-width: 42rem; }
+
+.form-items {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin-top: 0.4rem;
+}
+.form-items th, .form-items td {
+  border-top: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  padding: 0.4rem 0.55rem 0.4rem 0;
+}
+.form-items th {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 650;
+}
 details.amendments {
   margin-top: 1.5rem;
   max-width: 42rem;
@@ -670,12 +749,16 @@ details.amendments h3 {
   .bottom-nav a {
     flex: 1;
     text-align: center;
-    padding: 0.75rem 0.15rem calc(0.7rem + env(safe-area-inset-bottom));
+    padding: 0.7rem 0.05rem calc(0.65rem + env(safe-area-inset-bottom));
     min-height: 3rem;
-    font-size: 0.82rem;
+    font-size: 0.72rem;
   }
   body { padding-bottom: calc(3.2rem + env(safe-area-inset-bottom)); }
-  .cards, .act-main, .pin, .soon { grid-template-columns: 1fr; }
+  .cards, .act-main, .pin, .soon, .rule-toc li { grid-template-columns: 1fr; }
+  .form-items, .form-items tbody, .form-items tr, .form-items td { display: block; }
+  .form-items thead { display: none; }
+  .form-items tr { border-top: 1px solid var(--line); padding: 0.45rem 0; }
+  .form-items td { border: 0; padding: 0.08rem 0; }
   .statute { font-size: 1rem; line-height: 1.55; max-width: none; }
   .statute .s { margin-left: 0.45rem; }
   .statute .s .s .s .s { margin-left: 0.3rem; }

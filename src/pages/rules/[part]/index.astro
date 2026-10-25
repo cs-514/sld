@@ -1,0 +1,52 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Reading from "../../../components/Reading.astro";
+import { href } from "../../../lib/paths";
+import { readingForPart } from "../../../lib/reading";
+import { loadManifest, loadPart, longDate, parents, partNumber, toc } from "../../../lib/rules";
+
+export function getStaticPaths() {
+  return loadManifest().parts.map((part) => ({
+    params: { part: `17-cfr-${part.part}` },
+    props: { part: part.part },
+  }));
+}
+
+const { part } = Astro.props;
+const file = loadPart(partNumber(`17-cfr-${part}`));
+const buckets = toc(file);
+const count = parents(file).length;
+const description = `${file.name}, 17 C.F.R. Part ${file.part}. ${file.blurb}`;
+---
+
+<Base
+  title={`Part ${file.part}. ${file.name}`}
+  description={description}
+  crumbs={[{ href: href("rules/"), label: "Rules" }, { label: file.name }]}
+>
+  <p class="kicker">17 C.F.R. Part {file.part} · as of {longDate(file.date)}</p>
+  <h1>{file.name}</h1>
+  <p class="lede">{file.blurb}</p>
+  <p class="link-row">
+    <a href={`https://www.ecfr.gov/current/title-17/chapter-II/part-${file.part}`} target="_blank" rel="noopener noreferrer">eCFR</a>
+    <a href={`https://www.govinfo.gov/link/cfr/17/${file.part}?year=mostrecent&link-type=details`} target="_blank" rel="noopener noreferrer">govinfo</a>
+    <a href={file.source} target="_blank" rel="noopener noreferrer">Versioner XML</a>
+  </p>
+  <p class="note">{count} sections.</p>
+  {
+    buckets.map((bucket) => (
+      <section>
+        <h2 id={bucket.id}>{bucket.heading}</h2>
+        <ul class="rule-toc">
+          {bucket.sections.map((section) => (
+            <li>
+              <a href={href(section.path)}>{section.label}</a>
+              {section.heading && <span>{section.heading}</span>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+  <Reading links={readingForPart(file.part)} />
+</Base>

@@ -18,6 +18,10 @@ on:
         description: Refresh the EDGAR snapshot before deploying
         type: boolean
         default: false
+      refresh_rules:
+        description: Refresh 17 C.F.R. Parts 210, 229, 230, 239, 240, and 249 before deploying
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -62,6 +66,28 @@ jobs:
           else
             git commit -m "Refresh EDGAR issuer snapshot"
             git push || echo "Could not push the snapshot. The deploy still uses the files just fetched. Grant this workflow contents: write."
+          fi
+
+      # Same Monday job. Six part files from the eCFR versioner, then the
+      # parser rewrites src/data/rules. A push does not re-download the CFR.
+      - name: Refresh CFR rules
+        if: github.event_name == 'schedule' || inputs.refresh_rules
+        run: |
+          python3 -m venv /tmp/ecfr
+          /tmp/ecfr/bin/pip install lxml
+          /tmp/ecfr/bin/python scripts/build_rules.py --download
+
+      - name: Commit refreshed rules
+        if: github.event_name == 'schedule' || inputs.refresh_rules
+        run: |
+          git config user.name "Securities Law Deskbook data bot"
+          git config user.email "securities-law-deskbook@example.com"
+          git add src/data/rules
+          if git diff --cached --quiet; then
+            echo "No rule changes"
+          else
+            git commit -m "Refresh eCFR rule text"
+            git push || echo "Could not push the rule text. The deploy still uses the files just fetched. Grant this workflow contents: write."
           fi
 
       - name: Install

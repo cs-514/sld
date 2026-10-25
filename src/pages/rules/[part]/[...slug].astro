@@ -1,0 +1,18 @@
+---
+import RulePage from "../../../components/RulePage.astro";
+import { findRule, rulePaths } from "../../../lib/rules";
+
+export function getStaticPaths() {
+  return rulePaths().map(({ part, slug }) => ({
+    params: { part, slug },
+    props: { part, slug },
+  }));
+}
+
+const slug = Array.isArray(Astro.params.slug) ? Astro.params.slug.join("/") : Astro.props.slug;
+const found = findRule(Astro.props.part, slug);
+if (!found) throw new Error(`Missing rule ${Astro.props.part}/${slug}`);
+const { file, page } = found;
+---
+
+<RulePage file={file} page={page} />

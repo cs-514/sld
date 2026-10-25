@@ -1,0 +1,34 @@
+---
+import Base from "../../layouts/Base.astro";
+import Reading from "../../components/Reading.astro";
+import { href } from "../../lib/paths";
+import { readingForIndex } from "../../lib/reading";
+import { loadManifest, longDate } from "../../lib/rules";
+
+const manifest = loadManifest();
+const description =
+  "Regulation S-K, Regulation S-X, and the Securities Act and Exchange Act rules and forms in 17 C.F.R., each section on its own page.";
+---
+
+<Base title="Rules" description={description} crumbs={[{ label: "Rules" }]}>
+  <p class="kicker">17 C.F.R. · title 17 · as of {longDate(manifest.date)}</p>
+  <h1>Rules and regulations</h1>
+  <p class="lede">
+    The text of Regulation S-K, Regulation S-X, the general rules under the 1933 and 1934 Acts, and the form sections in Parts 239 and 249.
+    Each section is its own page, with an anchor on every paragraph.
+  </p>
+  <div class="cards">
+    {
+      manifest.parts.map((part) => (
+        <a class="card" href={href(part.path)}>
+          <strong>
+            Part {part.part}. {part.name}
+          </strong>
+          <span>{part.blurb}</span>
+          <em>{part.sections} sections</em>
+        </a>
+      ))
+    }
+  </div>
+  <Reading links={readingForIndex()} />
+</Base>

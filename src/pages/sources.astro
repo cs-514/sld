@@ -2,11 +2,13 @@
 import Base from "../layouts/Base.astro";
 import { href } from "../lib/paths";
 import { loadEdgar } from "../lib/edgar";
+import { loadManifest, longDate } from "../lib/rules";
 import { loadProvenance } from "../lib/statutes";
 
 const provenance = loadProvenance();
 const edgar = loadEdgar();
-const description = "Where the statute index and the EDGAR snapshot come from, and what this site does not copy.";
+const rules = loadManifest();
+const description = "Where the statute text, the rules, and the EDGAR snapshot come from, and what this site does not copy.";
 ---
 
 <Base title="Sources and currency" description={description} crumbs={[{ label: "Sources" }]}>
@@ -14,7 +16,7 @@ const description = "Where the statute index and the EDGAR snapshot come from, a
   <h1>Sources and currency</h1>
   <p class="lede">
     Section numbers are read out of the House Office of the Law Revision Counsel’s USLM XML.
-    Nothing on this site is scraped from a commercial treatise.
+    Rule text is read out of the eCFR versioner. Nothing on this site is scraped from a commercial treatise.
   </p>
 
   <h2>United States Code</h2>
@@ -62,21 +64,31 @@ const description = "Where the statute index and the EDGAR snapshot come from, a
     periodic reports have fallen out of the SEC “recent” list.
   </p>
 
+  <h2>Rules and forms</h2>
+  <p>
+    17 C.F.R. Parts 210, 229, 230, 239, 240, and 249, from the
+    <a href="https://www.ecfr.gov/api/versioner/v1/">eCFR versioner</a> full XML for title 17 as of {longDate(rules.date)}.
+    The text is a United States government work. Each section links to the current eCFR page, the govinfo link service, and Cornell LII.
+    Very large Regulation S-K and S-X items are split by top-level paragraph so a phone does not have to load the whole item.
+  </p>
+  <p>
+    Form pages are original short guides. They link the SEC’s instruction PDF on sec.gov. They do not copy it.
+    A statute section’s implementing rules and forms are filled from cites in the rule text plus a curated list, and shown on the section page.
+  </p>
+  <p><a href={href("rules/")}>Rules</a> · <a href={href("forms/")}>Forms</a></p>
+
   <h2>What is not here yet</h2>
   <ul>
-    <li>Regulation S-K, Regulation S-X, and the 1933 and 1934 Act rules (17 C.F.R. Parts 229, 210, 230, 239, 240, 249).</li>
-    <li>SEC forms, cross-linked back to the sections they implement.</li>
     <li>Adopting, proposing, and interpretive releases, with Federal Register pinpoints.</li>
-    <li>Corporation Finance C&amp;DIs, and the amending acts as their own pages.</li>
+    <li>Corporation Finance Interpretations (CFIs), other than the primary-source links on the Form S-8 page, and the amending acts as their own pages.</li>
+    <li>Trust Indenture Act rules (17 C.F.R. Part 260), Regulation S-T, Regulation FD, Regulation G, and Regulation BTR, except where a form page links the eCFR part.</li>
     <li>SIPA, the Investment Company Act, the Advisers Act, and the freestanding Sarbanes-Oxley provisions in chapter 98.</li>
   </ul>
   <p>
-    The section records already have empty <span class="cite">crossLinks</span> arrays
-    (<span class="cite">rules</span>, <span class="cite">forms</span>, <span class="cite">releases</span>,
-    <span class="cite">interpretations</span>, <span class="cite">amendingActs</span>) so those layers can be attached
-    without changing the section URLs. Paths reserved for them are in the README:
-    <span class="cite">/rules/</span>, <span class="cite">/forms/</span>, <span class="cite">/releases/</span>,
-    <span class="cite">/cdi/</span>, <span class="cite">/history/</span>.
+    Section records still have <span class="cite">crossLinks</span> arrays for
+    <span class="cite">releases</span>, <span class="cite">interpretations</span>, and <span class="cite">amendingActs</span>.
+    Paths reserved for those later steps stay in the README:
+    <span class="cite">/releases/</span>, <span class="cite">/cdi/</span>, <span class="cite">/history/</span>.
   </p>
   <p><a href={href()}>Home</a></p>
 </Base>

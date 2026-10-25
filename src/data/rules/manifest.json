@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-22",
+  "source": "eCFR versioner full XML, title 17",
+  "parts": [
+    {
+      "part": "210",
+      "name": "Regulation S-X",
+      "blurb": "Form and content of financial statements. Article rules are cited as Rule 1-01, Rule 3-05, and so on.",
+      "path": "rules/17-cfr-210/",
+      "sections": 118
+    },
+    {
+      "part": "229",
+      "name": "Regulation S-K",
+      "blurb": "Non-financial disclosure. Sections are Items (Item 101, Item 303, Item 402).",
+      "path": "rules/17-cfr-229/",
+      "sections": 131
+    },
+    {
+      "part": "230",
+      "name": "Securities Act rules",
+      "blurb": "General rules under the Securities Act of 1933, including Regulation D, Rule 144, Regulation S, and the registration-statement rules.",
+      "path": "rules/17-cfr-230/",
+      "sections": 214
+    },
+    {
+      "part": "239",
+      "name": "Securities Act forms",
+      "blurb": "Forms prescribed under the Securities Act. The form pages under Forms restate what each form is for and link here for the Code section.",
+      "path": "rules/17-cfr-239/",
+      "sections": 56
+    },
+    {
+      "part": "240",
+      "name": "Exchange Act rules",
+      "blurb": "General rules under the Securities Exchange Act of 1934, including Rule 10b-5, Regulation 14A, and Regulation 13D-G.",
+      "path": "rules/17-cfr-240/",
+      "sections": 594
+    },
+    {
+      "part": "249",
+      "name": "Exchange Act forms",
+      "blurb": "Forms prescribed under the Exchange Act, including Forms 10-K, 10-Q, and 8-K.",
+      "path": "rules/17-cfr-249/",
+      "sections": 89
+    }
+  ]
+}

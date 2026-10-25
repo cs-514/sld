@@ -31,11 +31,13 @@ const onHome = current("");
 const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
 const markLines = SITE_NAME.split(/ (?=[^ ]+$)/);
 const nav = [
-  ["", "Home"],
-  ["33-act/", "Securities Act"],
-  ["34-act/", "Exchange Act"],
-  ["tia/", "Trust Indenture Act"],
-  ["edgar/", "EDGAR"],
+  ["", "Home", "Home"],
+  ["33-act/", "Securities Act", "1933"],
+  ["34-act/", "Exchange Act", "1934"],
+  ["tia/", "Trust Indenture Act", "TIA"],
+  ["rules/", "Rules", "Rules"],
+  ["forms/", "Forms", "Forms"],
+  ["edgar/", "EDGAR", "EDGAR"],
 ];
 ---
 
@@ -81,9 +83,10 @@ const nav = [
         </a>
         <nav class="primary-nav" aria-label="Primary">
           {
-            nav.map(([to, label]) => (
+            nav.map(([to, label, short]) => (
               <a href={href(to)} aria-current={current(to) ? "page" : undefined}>
-                {label}
+                <span class="nav-full">{label}</span>
+                <span class="nav-short">{short}</span>
               </a>
             ))
           }
@@ -112,15 +115,15 @@ const nav = [
     </main>
     <footer class="site-footer" data-pagefind-ignore>
       <div class="wrap">
-        <span>Statutory text from the House OLRC. Filings are an EDGAR snapshot, not a live feed.</span>
+        <span>Statutes from the House OLRC. Rules from the eCFR. Filings are an EDGAR snapshot, not a live feed.</span>
         <span><a href={href("sources/")}>Sources and currency</a></span>
       </div>
     </footer>
     <nav class="bottom-nav" aria-label="Primary" data-pagefind-ignore>
       {
-        nav.map(([to, label]) => (
+        nav.map(([to, , short]) => (
           <a href={href(to)} aria-current={current(to) ? "page" : undefined}>
-            {label.replace("Trust Indenture Act", "TIA").replace("Securities Act", "1933").replace("Exchange Act", "1934")}
+            {short}
           </a>
         ))
       }

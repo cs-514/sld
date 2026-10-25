@@ -1,0 +1,55 @@
+---
+import Base from "../layouts/Base.astro";
+import Reading from "./Reading.astro";
+import { href } from "../lib/paths";
+import { readingForRule } from "../lib/reading";
+import { longDate, neighbors, type RulePage, type RulePartFile } from "../lib/rules";
+
+interface Props {
+  file: RulePartFile;
+  page: RulePage;
+}
+
+const { file, page } = Astro.props;
+const adjacent = neighbors(file, page);
+const withBase = (fragment: string) =>
+  fragment ? fragment.replaceAll('href="/', `href="${import.meta.env.BASE_URL}`) : "";
+const copyCite = page.parent ? `${page.cite} ${page.label.slice(page.label.lastIndexOf("("))}` : page.cite;
+const currentLabel = page.parent ? page.label.replace(page.parent.label, "").trim() : page.label;
+const kicker = [file.name, page.group?.heading || page.subpart?.heading || ""].filter(Boolean).join(" · ");
+const description = `${page.label}. ${page.heading}. ${page.cite}`;
+const crumbs = [
+  { href: href("rules/"), label: "Rules" },
+  { href: href(file.path), label: file.name },
+];
+if (page.parent) crumbs.push({ href: href(page.parent.path), label: page.parent.label });
+---
+
+<Base title={`${page.label}. ${page.heading}`} description={description} crumbs={[...crumbs, { label: currentLabel }]}>
+  <p class="kicker">{kicker}</p>
+  <h1 data-pagefind-weight="10">{page.label}</h1>
+  {page.heading && <p class="stat-heading" data-pagefind-weight="7">{page.heading}</p>}
+  <p class="cite-line">
+    <span class="cite" data-pagefind-weight="8">{page.cite}</span>
+    <button type="button" class="copy" data-copy={copyCite}>Copy cite</button>
+  </p>
+  <p class="link-row">
+    <a href={page.links.ecfr} target="_blank" rel="noopener noreferrer">eCFR</a>
+    <a href={page.links.govinfo} target="_blank" rel="noopener noreferrer">govinfo</a>
+    <a href={page.links.lii} target="_blank" rel="noopener noreferrer">Cornell LII</a>
+  </p>
+  {page.parent && (
+    <p class="note">
+      Part of <a href={href(page.parent.path)}>{page.parent.label}</a>. The paragraph below is one piece of that section.
+    </p>
+  )}
+  {page.reserved && <p class="note">This section is reserved.</p>}
+  {page.html && <Fragment set:html={withBase(page.html)} />}
+  {page.notesHtml && <Fragment set:html={withBase(page.notesHtml)} />}
+  <p class="note">Text from the eCFR versioner, title 17 as of {longDate(file.date)}.</p>
+  <Reading links={readingForRule(page.id)} />
+  <nav class="pager" aria-label="Adjacent sections">
+    {adjacent.prev ? <a href={href(adjacent.prev.path)}>← {adjacent.prev.label}</a> : <span></span>}
+    {adjacent.next ? <a href={href(adjacent.next.path)}>{adjacent.next.label} →</a> : <span></span>}
+  </nav>
+</Base>

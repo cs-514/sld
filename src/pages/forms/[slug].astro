@@ -1,0 +1,116 @@
+---
+import Base from "../../layouts/Base.astro";
+import Reading from "../../components/Reading.astro";
+import { findForm, formNeighbors, formSearchUrl, FORMS, type Pointer } from "../../lib/formCatalog";
+import { href } from "../../lib/paths";
+import { readingForForm } from "../../lib/reading";
+
+export function getStaticPaths() {
+  return FORMS.map((form) => ({ params: { slug: form.slug }, props: { slug: form.slug } }));
+}
+
+const form = findForm(Astro.props.slug);
+if (!form) throw new Error(`Missing form ${Astro.props.slug}`);
+const adjacent = formNeighbors(form.slug);
+const description = `${form.name}. ${form.purpose}`;
+const link = (item: Pointer) => (item.href ? item.href : href(item.path || ""));
+const external = (item: Pointer) => Boolean(item.href);
+---
+
+<Base title={form.name} description={description} crumbs={[{ href: href("forms/"), label: "Forms" }, { label: form.name }]}>
+  <p class="kicker">{form.aka ? `${form.aka} · ` : ""}{form.cfr.label}</p>
+  <h1 data-pagefind-weight="10">{form.name}</h1>
+  <p class="lede">{form.purpose}</p>
+  <h2>Who files</h2>
+  <p>{form.who}</p>
+  <h2>Governing rules and statutes</h2>
+  <ul class="impl">
+    <li><a href={link(form.cfr)}>{form.cfr.label}</a></li>
+    {form.rules.map((item) => (
+      <li>
+        <a href={link(item)} target={external(item) ? "_blank" : undefined} rel={external(item) ? "noopener noreferrer" : undefined}>{item.label}</a>
+      </li>
+    ))}
+    {form.statutes.map((item) => (
+      <li><a href={link(item)}>{item.label}</a></li>
+    ))}
+  </ul>
+  <h2>Official form and recent filings</h2>
+  <p class="link-row">
+    {
+      form.pdf ? (
+        <a href={form.pdf.href} target="_blank" rel="noopener noreferrer">{form.pdf.label}</a>
+      ) : (
+        <a href={link(form.cfr)}>Code text of the schedule</a>
+      )
+    }
+    <a href={formSearchUrl(form.edgarForms)} target="_blank" rel="noopener noreferrer">EDGAR filings of this form</a>
+  </p>
+  {
+    !form.pdf && (
+      <p class="note">
+        The schedule is the Code section linked above. A separate instruction booklet was not at the usual sec.gov/files address, so this page links the Code text, and from there eCFR, govinfo, and Cornell LII.
+      </p>
+    )
+  }
+  {
+    form.slug === "s-8" && (
+      <section class="position">
+        <h2>How this position developed</h2>
+        <p>
+          A registration statement generally has to be on file before an option is exercisable. Form S-8 is the exception the staff has described: the shares underlying an option may be registered any time before the option is exercised.
+          That is <a href="https://www.sec.gov/interps/telephone/cftelinterps_securitiesactforms.pdf" target="_blank" rel="noopener noreferrer">Telephone Interpretations Manual No. 61</a> (July 1997).
+          <a href="https://www.sec.gov/rule-release/33-7646" target="_blank" rel="noopener noreferrer">Release 33-7646</a> (Feb. 25, 1999), published at <a href="https://www.govinfo.gov/content/pkg/FR-1999-03-08/html/99-5297.htm" target="_blank" rel="noopener noreferrer">64 FR 11103</a> (Mar. 8, 1999), cites the same policy in footnote 65.
+        </p>
+        <p>
+          <a href="https://www.sec.gov/rules-regulations/staff-guidance/corporation-finance-interpretations/securities-act-forms" target="_blank" rel="noopener noreferrer">Corporation Finance Interpretation 126.02</a> (Feb. 27, 2009) restates the exception.
+          Interpretation 126.47 (Oct. 15, 2026), on the same page, applies that timing to restricted stock and RSUs: the staff will not object if the common stock issued on settlement is registered on Form S-8 by the vesting date, where the company was also eligible to use Form S-8 on the grant date.
+        </p>
+        <p>
+          The fee for securities offered under an employee benefit plan is computed under <a href={href("rules/17-cfr-230/rule-457/#h")}>Rule 457(h)(1)</a>.
+          <a href={href("rules/17-cfr-230/rule-462/#a")}>Rule 462(a)</a> makes a Form S-8 effective on filing.
+          <a href={href("rules/17-cfr-230/rule-701/#d")}>Rule 701(d)(1)</a> is the exemption-side counterpart: sales of securities underlying options count on the grant date.
+        </p>
+      </section>
+    )
+  }
+  {
+    form.items && (
+      <section>
+        <h2>Items</h2>
+        <p class="note">Captions are the current Form 8-K. The rule links are the provisions the item points at. Sections 1 through 6 and Item 9.01 are the events that must be reported. Items 7.01 and 8.01 are voluntary.</p>
+        <table class="form-items">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Event</th>
+              <th>Related rules</th>
+            </tr>
+          </thead>
+          <tbody>
+            {form.items.map((row) => (
+              <tr>
+                <td>{row.item}</td>
+                <td>{row.title}</td>
+                <td>
+                  {row.rules.length === 0 && "—"}
+                  {row.rules.map((item, index) => (
+                    <>
+                      {index > 0 && ", "}
+                      <a href={link(item)} target={external(item) ? "_blank" : undefined} rel={external(item) ? "noopener noreferrer" : undefined}>{item.label}</a>
+                    </>
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    )
+  }
+  <Reading links={readingForForm(form.slug)} />
+  <nav class="pager" aria-label="Adjacent forms">
+    {adjacent.prev ? <a href={href(`forms/${adjacent.prev.slug}/`)}>← {adjacent.prev.name}</a> : <span></span>}
+    {adjacent.next ? <a href={href(`forms/${adjacent.next.slug}/`)}>{adjacent.next.name} →</a> : <span></span>}
+  </nav>
+</Base>

@@ -41,8 +41,8 @@ export interface Section {
   notesHtml: string;
   links: { house: string; govinfo: string; lii: string };
   crossLinks: {
-    rules: unknown[];
-    forms: unknown[];
+    rules: SectionLink[];
+    forms: SectionLink[];
     releases: unknown[];
     interpretations: unknown[];
     amendingActs: unknown[];
@@ -102,9 +102,35 @@ function readJson<T>(relative: string): T {
 
 const cache = new Map<string, ActFile>();
 
+interface StatuteLinkFile {
+  [key: string]: { rules?: SectionLink[]; forms?: SectionLink[] };
+}
+
+let statuteLinkFile: StatuteLinkFile | null = null;
+
+function statuteLinks(): StatuteLinkFile {
+  if (!statuteLinkFile) {
+    const file = path.join(process.cwd(), "src/data/rules/statute-links.json");
+    statuteLinkFile = JSON.parse(readFileSync(file, "utf8")) as StatuteLinkFile;
+  }
+  return statuteLinkFile;
+}
+
 export function loadAct(id: string): ActFile {
   if (!cache.has(id)) {
-    cache.set(id, readJson<ActFile>(`${id}.json`));
+    const file = readJson<ActFile>(`${id}.json`);
+    const links = statuteLinks();
+    for (const section of file.sections) {
+      const key = section.path.replace(/^\/+|\/+$/g, "");
+      const extra = links[key];
+      if (!extra) continue;
+      section.crossLinks = {
+        ...section.crossLinks,
+        rules: extra.rules || [],
+        forms: extra.forms || [],
+      };
+    }
+    cache.set(id, file);
   }
   return cache.get(id)!;
 }

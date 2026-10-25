@@ -1,0 +1,37 @@
+---
+import Base from "../../layouts/Base.astro";
+import Reading from "../../components/Reading.astro";
+import { FORM_GROUPS, findForm } from "../../lib/formCatalog";
+import { href } from "../../lib/paths";
+import { readingForIndex } from "../../lib/reading";
+
+const description =
+  "What the core SEC forms are for, who files them, and the rules and statute sections that govern them.";
+---
+
+<Base title="Forms" description={description} crumbs={[{ label: "Forms" }]}>
+  <p class="kicker">Securities Act · Exchange Act</p>
+  <h1>Forms</h1>
+  <p class="lede">
+    A short guide to the forms a capital-markets practice files or reads. Each page says what the form is for, who files it, and links the governing rule, the statute, the SEC’s instruction PDF, and an EDGAR search for recent filings.
+  </p>
+  {
+    FORM_GROUPS.map((group) => (
+      <section>
+        <h2>{group.heading}</h2>
+        <ul class="rule-toc">
+          {group.slugs.map((slug) => {
+            const form = findForm(slug)!;
+            return (
+              <li>
+                <a href={href(`forms/${form.slug}/`)}>{form.name}</a>
+                <span>{form.purpose}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    ))
+  }
+  <Reading links={readingForIndex()} />
+</Base>

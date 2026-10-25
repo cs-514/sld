@@ -70,6 +70,32 @@ const kicker = [
   }
   {notesHtml && <Fragment set:html={notesHtml} />}
 
+  {
+    (section.crossLinks.rules.length > 0 || section.crossLinks.forms.length > 0) && (
+      <section class="related">
+        <h2>Implementing rules and forms</h2>
+        {section.crossLinks.rules.length > 0 && (
+          <ul class="impl">
+            {section.crossLinks.rules.map((item) => (
+              <li>
+                <a href={href(item.path)}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        )}
+        {section.crossLinks.forms.length > 0 && (
+          <ul class="impl">
+            {section.crossLinks.forms.map((item) => (
+              <li>
+                <a href={href(item.path)}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+    )
+  }
+
   <nav class="pager" aria-label="Adjacent sections">
     {section.prev ? <a href={href(section.prev.path)}>← {section.prev.label}</a> : <span></span>}
     {section.next ? <a href={href(section.next.path)}>{section.next.label} →</a> : <span></span>}

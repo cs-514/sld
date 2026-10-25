@@ -13,15 +13,15 @@ const pins = PINS.map((pin) => {
   return { pin, file, section };
 }).filter((item) => item.section && item.file);
 const description =
-  "Read the Securities Act, the Exchange Act, and the Trust Indenture Act, and look up a company’s recent EDGAR filings.";
-const soon = ["Rules and Regulations", "Forms", "SEC Releases", "Staff interpretations (C&DIs)"];
+  "Read the Securities Act, the Exchange Act, the Trust Indenture Act, the core SEC rules and forms, and look up a company’s recent EDGAR filings.";
+const soon = ["SEC releases", "Corporation Finance Interpretations (CFIs)"];
 ---
 
 <Base title="Home" description={description} hideHeaderSearch>
-  <p class="kicker">Securities Act · Exchange Act · Trust Indenture Act · EDGAR</p>
+  <p class="kicker">Statutes · Rules · Forms · EDGAR</p>
   <h1>{SITE_NAME}</h1>
   <p class="lede">
-    Read a section of the Securities Act, the Exchange Act, or the Trust Indenture Act, or look up a company’s EDGAR filings.
+    Read a section of the Securities Act, the Exchange Act, or the Trust Indenture Act, open a rule or a form, or look up a company’s EDGAR filings.
   </p>
   <SearchForm prominent />
 
@@ -37,6 +37,16 @@ const soon = ["Rules and Regulations", "Forms", "SEC Releases", "Staff interpret
         </a>
       ))
     }
+    <a class="card" href={href("rules/")}>
+      <strong>Rules and regulations</strong>
+      <span>Regulation S-K, Regulation S-X, and the 1933 and 1934 Act rules, including Rule 144 and Rule 10b-5.</span>
+      <em>17 C.F.R. Parts 210, 229, 230, 239, 240, 249</em>
+    </a>
+    <a class="card" href={href("forms/")}>
+      <strong>Forms</strong>
+      <span>What S-1, 10-K, 8-K, S-8, and the other core forms are for, and the rules that govern them.</span>
+      <em>S-1 · 10-K · 8-K · S-8</em>
+    </a>
     <a class="card" href={href("edgar/")}>
       <strong>EDGAR company search</strong>
       <span>Search by name or ticker. Open a snapshot of recent filings, or the live EDGAR index.</span>

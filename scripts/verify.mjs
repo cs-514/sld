@@ -123,6 +123,23 @@ if (existsSync(path.join(ROOT, "src/data/edgar/companies.json"))) {
   assert(false, "EDGAR snapshot missing");
 }
 
+const rules = load("src/data/rules/manifest.json");
+assert(/^\d{4}-\d{2}-\d{2}$/.test(rules.date), `rules date ${rules.date}`);
+const rule10b5 = load("src/data/rules/240.json").sections.find((section) => section.slug === "rule-10b-5");
+assert(rule10b5?.html?.includes('id="a"') && rule10b5.html.includes('id="b"') && rule10b5.html.includes('id="c"'), "10b-5 anchors");
+assert(rule10b5?.html?.includes("purchase or sale"), "10b-5 trailing clause");
+assert(rule10b5?.links?.ecfr.includes("240.10b-5") && rule10b5.links.govinfo.includes("sectionnum=10b-5"), "10b-5 official links");
+const rule144 = load("src/data/rules/230.json").sections.find((section) => section.slug === "rule-144");
+assert(rule144?.anchors.includes("a-1"), "rule 144 paragraph (a)(1)");
+const item402 = load("src/data/rules/229.json").sections.find((section) => section.slug === "item-402");
+assert(item402?.chunks?.some((chunk) => chunk.anchor === "a") && item402.chunks.some((chunk) => chunk.anchor === "w"), "item 402 split through (w)");
+const statuteLinks = load("src/data/rules/statute-links.json");
+assert(statuteLinks["34-act/section-10"]?.rules?.[0]?.path === "rules/17-cfr-240/rule-10b-5/", "§ 10 leads with Rule 10b-5");
+assert(statuteLinks["33-act/section-5"]?.rules?.some((item) => item.path === "rules/17-cfr-230/rule-144/"), "§ 5 links Rule 144");
+assert(statuteLinks["34-act/section-13"]?.forms?.some((item) => item.path === "forms/10-k/"), "§ 13 links Form 10-K");
+assert(statuteLinks["34-act/section-16"]?.forms?.some((item) => item.path === "forms/3/"), "§ 16 links Form 3");
+console.log(`rules: ${rules.parts.map((part) => `${part.part}=${part.sections}`).join(" ")}`);
+
 const dist = path.join(ROOT, "dist");
 if (existsSync(dist)) {
   const home = readFileSync(path.join(dist, "index.html"), "utf8");
@@ -142,6 +159,24 @@ if (existsSync(dist)) {
   assert(existsSync(path.join(dist, "pagefind/pagefind.js")), "pagefind bundle");
   assert(existsSync(path.join(dist, "edgar/aapl/index.html")), "AAPL page");
   assert(existsSync(path.join(dist, "34-act/section-10/index.html")), "Exchange Act § 10");
+  assert(section10.includes("Implementing rules and forms"), "§ 10 implementing heading");
+  assert(section10.includes("/sld/rules/17-cfr-240/rule-10b-5/"), "§ 10 links Rule 10b-5");
+  assert(!home.includes("C&amp;DI") && !home.includes("C&DI"), "home says CFIs, not C&DIs");
+  assert(home.includes("/sld/rules/") && home.includes("/sld/forms/"), "home links rules and forms");
+  const rulePage = readFileSync(path.join(dist, "rules/17-cfr-240/rule-10b-5/index.html"), "utf8");
+  assert(rulePage.includes('id="b"') && rulePage.includes("purchase or sale"), "built Rule 10b-5");
+  assert(rulePage.includes("ecfr.gov") && rulePage.includes("govinfo.gov"), "built Rule 10b-5 official links");
+  const rule144page = readFileSync(path.join(dist, "rules/17-cfr-230/rule-144/index.html"), "utf8");
+  assert(rule144page.includes('id="a-1"') || rule144page.includes('href="#a-1"'), "built Rule 144 (a)(1)");
+  const item402page = readFileSync(path.join(dist, "rules/17-cfr-229/item-402/index.html"), "utf8");
+  assert(item402page.includes("/sld/rules/17-cfr-229/item-402/a/"), "built Item 402 paragraph links");
+  const form8k = readFileSync(path.join(dist, "forms/8-k/index.html"), "utf8");
+  assert(form8k.includes(">1.05<") && form8k.includes("Material Cybersecurity Incidents"), "Form 8-K items");
+  assert(form8k.includes("sec.gov/files/form8-k.pdf"), "Form 8-K PDF");
+  const formS8 = readFileSync(path.join(dist, "forms/s-8/index.html"), "utf8");
+  assert(formS8.includes("How this position developed"), "Form S-8 note");
+  assert(formS8.includes("126.47") && formS8.includes("33-7646") && formS8.includes("cftelinterps_securitiesactforms.pdf"), "Form S-8 primary sources");
+  assert(formS8.includes("/sld/rules/17-cfr-230/rule-457/#h"), "Form S-8 links Rule 457(h)");
   const aapl = readFileSync(path.join(dist, "edgar/aapl/index.html"), "utf8");
   assert(aapl.includes("10-K"), "AAPL lists a 10-K");
   assert(aapl.includes("sec.gov/Archives/edgar/data/"), "AAPL document link");

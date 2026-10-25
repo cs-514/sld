@@ -10,6 +10,7 @@
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview --host 127.0.0.1 --port 4477",
     "data:statutes": "python3 scripts/build_statutes.py --download",
+    "data:rules": "python3 scripts/build_rules.py --download",
     "data:edgar": "node scripts/fetch_edgar.mjs",
     "verify": "node scripts/verify.mjs",
     "verify:links": "node scripts/verify.mjs --links"

@@ -375,7 +375,8 @@ def build_section(sec, order: int, subchapter: dict | None) -> dict:
         "textHtml": "",
         "notesHtml": "",
         "links": links_for(slug_usc),
-        # Empty on purpose. Step 2–4 append rules, forms, releases, and C&DIs.
+        # Empty on purpose. Rules and forms are merged from src/data/rules/statute-links.json.
+        # Later steps append releases and Corporation Finance Interpretations (CFIs).
         "crossLinks": {
             "rules": [],
             "forms": [],
