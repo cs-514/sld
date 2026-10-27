@@ -51,12 +51,19 @@ jobs:
       # Weekly (and manual) refresh. The SEC User-Agent lives only in
       # scripts/user-agent.mjs. This step rewrites the ticker list and the
       # filings snapshot; the later build and deploy publish that snapshot.
+      # Non-fatal: if the SEC refuses the fetch, the site still deploys with
+      # the last good snapshot. SEC_USER_AGENT (an Actions secret, "Name email")
+      # overrides the default in scripts/user-agent.mjs.
       - name: Refresh EDGAR snapshot
+        id: edgar
         if: github.event_name == 'schedule' || inputs.refresh_edgar
+        continue-on-error: true
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: node scripts/fetch_edgar.mjs
 
       - name: Commit refreshed snapshot
-        if: github.event_name == 'schedule' || inputs.refresh_edgar
+        if: steps.edgar.outcome == 'success'
         run: |
           git config user.name "Securities Law Deskbook data bot"
           git config user.email "securities-law-deskbook@example.com"
@@ -71,14 +78,18 @@ jobs:
       # Same Monday job. Six part files from the eCFR versioner, then the
       # parser rewrites src/data/rules. A push does not re-download the CFR.
       - name: Refresh CFR rules
+        id: rules
         if: github.event_name == 'schedule' || inputs.refresh_rules
+        continue-on-error: true
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
           python3 -m venv /tmp/ecfr
           /tmp/ecfr/bin/pip install lxml
           /tmp/ecfr/bin/python scripts/build_rules.py --download
 
       - name: Commit refreshed rules
-        if: github.event_name == 'schedule' || inputs.refresh_rules
+        if: steps.rules.outcome == 'success'
         run: |
           git config user.name "Securities Law Deskbook data bot"
           git config user.email "securities-law-deskbook@example.com"

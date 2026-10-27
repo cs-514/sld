@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import urllib.request
 from collections import defaultdict
@@ -145,8 +146,11 @@ FORM_LABELS = {
 
 
 def user_agent() -> str:
+    env = os.environ.get("SEC_USER_AGENT", "").strip()
+    if env:
+        return env
     text = (ROOT / "scripts" / "user-agent.mjs").read_text()
-    match = re.search(r'SEC_USER_AGENT = "([^"]+)"', text)
+    match = re.search(r'DEFAULT_UA = "([^"]+)"', text)
     if not match:
         raise SystemExit("Could not read SEC_USER_AGENT")
     return match.group(1)
