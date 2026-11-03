@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
+import { rewriteHtml, rewritePath } from "./desk";
 
 export interface RuleLink {
   path: string;
@@ -73,33 +74,44 @@ export interface TocBucket {
   sections: RulePage[];
 }
 
-const PARTS = ["210", "229", "230", "239", "240", "249"] as const;
-
 function readJson<T>(relative: string): T {
   const file = path.join(process.cwd(), "src/data/rules", relative);
   return JSON.parse(readFileSync(file, "utf8")) as T;
 }
 
 const cache = new Map<string, RulePartFile>();
+let manifestCache: RuleManifest | null = null;
 
 export function loadManifest(): RuleManifest {
-  return readJson<RuleManifest>("manifest.json");
+  if (!manifestCache) manifestCache = readJson<RuleManifest>("manifest.json");
+  return manifestCache;
+}
+
+function canon(file: RulePartFile): RulePartFile {
+  file.path = rewritePath(file.path);
+  for (const page of file.sections) {
+    page.path = rewritePath(page.path);
+    page.html = rewriteHtml(page.html || "");
+    page.notesHtml = rewriteHtml(page.notesHtml || "");
+    if (page.parent) page.parent = { ...page.parent, path: rewritePath(page.parent.path) };
+    page.chunks = (page.chunks || []).map((chunk) => ({ ...chunk, path: rewritePath(chunk.path) }));
+  }
+  return file;
 }
 
 export function loadPart(part: string): RulePartFile {
-  if (!cache.has(part)) cache.set(part, readJson<RulePartFile>(`${part}.json`));
+  if (!cache.has(part)) cache.set(part, canon(readJson<RulePartFile>(`${part}.json`)));
   return cache.get(part)!;
 }
 
 export function loadParts(): RulePartFile[] {
-  return PARTS.map((part) => loadPart(part));
+  return loadManifest().parts.map((part) => loadPart(part.part));
 }
 
 export function partNumber(param: string): string {
   const match = /^17-cfr-(\d+)$/.exec(param);
-  if (!match || !PARTS.includes(match[1] as (typeof PARTS)[number])) {
-    throw new Error(`Unknown CFR part ${param}`);
-  }
+  const known = new Set(loadManifest().parts.map((part) => part.part));
+  if (!match || !known.has(match[1])) throw new Error(`Unknown CFR part ${param}`);
   return match[1];
 }
 
@@ -116,12 +128,42 @@ export function findRule(partParam: string, slug: string): { file: RulePartFile;
 
 export function rulePaths(): { part: string; slug: string }[] {
   const paths: { part: string; slug: string }[] = [];
-  for (const part of PARTS) {
-    for (const page of loadPart(part).sections) {
-      paths.push({ part: `17-cfr-${part}`, slug: page.slug });
+  for (const part of loadManifest().parts) {
+    for (const page of loadPart(part.part).sections) {
+      paths.push({ part: `17-cfr-${part.part}`, slug: page.slug });
     }
   }
   return paths;
+}
+
+let ruleById: Map<string, RulePage> | null = null;
+
+function rulesById(): Map<string, RulePage> {
+  if (!ruleById) {
+    ruleById = new Map();
+    for (const part of loadManifest().parts) {
+      for (const page of loadPart(part.part).sections) {
+        if (!page.parent) ruleById.set(page.id, page);
+      }
+    }
+  }
+  return ruleById;
+}
+
+/** Canonical path for a rule, including a paragraph anchor or split-page path when it exists. */
+export function ruleTarget(id: string, anchor?: string): { path: string; label: string } | null {
+  const page = rulesById().get(id);
+  if (!page) return null;
+  if (!anchor) return { path: page.path, label: page.label };
+  const chunk = page.chunks.find(
+    (item) => item.anchor === anchor || item.anchors?.includes(anchor) || anchor.startsWith(`${item.anchor}-`),
+  );
+  if (chunk) {
+    const hash = chunk.anchor === anchor ? "" : `#${anchor}`;
+    return { path: `${chunk.path}${hash}`, label: `${page.label} (${anchor})` };
+  }
+  if (page.anchors?.includes(anchor)) return { path: `${page.path}#${anchor}`, label: `${page.label} (${anchor})` };
+  return { path: page.path, label: page.label };
 }
 
 export function neighbors(file: RulePartFile, page: RulePage): { prev: RuleLink | null; next: RuleLink | null } {

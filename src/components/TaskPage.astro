@@ -1,0 +1,60 @@
+---
+import Base from "../layouts/Base.astro";
+import Reading from "./Reading.astro";
+import { href } from "../lib/paths";
+import { halfName, resolveRef, taskPath, taskReading, type Task } from "../lib/tasks";
+
+interface Props {
+  task: Task;
+}
+
+const { task } = Astro.props;
+const description = task.orientation[0];
+---
+
+<Base
+  title={task.nav}
+  description={description}
+  half={task.half}
+  crumbs={[
+    { href: href(`${task.half}/`), label: halfName(task.half) },
+    { label: task.nav },
+  ]}
+>
+  <p class="kicker">{halfName(task.half)}</p>
+  <h1 data-pagefind-weight="200">{task.title}</h1>
+  {task.orientation.map((paragraph) => <p class="lede">{paragraph}</p>)}
+
+  <h2>Rules and forms</h2>
+  {
+    task.groups.map((group) => (
+      <section>
+        <h3 class="group-label">{group.heading}</h3>
+        <ul class="impl">
+          {group.refs.map((ref) => {
+            const link = resolveRef(ref);
+            const url = link.href || href(link.path || "");
+            const external = Boolean(link.href);
+            return (
+              <li>
+                <a href={url} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}>
+                  {link.label}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    ))
+  }
+
+  <section class="placeholder">
+    <h2>Releases</h2>
+    <p>Adopting and amending releases, with Federal Register pinpoints, coming in phase 3.</p>
+  </section>
+  <section class="placeholder">
+    <h2>Corporation Finance Interpretations</h2>
+    <p>CFIs on these rules and forms, coming in phase 4.</p>
+  </section>
+  <Reading links={taskReading(task)} />
+</Base>

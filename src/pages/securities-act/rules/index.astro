@@ -1,0 +1,32 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { halfForPart } from "../../../lib/desk";
+import { href } from "../../../lib/paths";
+import { loadManifest } from "../../../lib/rules";
+import { halfName } from "../../../lib/tasks";
+
+const parts = loadManifest().parts.filter((part) => halfForPart(part.part) === "securities-act");
+const description = "Securities Act rules and forms in 17 C.F.R., including Regulation D, Rule 144, and Regulation Crowdfunding.";
+---
+
+<Base
+  title="Securities Act rules"
+  description={description}
+  half="securities-act"
+  crumbs={[{ href: href("securities-act/"), label: "Securities Act" }, { label: "Rules" }]}
+>
+  <p class="kicker">{halfName("securities-act")}</p>
+  <h1>Rules</h1>
+  <p class="lede">The Securities Act rules, the Securities Act forms in Part 239, and Regulation Crowdfunding.</p>
+  <div class="cards">
+    {
+      parts.map((part) => (
+        <a class="card" href={href(`securities-act/rules/17-cfr-${part.part}/`)}>
+          <strong>Part {part.part}. {part.name}</strong>
+          <span>{part.blurb}</span>
+          <em>{part.sections} sections</em>
+        </a>
+      ))
+    }
+  </div>
+</Base>

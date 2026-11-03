@@ -1,16 +1,14 @@
 ---
-import ActIndex from "../../components/ActIndex.astro";
-import { loadAct } from "../../lib/statutes";
+import Redirect from "../../components/Redirect.astro";
 
 export function getStaticPaths() {
-  return ["33-act", "34-act", "tia"].map((act) => ({
-    params: { act },
-    props: { act },
-  }));
+  return [
+    { params: { act: "33-act" }, props: { to: "securities-act/" } },
+    { params: { act: "34-act" }, props: { to: "exchange-act/" } },
+  ];
 }
 
-const { act } = Astro.props;
-const file = loadAct(act);
+const { to } = Astro.props;
 ---
 
-<ActIndex file={file} />
+<Redirect to={to} />

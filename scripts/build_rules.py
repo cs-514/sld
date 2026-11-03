@@ -29,7 +29,7 @@ CACHE = ROOT / "data" / "cache" / "ecfr"
 OUT = ROOT / "src" / "data" / "rules"
 STATUTES = ROOT / "src" / "data" / "statutes"
 
-PARTS = ("210", "229", "230", "239", "240", "249")
+PARTS = ("210", "227", "229", "230", "232", "239", "240", "243", "244", "245", "249")
 PART_META = {
     "210": {
         "name": "Regulation S-X",
@@ -60,6 +60,31 @@ PART_META = {
         "name": "Exchange Act forms",
         "blurb": "Forms prescribed under the Exchange Act, including Forms 10-K, 10-Q, and 8-K.",
         "style": "form",
+    },
+    "227": {
+        "name": "Regulation Crowdfunding",
+        "blurb": "The exemption for crowdfunding offerings under Securities Act § 4(a)(6), including Rules 100 through 503.",
+        "style": "rule",
+    },
+    "232": {
+        "name": "Regulation S-T",
+        "blurb": "EDGAR filing rules: electronic submission, hours, and the formatting requirements that apply to almost every form.",
+        "style": "rule",
+    },
+    "243": {
+        "name": "Regulation FD",
+        "blurb": "Selective disclosure. Rule 100 is the operative duty. Form 8-K Item 7.01 is the usual way to make the public disclosure.",
+        "style": "rule",
+    },
+    "244": {
+        "name": "Regulation G",
+        "blurb": "Non-GAAP financial measures in public disclosures. Item 10(e) of Regulation S-K is the companion rule for filed documents.",
+        "style": "rule",
+    },
+    "245": {
+        "name": "Regulation BTR",
+        "blurb": "Blackout trading restriction. Directors and executive officers are barred from certain transactions during a 401(k) blackout. Form 8-K Item 5.04 is the notice.",
+        "style": "rule",
     },
 }
 
@@ -677,7 +702,7 @@ def flatten(parts: list[dict]) -> list[dict]:
 def load_statutes() -> dict:
     by_act = {}
     by_usc = {}
-    for act in ("33-act", "34-act", "tia"):
+    for act in ("33-act", "34-act"):
         data = json.loads((STATUTES / f"{act}.json").read_text())
         for section in data["sections"]:
             anchors = set(re.findall(r'id="([^"]+)"', section.get("textHtml") or ""))
@@ -700,7 +725,6 @@ def act_for_part(part: str) -> str | None:
 ACT_NAME = {
     "securities act": "33-act",
     "exchange act": "34-act",
-    "trust indenture act": "tia",
 }
 
 
@@ -785,7 +809,7 @@ def link_pages(pages: list[dict], statutes: dict, groups_by_part: dict) -> dict:
     act_re = re.compile(
         r"\bsections?\s+(\d+)([A-Z])?"
         r"(?:\(([A-Za-z0-9]+)\))?(?:\(([A-Za-z0-9]+)\))?(?:\(([A-Za-z0-9]+)\))?"
-        r"\s+of\s+the\s+(Securities Act|Exchange Act|Trust Indenture Act|Act)\b",
+        r"\s+of\s+the\s+(Securities Act|Exchange Act|Act)\b",
         re.I,
     )
 
@@ -971,9 +995,61 @@ def link_pages(pages: list[dict], statutes: dict, groups_by_part: dict) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--download", action="store_true")
+    parser.add_argument("--only", default="", help="Comma-separated parts to refresh without rewriting the others")
     args = parser.parse_args()
     ua = user_agent()
+    selected = tuple(part.strip() for part in args.only.split(",") if part.strip()) or PARTS
+    unknown = [part for part in selected if part not in PART_META]
+    if unknown:
+        raise SystemExit(f"Unknown part {unknown}")
     date_path = CACHE / "date.txt"
+    if args.only:
+        date = date_path.read_text().strip() if date_path.exists() and not args.download else issue_date(ua)
+        if args.download or not date_path.exists():
+            date_path.parent.mkdir(parents=True, exist_ok=True)
+            date_path.write_text(date)
+        for part in selected:
+            url = f"https://www.ecfr.gov/api/versioner/v1/full/{date}/title-17.xml?part={part}"
+            dest = CACHE / f"part-{part}.xml"
+            print(f"download {part}")
+            fetch(url, dest, ua)
+        parsed = []
+        for part in selected:
+            print(f"parse {part}")
+            parsed.append(parse_part(part, CACHE / f"part-{part}.xml"))
+        pages = flatten(parsed)
+        by_part = defaultdict(list)
+        for page in pages:
+            page.pop("bytes", None)
+            by_part[page["part"]].append(page)
+        manifest_path = OUT / "manifest.json"
+        manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {"date": date, "source": "eCFR versioner full XML, title 17", "parts": []}
+        by_name = {item["part"]: item for item in manifest["parts"]}
+        for part in parsed:
+            for section in part["sections"]:
+                section.pop("bytes", None)
+                for chunk in section["chunks"]:
+                    chunk.pop("html", None)
+                    chunk.pop("bytes", None)
+            payload = {
+                "part": part["part"],
+                "name": part["name"],
+                "blurb": part["blurb"],
+                "heading": part["heading"],
+                "path": part["path"],
+                "date": date,
+                "source": f"https://www.ecfr.gov/api/versioner/v1/full/{date}/title-17.xml?part={part['part']}",
+                "groups": part["groups"],
+                "sections": by_part[part["part"]],
+            }
+            dest = OUT / f"{part['part']}.json"
+            dest.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
+            count = len([page for page in by_part[part["part"]] if not page.get("parent")])
+            by_name[part["part"]] = {"part": part["part"], "name": part["name"], "blurb": part["blurb"], "path": part["path"], "sections": count}
+            print(f"wrote {dest.name} sections {count} bytes {dest.stat().st_size}")
+        manifest["parts"] = [by_name[part] for part in PARTS if part in by_name]
+        manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
+        return
     if args.download or not date_path.exists():
         date = issue_date(ua)
         date_path.parent.mkdir(parents=True, exist_ok=True)

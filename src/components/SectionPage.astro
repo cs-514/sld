@@ -1,7 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
+import { halfForStatute } from "../lib/desk";
 import { href } from "../lib/paths";
 import { addedLabel, citation, type ActFile, type Section } from "../lib/statutes";
+import { taskForSection, taskPath } from "../lib/tasks";
 
 interface Props {
   file: ActFile;
@@ -29,23 +31,23 @@ const notesHtml = withBase(
 const description = section.actSection
   ? `${act.shortName} ${section.label}, ${section.uscCite}. ${section.heading}`
   : `${section.uscCite}. ${section.heading}`;
+const half = halfForStatute(act.id);
+const task = taskForSection(act.id, section.slug);
+const crumbs = [
+  { href: href(act.path), label: act.titleName },
+  ...(task ? [{ href: href(taskPath(task)), label: task.nav }] : []),
+  { label: section.label },
+];
 const kicker = [
   act.shortName,
-  section.actTitle && act.id !== "tia" ? `Title ${section.actTitle}` : "",
+  section.actTitle ? `Title ${section.actTitle}` : "",
   section.subchapter?.heading || "",
 ]
   .filter(Boolean)
   .join(" · ");
 ---
 
-<Base
-  title={`${section.label}. ${section.heading}`}
-  description={description}
-  crumbs={[
-    { href: href(act.path), label: act.titleName },
-    { label: section.label },
-  ]}
->
+<Base title={`${section.label}. ${section.heading}`} description={description} half={half} crumbs={crumbs}>
   <p class="kicker">{kicker}</p>
   <h1 data-pagefind-weight="10">{section.label}</h1>
   {section.heading && <p class="stat-heading" data-pagefind-weight="7">{section.heading}</p>}

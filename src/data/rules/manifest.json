@@ -10,6 +10,13 @@
       "sections": 118
     },
     {
+      "part": "227",
+      "name": "Regulation Crowdfunding",
+      "blurb": "The exemption for crowdfunding offerings under Securities Act \u00a7 4(a)(6), including Rules 100 through 503.",
+      "path": "rules/17-cfr-227/",
+      "sections": 22
+    },
+    {
       "part": "229",
       "name": "Regulation S-K",
       "blurb": "Non-financial disclosure. Sections are Items (Item 101, Item 303, Item 402).",
@@ -24,6 +31,13 @@
       "sections": 214
     },
     {
+      "part": "232",
+      "name": "Regulation S-T",
+      "blurb": "EDGAR filing rules: electronic submission, hours, and the formatting requirements that apply to almost every form.",
+      "path": "rules/17-cfr-232/",
+      "sections": 36
+    },
+    {
       "part": "239",
       "name": "Securities Act forms",
       "blurb": "Forms prescribed under the Securities Act. The form pages under Forms restate what each form is for and link here for the Code section.",
@@ -36,6 +50,27 @@
       "blurb": "General rules under the Securities Exchange Act of 1934, including Rule 10b-5, Regulation 14A, and Regulation 13D-G.",
       "path": "rules/17-cfr-240/",
       "sections": 594
+    },
+    {
+      "part": "243",
+      "name": "Regulation FD",
+      "blurb": "Selective disclosure. Rule 100 is the operative duty. Form 8-K Item 7.01 is the usual way to make the public disclosure.",
+      "path": "rules/17-cfr-243/",
+      "sections": 4
+    },
+    {
+      "part": "244",
+      "name": "Regulation G",
+      "blurb": "Non-GAAP financial measures in public disclosures. Item 10(e) of Regulation S-K is the companion rule for filed documents.",
+      "path": "rules/17-cfr-244/",
+      "sections": 3
+    },
+    {
+      "part": "245",
+      "name": "Regulation BTR",
+      "blurb": "Blackout trading restriction. Directors and executive officers are barred from certain transactions during a 401(k) blackout. Form 8-K Item 5.04 is the notice.",
+      "path": "rules/17-cfr-245/",
+      "sections": 5
     },
     {
       "part": "249",

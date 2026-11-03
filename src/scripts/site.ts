@@ -53,6 +53,21 @@ function safeExcerpt(input: string): string {
   return escaped.replace(/&lt;(\/)?mark&gt;/g, "<$1mark>");
 }
 
+function isTaskPage(url: string): boolean {
+  const path = url.replace(/\/+$/, "");
+  return /\/(?:securities-act|exchange-act)\/(?!section-|schedule-|usc-|rules$|statute$)[^/]+$/.test(path);
+}
+
+function taskBoost(url: string, title: string, query: string): number {
+  if (!isTaskPage(url)) return 0;
+  const q = query.toLowerCase().trim();
+  const text = title.toLowerCase();
+  if (!q || !text.includes(q)) return 1;
+  const escaped = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const exact = new RegExp(`(?:^|[^a-z0-9])${escaped}(?:[^a-z0-9]|$)`, "i");
+  return exact.test(text) ? 3 : 2;
+}
+
 function resultUrl(url: string): string {
   let path = url;
   try {
@@ -172,11 +187,15 @@ function initSiteSearch(): void {
     if (pagefind) {
       const found = await pagefind.search(query);
       if (current !== token) return;
-      const slice = found.results.slice(0, 6);
-      const pages = await Promise.all(slice.map((result) => result.data()));
-      for (const page of pages) {
-        const url = resultUrl(page.url);
-        if (url.includes("/edgar/cik/")) continue;
+      const pages = await Promise.all(found.results.slice(0, 24).map((result) => result.data()));
+      const ranked = pages
+        .map((page) => ({ page, url: resultUrl(page.url) }))
+        .filter((item) => !item.url.includes("/edgar/cik/"))
+        .sort(
+          (a, b) =>
+            taskBoost(b.url, b.page.meta?.title || "", query) - taskBoost(a.url, a.page.meta?.title || "", query),
+        );
+      for (const { page, url } of ranked.slice(0, 6)) {
         if (hits.some((hit) => hit.href === url)) continue;
         hits.push({
           href: url,
@@ -187,6 +206,7 @@ function initSiteSearch(): void {
         });
       }
     }
+    hits.sort((a, b) => Number(isTaskPage(b.href)) - Number(isTaskPage(a.href)));
     renderResults(
       box,
       hits,

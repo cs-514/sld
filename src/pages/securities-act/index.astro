@@ -1,0 +1,36 @@
+---
+import Base from "../../layouts/Base.astro";
+import { halfById } from "../../lib/desk";
+import { href } from "../../lib/paths";
+import { loadAct } from "../../lib/statutes";
+import { taskPath, tasksFor } from "../../lib/tasks";
+
+const half = halfById("securities-act");
+const tasks = tasksFor(half.id);
+const act = loadAct(half.statuteId);
+const description = half.blurb;
+---
+
+<Base title={half.label} description={description} half={half.id} crumbs={[{ label: half.label }]}>
+  <p class="kicker">Offerings</p>
+  <h1>{half.label}</h1>
+  <p class="lede">{half.blurb}</p>
+  <ul class="task-list">
+    {
+      tasks.map((task) => (
+        <li>
+          <a href={href(taskPath(task))}>
+            <strong>{task.nav}</strong>
+            <span>{task.orientation[0]}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="link-row">
+    <a href={href("securities-act/statute/")}>Statute ({act.sections.length} sections)</a>
+    <a href={href("securities-act/rules/")}>Rules</a>
+    <a href={href("forms/")}>Forms</a>
+    <a href={href("edgar/")}>EDGAR</a>
+  </p>
+</Base>

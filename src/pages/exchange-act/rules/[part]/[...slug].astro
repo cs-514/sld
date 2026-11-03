@@ -1,0 +1,25 @@
+---
+import RulePage from "../../../../components/RulePage.astro";
+import { halfForPart } from "../../../../lib/desk";
+import { findRule, loadManifest, loadPart } from "../../../../lib/rules";
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const part of loadManifest().parts) {
+    if (halfForPart(part.part) !== "exchange-act") continue;
+    for (const page of loadPart(part.part).sections) {
+      paths.push({
+        params: { part: `17-cfr-${part.part}`, slug: page.slug },
+        props: { part: `17-cfr-${part.part}`, slug: page.slug },
+      });
+    }
+  }
+  return paths;
+}
+
+const slug = Array.isArray(Astro.params.slug) ? Astro.params.slug.join("/") : Astro.props.slug;
+const found = findRule(Astro.props.part, slug);
+if (!found) throw new Error(`Missing rule ${Astro.props.part}/${slug}`);
+---
+
+<RulePage file={found.file} page={found.page} />

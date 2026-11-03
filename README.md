@@ -1,6 +1,6 @@
 # Securities Law Deskbook
 
-A static research desk for U.S. capital-markets lawyers. It carries the statute hierarchy for the Securities Act of 1933, the Securities Exchange Act of 1934, and the Trust Indenture Act; the text of 17 C.F.R. Parts 210, 229, 230, 239, 240, and 249; short guides to the core forms; and an EDGAR issuer search.
+A static research desk for public-company and capital-markets lawyers. The Securities Act half covers offerings. The Exchange Act half covers reporting, proxies, insiders, and deals. Under those tasks sit the statute text, the related 17 C.F.R. rules, short form guides, and an EDGAR issuer search. Foreign private issuers are included throughout.
 
 The site is built to be published at [https://cs-514.github.io/sld/](https://cs-514.github.io/sld/). Every link, asset, and search index is prefixed with `/sld/`. The name in the header is `SITE_NAME` in `src/lib/site.ts`.
 
@@ -23,29 +23,21 @@ Stable section permalinks:
 
 | What | Path |
 | --- | --- |
-| Securities Act | `/33-act/` |
-| Securities Act § 5 | `/33-act/section-5/` |
-| Securities Act § 5(b) | `/33-act/section-5/#b` |
-| Securities Act § 4A | `/33-act/section-4a/` |
-| Schedules A and B | `/33-act/schedule-a/` |
-| Securities Act Title II § 201 | `/33-act/section-201/` |
-| Exchange Act § 10 | `/34-act/section-10/` |
-| Exchange Act § 10(b) | `/34-act/section-10/#b` |
-| Exchange Act § 10A | `/34-act/section-10a/` |
-| A chapter 2B provision that is not an Act section | `/34-act/usc-78d-6/` |
-| Trust Indenture Act § 304 | `/tia/section-304/` |
-| Issuer | `/edgar/aapl/` |
-| Issuer by CIK | `/edgar/cik/0000320193/` |
-| Rules | `/rules/` |
-| Rule 10b-5 | `/rules/17-cfr-240/rule-10b-5/` |
-| Rule 10b-5(b) | `/rules/17-cfr-240/rule-10b-5/#b` |
-| Rule 144 | `/rules/17-cfr-230/rule-144/` |
-| Regulation S-K Item 402 | `/rules/17-cfr-229/item-402/` |
-| Item 402(a) | `/rules/17-cfr-229/item-402/a/` |
-| Regulation S-X | `/rules/17-cfr-210/` |
+| Securities Act | `/securities-act/` |
+| Registered offerings | `/securities-act/registered-offerings/` |
+| Securities Act § 5 | `/securities-act/section-5/` |
+| Securities Act § 5(b) | `/securities-act/section-5/#b` |
+| Exchange Act | `/exchange-act/` |
+| Current reporting | `/exchange-act/current-reporting/` |
+| Exchange Act § 10(b) | `/exchange-act/section-10/#b` |
+| Rule 10b-5 | `/exchange-act/rules/17-cfr-240/rule-10b-5/` |
+| Rule 144 | `/securities-act/rules/17-cfr-230/rule-144/` |
+| Regulation S-K Item 402 | `/exchange-act/rules/17-cfr-229/item-402/` |
 | Forms | `/forms/` |
-| Form 10-K | `/forms/10-k/` |
-| Form S-8 | `/forms/s-8/` |
+| Form 8-K | `/forms/8-k/` |
+| Issuer | `/edgar/aapl/` |
+
+The old paths `/33-act/…`, `/34-act/…`, and `/rules/…` redirect to these.
 
 On GitHub Pages those paths are under `https://cs-514.github.io/sld`.
 
@@ -65,10 +57,9 @@ Still reserved. Section records keep `crossLinks` arrays for `releases`, `interp
 
 - `src/data/statutes/33-act.json`
 - `src/data/statutes/34-act.json`
-- `src/data/statutes/tia.json`
 - `src/data/statutes/provenance.json` (release point and SHA-256)
 
-Act section numbers are the first `ch. 38` or `ch. 404` citation in the OLRC source credit. That is the crosswalk lawyers use. A later citation in the same credit is an amendment, not a second section number. The script checks a fixed set of mappings (Securities Act §§ 4, 4A, 5, 11; Exchange Act §§ 10, 10A, 10D, 15D, 30A; Trust Indenture Act § 301) and exits if they drift.
+Act section numbers are the first `ch. 38` or `ch. 404` citation in the OLRC source credit. That is the crosswalk lawyers use. A later citation in the same credit is an amendment, not a second section number. The script checks a fixed set of mappings (Securities Act §§ 4, 4A, 5, 11; Exchange Act §§ 10, 10A, 10D, 15D, 30A) and exits if they drift. Title III of the 1933 Act chapter is classified and not published.
 
 ```bash
 python3 -m pip install lxml
@@ -79,14 +70,14 @@ The generated JSON is committed, so a normal site build does not need Python.
 
 ### Rules
 
-`scripts/build_rules.py` reads the eCFR versioner full XML for 17 C.F.R. Parts 210, 229, 230, 239, 240, and 249 and writes `src/data/rules/`. Paragraphs are anchored (`#a`, `#a-1`, `#b-2-i`). A Regulation S-K or S-X item over 80 KB, and any other section over 140 KB, is split at the top-level paragraph. Cites to other rules and to Act sections become links. The script also writes `statute-links.json`, which the statute pages merge in as “Implementing rules and forms.”
+`scripts/build_rules.py` reads the eCFR versioner full XML for 17 C.F.R. Parts 210, 227, 229, 230, 232, 239, 240, 243, 244, 245, and 249 and writes `src/data/rules/`. Paragraphs are anchored (`#a`, `#a-1`, `#b-2-i`). A Regulation S-K or S-X item over 80 KB, and any other section over 140 KB, is split at the top-level paragraph. Cites to other rules and to Act sections become links. The script also writes `statute-links.json`, which the statute pages merge in as “Implementing rules and forms.”
 
 ```bash
 python3 -m pip install lxml
 npm run data:rules
 ```
 
-`python3 scripts/build_rules.py` without `--download` rebuilds from `data/cache/ecfr/` (gitignored). The Monday workflow refreshes the six parts and commits the JSON. A normal push does not.
+`python3 scripts/build_rules.py` without `--download` rebuilds from `data/cache/ecfr/` (gitignored). The Monday workflow refreshes those parts and commits the JSON. `--only 243,244` refreshes a subset. A normal push does not.
 
 ### EDGAR
 

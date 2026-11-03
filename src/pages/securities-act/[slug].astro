@@ -1,0 +1,33 @@
+---
+import SectionPage from "../../components/SectionPage.astro";
+import TaskPage from "../../components/TaskPage.astro";
+import { findTask, tasksFor } from "../../lib/tasks";
+import { findSection, loadAct } from "../../lib/statutes";
+
+export function getStaticPaths() {
+  const tasks = tasksFor("securities-act").map((task) => ({
+    params: { slug: task.slug },
+    props: { kind: "task" as const, slug: task.slug },
+  }));
+  const sections = loadAct("33-act").sections.map((section) => ({
+    params: { slug: section.slug },
+    props: { kind: "section" as const, slug: section.slug },
+  }));
+  const slugs = new Set<string>();
+  for (const entry of [...tasks, ...sections]) {
+    if (slugs.has(entry.params.slug)) throw new Error(`Duplicate securities-act slug ${entry.params.slug}`);
+    slugs.add(entry.params.slug);
+  }
+  return [...tasks, ...sections];
+}
+
+const { kind, slug } = Astro.props;
+const task = kind === "task" ? findTask("securities-act", slug) : undefined;
+const file = kind === "section" ? loadAct("33-act") : undefined;
+const section = kind === "section" ? findSection("33-act", slug) : undefined;
+if (kind === "task" && !task) throw new Error(`Missing task ${slug}`);
+if (kind === "section" && (!file || !section)) throw new Error(`Missing section ${slug}`);
+---
+
+{task && <TaskPage task={task} />}
+{file && section && <SectionPage file={file} section={section} />}

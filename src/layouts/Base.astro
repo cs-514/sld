@@ -16,9 +16,10 @@ interface Props {
   canonicalPath?: string;
   noindex?: boolean;
   hideHeaderSearch?: boolean;
+  half?: "securities-act" | "exchange-act";
 }
 
-const { title, description, crumbs = [], canonicalPath, noindex = false, hideHeaderSearch = false } = Astro.props;
+const { title, description, crumbs = [], canonicalPath, noindex = false, hideHeaderSearch = false, half } = Astro.props;
 const canonical = new URL(canonicalPath ? href(canonicalPath) : Astro.url.pathname, Astro.site);
 const path = Astro.url.pathname.endsWith("/") ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const current = (prefix: string) => {
@@ -30,15 +31,15 @@ const current = (prefix: string) => {
 const onHome = current("");
 const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
 const markLines = SITE_NAME.split(/ (?=[^ ]+$)/);
-const nav = [
-  ["", "Home", "Home"],
-  ["33-act/", "Securities Act", "1933"],
-  ["34-act/", "Exchange Act", "1934"],
-  ["tia/", "Trust Indenture Act", "TIA"],
-  ["rules/", "Rules", "Rules"],
-  ["forms/", "Forms", "Forms"],
-  ["edgar/", "EDGAR", "EDGAR"],
+const tabs = [
+  ["securities-act/", "Securities Act", "1933"],
+  ["exchange-act/", "Exchange Act", "1934"],
 ];
+const tabOn = (prefix: string) => {
+  const id = prefix.replace(/\/$/, "");
+  if (half) return half === id;
+  return current(prefix);
+};
 ---
 
 <!doctype html>
@@ -81,15 +82,16 @@ const nav = [
             {markLines.map((line) => <span class="mark-line">{line}</span>)}
           </span>
         </a>
-        <nav class="primary-nav" aria-label="Primary">
+        <nav class="act-tabs" aria-label="Acts">
           {
-            nav.map(([to, label, short]) => (
-              <a href={href(to)} aria-current={current(to) ? "page" : undefined}>
+            tabs.map(([to, label, short]) => (
+              <a href={href(to)} aria-current={tabOn(to) ? "page" : undefined}>
                 <span class="nav-full">{label}</span>
                 <span class="nav-short">{short}</span>
               </a>
             ))
           }
+          <a class="edgar-tab" href={href("edgar/")} aria-current={current("edgar/") ? "page" : undefined}>EDGAR</a>
         </nav>
         {!hideHeaderSearch && <SearchForm />}
         <button type="button" id="theme" class="theme">Dark</button>
@@ -119,14 +121,15 @@ const nav = [
         <span><a href={href("sources/")}>Sources and currency</a></span>
       </div>
     </footer>
-    <nav class="bottom-nav" aria-label="Primary" data-pagefind-ignore>
+    <nav class="bottom-nav" aria-label="Acts" data-pagefind-ignore>
       {
-        nav.map(([to, , short]) => (
-          <a href={href(to)} aria-current={current(to) ? "page" : undefined}>
+        tabs.map(([to, , short]) => (
+          <a href={href(to)} aria-current={tabOn(to) ? "page" : undefined}>
             {short}
           </a>
         ))
       }
+      <a href={href("edgar/")} aria-current={current("edgar/") ? "page" : undefined}>EDGAR</a>
     </nav>
     <script>
       import "../scripts/site.ts";

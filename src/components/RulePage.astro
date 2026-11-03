@@ -1,9 +1,11 @@
 ---
 import Base from "../layouts/Base.astro";
 import Reading from "./Reading.astro";
+import { halfForPart } from "../lib/desk";
 import { href } from "../lib/paths";
 import { readingForRule } from "../lib/reading";
 import { longDate, neighbors, type RulePage, type RulePartFile } from "../lib/rules";
+import { halfName, taskForRule, taskPath } from "../lib/tasks";
 
 interface Props {
   file: RulePartFile;
@@ -16,16 +18,19 @@ const withBase = (fragment: string) =>
   fragment ? fragment.replaceAll('href="/', `href="${import.meta.env.BASE_URL}`) : "";
 const copyCite = page.parent ? `${page.cite} ${page.label.slice(page.label.lastIndexOf("("))}` : page.cite;
 const currentLabel = page.parent ? page.label.replace(page.parent.label, "").trim() : page.label;
+const half = halfForPart(page.part);
+const task = taskForRule(page.id);
 const kicker = [file.name, page.group?.heading || page.subpart?.heading || ""].filter(Boolean).join(" · ");
 const description = `${page.label}. ${page.heading}. ${page.cite}`;
 const crumbs = [
-  { href: href("rules/"), label: "Rules" },
+  { href: href(`${half}/`), label: halfName(half) },
+  ...(task ? [{ href: href(taskPath(task)), label: task.nav }] : [{ href: href(`${half}/rules/`), label: "Rules" }]),
   { href: href(file.path), label: file.name },
 ];
 if (page.parent) crumbs.push({ href: href(page.parent.path), label: page.parent.label });
 ---
 
-<Base title={`${page.label}. ${page.heading}`} description={description} crumbs={[...crumbs, { label: currentLabel }]}>
+<Base title={`${page.label}. ${page.heading}`} description={description} half={half} crumbs={[...crumbs, { label: currentLabel }]}>
   <p class="kicker">{kicker}</p>
   <h1 data-pagefind-weight="10">{page.label}</h1>
   {page.heading && <p class="stat-heading" data-pagefind-weight="7">{page.heading}</p>}

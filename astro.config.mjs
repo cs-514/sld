@@ -15,7 +15,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       // CIK pages repeat the ticker pages. Tickers are the ones we list.
-      filter: (page) => !page.includes("/edgar/cik/"),
+      filter: (page) => !page.includes("/edgar/cik/") && !/\/sld\/(?:33-act|34-act|rules|tia)\//.test(page),
     }),
   ],
 });

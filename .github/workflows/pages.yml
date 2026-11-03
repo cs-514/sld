@@ -19,7 +19,7 @@ on:
         type: boolean
         default: false
       refresh_rules:
-        description: Refresh 17 C.F.R. Parts 210, 229, 230, 239, 240, and 249 before deploying
+        description: Refresh the 17 C.F.R. parts before deploying
         type: boolean
         default: false
 
@@ -75,8 +75,8 @@ jobs:
             git push || echo "Could not push the snapshot. The deploy still uses the files just fetched. Grant this workflow contents: write."
           fi
 
-      # Same Monday job. Six part files from the eCFR versioner, then the
-      # parser rewrites src/data/rules. A push does not re-download the CFR.
+      # Same Monday job. The eCFR versioner parts in scripts/build_rules.py,
+      # then the parser rewrites src/data/rules. A push does not re-download the CFR.
       - name: Refresh CFR rules
         id: rules
         if: github.event_name == 'schedule' || inputs.refresh_rules

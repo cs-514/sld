@@ -1,0 +1,31 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { halfForPart } from "../../../lib/desk";
+import { href } from "../../../lib/paths";
+import { loadManifest } from "../../../lib/rules";
+
+const parts = loadManifest().parts.filter((part) => halfForPart(part.part) === "exchange-act");
+const description = "Exchange Act rules, Regulation S-K, Regulation S-X, and the Exchange Act forms.";
+---
+
+<Base
+  title="Exchange Act rules"
+  description={description}
+  half="exchange-act"
+  crumbs={[{ href: href("exchange-act/"), label: "Exchange Act" }, { label: "Rules" }]}
+>
+  <p class="kicker">Exchange Act</p>
+  <h1>Rules</h1>
+  <p class="lede">Regulation S-K, Regulation S-X, the Exchange Act rules and forms, and Regulation FD, Regulation G, and Regulation S-T when those parts are in the corpus.</p>
+  <div class="cards">
+    {
+      parts.map((part) => (
+        <a class="card" href={href(`exchange-act/rules/17-cfr-${part.part}/`)}>
+          <strong>Part {part.part}. {part.name}</strong>
+          <span>{part.blurb}</span>
+          <em>{part.sections} sections</em>
+        </a>
+      ))
+    }
+  </div>
+</Base>

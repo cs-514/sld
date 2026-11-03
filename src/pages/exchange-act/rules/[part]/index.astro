@@ -1,0 +1,15 @@
+---
+import PartToc from "../../../../components/PartToc.astro";
+import { halfForPart } from "../../../../lib/desk";
+import { loadManifest, loadPart, partNumber } from "../../../../lib/rules";
+
+export function getStaticPaths() {
+  return loadManifest()
+    .parts.filter((part) => halfForPart(part.part) === "exchange-act")
+    .map((part) => ({ params: { part: `17-cfr-${part.part}` }, props: { part: part.part } }));
+}
+
+const file = loadPart(partNumber(`17-cfr-${Astro.props.part}`));
+---
+
+<PartToc file={file} />

@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
+import { halfForStatute, rewriteHtml, rewritePath } from "./desk";
 
 export interface OutlineNode {
   num: string;
@@ -92,7 +93,7 @@ export interface Provenance {
   counts: Record<string, number>;
 }
 
-const ACTS = ["33-act", "34-act", "tia"] as const;
+const ACTS = ["33-act", "34-act"] as const;
 export type ActId = (typeof ACTS)[number];
 
 function readJson<T>(relative: string): T {
@@ -120,15 +121,27 @@ export function loadAct(id: string): ActFile {
   if (!cache.has(id)) {
     const file = readJson<ActFile>(`${id}.json`);
     const links = statuteLinks();
+    const half = halfForStatute(file.act.id);
+    file.act.path = `${half}/`;
+    if (file.act.id === "33-act") {
+      file.act.scope =
+        "Title I (domestic securities) and Title II (Corporation of Foreign Security Holders). Foreign private issuers are covered with the domestic provisions.";
+    }
     for (const section of file.sections) {
       const key = section.path.replace(/^\/+|\/+$/g, "");
       const extra = links[key];
-      if (!extra) continue;
-      section.crossLinks = {
-        ...section.crossLinks,
-        rules: extra.rules || [],
-        forms: extra.forms || [],
-      };
+      if (extra) {
+        section.crossLinks = {
+          ...section.crossLinks,
+          rules: (extra.rules || []).map((item) => ({ ...item, path: rewritePath(item.path) })),
+          forms: (extra.forms || []).map((item) => ({ ...item, path: rewritePath(item.path) })),
+        };
+      }
+      section.path = rewritePath(section.path);
+      section.textHtml = rewriteHtml(section.textHtml || "");
+      section.notesHtml = rewriteHtml(section.notesHtml || "");
+      if (section.prev) section.prev = { ...section.prev, path: rewritePath(section.prev.path) };
+      if (section.next) section.next = { ...section.next, path: rewritePath(section.next.path) };
     }
     cache.set(id, file);
   }

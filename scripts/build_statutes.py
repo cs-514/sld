@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Securities Act / Exchange Act / Trust Indenture Act index
+"""Build the Securities Act and Exchange Act index.
 from the Office of the Law Revision Counsel USLM XML for Title 15.
 
 The XML is the current House download (release point encoded in the file).
@@ -418,7 +418,7 @@ ACT_META = {
         "chapter": "2A",
         "sessionCite": "ch. 38, 48 Stat. 74",
         "enacted": "1933-05-27",
-        "scope": "Title I (domestic securities) and Title II (Corporation of Foreign Security Holders). Title III is the Trust Indenture Act and is indexed separately.",
+        "scope": "Title I (domestic securities) and Title II (Corporation of Foreign Security Holders). Foreign private issuers are covered with the domestic provisions.",
     },
     "34-act": {
         "id": "34-act",
@@ -555,6 +555,9 @@ def main() -> None:
     (OUT_DIR / "provenance.json").write_text(json.dumps(provenance, indent=2, ensure_ascii=False) + "\n")
 
     for act_id, sections in buckets.items():
+        # Title III is classified so it is not filed as a Securities Act section. It is not published.
+        if act_id == "tia":
+            continue
         # Restore Code order for the file the site renders (prev/next follow this order).
         sections.sort(key=lambda s: s["order"])
         payload = {

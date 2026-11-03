@@ -17,7 +17,12 @@ const actSections = sections.filter((section) => section.actSection || section.s
 const description = `${act.shortName}: Act section, U.S.C. cite, and official text. ${act.scope}`;
 ---
 
-<Base title={act.shortName} description={description} crumbs={[{ label: act.titleName }]}>
+<Base
+  title={act.shortName}
+  description={description}
+  half={act.id === "34-act" ? "exchange-act" : "securities-act"}
+  crumbs={[{ href: href(act.path), label: act.titleName }, { label: "Statute" }]}
+>
   <p class="kicker">15 U.S.C. chapter {act.chapter}</p>
   <h1>{act.shortName}</h1>
   <p class="lede">{act.scope}</p>
@@ -45,7 +50,7 @@ const description = `${act.shortName}: Act section, U.S.C. cite, and official te
       {
         groups.titleI.length > 0 && (
           <section data-filter-group>
-            <h2 class="group-label">{act.id === "tia" ? "Act sections" : "Title I"}</h2>
+            <h2 class="group-label">Title I</h2>
             <SectionRows sections={groups.titleI} />
           </section>
         )

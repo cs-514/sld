@@ -1,0 +1,28 @@
+---
+import { href } from "../lib/paths";
+
+interface Props {
+  to: string;
+}
+
+const dest = href(Astro.props.to);
+const canonical = new URL(dest, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta data-pagefind-ignore="all" />
+    <link rel="canonical" href={canonical.href} />
+    <meta http-equiv="refresh" content={`0;url=${dest}`} />
+    <title>Moved · Securities Law Deskbook</title>
+    <script is:inline define:vars={{ dest }}>
+      location.replace(dest + location.hash);
+    </script>
+  </head>
+  <body>
+    <p><a href={dest}>This page has moved.</a></p>
+  </body>
+</html>

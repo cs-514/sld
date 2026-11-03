@@ -1,0 +1,8 @@
+---
+import ActIndex from "../../../components/ActIndex.astro";
+import { loadAct } from "../../../lib/statutes";
+
+const file = loadAct("33-act");
+---
+
+<ActIndex file={file} />

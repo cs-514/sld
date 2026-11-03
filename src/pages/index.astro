@@ -1,90 +1,56 @@
 ---
 import Base from "../layouts/Base.astro";
 import SearchForm from "../components/SearchForm.astro";
+import { HALVES } from "../lib/desk";
 import { href } from "../lib/paths";
 import { SITE_NAME } from "../lib/site";
-import { findSection, loadActs, loadProvenance, PINS } from "../lib/statutes";
+import { taskPath, tasksFor } from "../lib/tasks";
 
-const acts = loadActs();
-const provenance = loadProvenance();
-const pins = PINS.map((pin) => {
-  const file = acts.find((item) => item.act.id === pin.act);
-  const section = file && findSection(pin.act, pin.slug);
-  return { pin, file, section };
-}).filter((item) => item.section && item.file);
 const description =
-  "Read the Securities Act, the Exchange Act, the Trust Indenture Act, the core SEC rules and forms, and look up a company’s recent EDGAR filings.";
-const soon = ["SEC releases", "Corporation Finance Interpretations (CFIs)"];
+  "A desk for public-company and capital-markets work. Securities Act offerings on one side, Exchange Act reporting on the other, plus EDGAR.";
+const columns = HALVES.map((half) => ({
+  half,
+  tasks: tasksFor(half.id).map((task) => ({
+    task,
+    hint: task.title.match(/\(([^)]+)\)/)?.[1] || task.nav,
+  })),
+}));
 ---
 
 <Base title="Home" description={description} hideHeaderSearch>
-  <p class="kicker">Statutes · Rules · Forms · EDGAR</p>
+  <p class="kicker">Public companies · Capital markets</p>
   <h1>{SITE_NAME}</h1>
   <p class="lede">
-    Read a section of the Securities Act, the Exchange Act, or the Trust Indenture Act, open a rule or a form, or look up a company’s EDGAR filings.
+    Two halves. The Securities Act covers how securities are offered, exempted, and resold. The Exchange Act covers how a public company reports, solicits proxies, and runs its disclosure. Foreign private issuers are in both.
   </p>
   <SearchForm prominent />
 
-  <div class="cards">
+  <div class="halves">
     {
-      acts.map((file) => (
-        <a class="card" href={href(file.act.path)}>
-          <strong>{file.act.shortName}</strong>
-          <span>{file.act.scope}</span>
-          <em>
-            {file.sections.length} sections · 15 U.S.C. ch. {file.act.chapter}
-          </em>
-        </a>
-      ))
-    }
-    <a class="card" href={href("rules/")}>
-      <strong>Rules and regulations</strong>
-      <span>Regulation S-K, Regulation S-X, and the 1933 and 1934 Act rules, including Rule 144 and Rule 10b-5.</span>
-      <em>17 C.F.R. Parts 210, 229, 230, 239, 240, 249</em>
-    </a>
-    <a class="card" href={href("forms/")}>
-      <strong>Forms</strong>
-      <span>What S-1, 10-K, 8-K, S-8, and the other core forms are for, and the rules that govern them.</span>
-      <em>S-1 · 10-K · 8-K · S-8</em>
-    </a>
-    <a class="card" href={href("edgar/")}>
-      <strong>EDGAR company search</strong>
-      <span>Search by name or ticker. Open a snapshot of recent filings, or the live EDGAR index.</span>
-      <em>AAPL · MSFT · JPM</em>
-    </a>
-  </div>
-
-  <h2>Coming soon</h2>
-  <ul class="soon">
-    {soon.map((label) => (
-      <li>
-        <span>{label}</span>
-        <span class="tag">Coming soon</span>
-      </li>
-    ))}
-  </ul>
-
-  <h2>Often opened</h2>
-  <div class="pins">
-    {
-      pins.map(({ pin, file, section }) => (
-        <a class="pin" href={`${href(section!.path)}${pin.hash ? `#${pin.hash}` : ""}`}>
-          <b>
-            {file!.act.titleName} {pin.hash ? `${section!.label}(${pin.hash})` : section!.label}
-          </b>
-          <span>
-            {section!.heading}
-            <small>
-              {section!.uscCite} · {pin.note}
-            </small>
-          </span>
-        </a>
+      columns.map(({ half, tasks }) => (
+        <section class="half">
+          <h2>
+            <a href={href(`${half.id}/`)}>{half.label}</a>
+          </h2>
+          <p>{half.blurb}</p>
+          <ul class="task-list">
+            {tasks.map(({ task, hint }) => (
+              <li>
+                <a href={href(taskPath(task))}>
+                  <strong>{task.nav}</strong>
+                  <span>{hint}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
       ))
     }
   </div>
 
-  <p class="note">
-    Text from the House Office of the Law Revision Counsel, {provenance.release.docPublicationName},{" "}
-    {provenance.release.currencyNote.toLowerCase()}. Title 15 is not positive law. The Act section number comes from the source credit.
+  <p class="link-row home-more">
+    <a href={href("edgar/")}>EDGAR company search</a>
+    <a href={href("forms/")}>Forms</a>
+    <a href={href("sources/")}>Sources and currency</a>
   </p>
 </Base>

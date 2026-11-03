@@ -53,7 +53,6 @@ const expected = {
     "30A": "78dd-1",
     41: "78rr",
   },
-  tia: { 301: "77aaa", 304: "77ddd", 328: "77bbbb" },
 };
 
 for (const [actId, map] of Object.entries(expected)) {
@@ -145,44 +144,59 @@ if (existsSync(dist)) {
   const home = readFileSync(path.join(dist, "index.html"), "utf8");
   assert(home.includes('href="/sld/'), "home links use /sld/");
   assert(!home.includes('href="/33-act/'), "home does not link to site root");
-  assert(home.includes("/sld/33-act/section-5/"), "home pins section 5");
-  const section = readFileSync(path.join(dist, "33-act/section-5/index.html"), "utf8");
+  assert(home.includes("/sld/securities-act/registered-offerings/"), "home links a Securities Act task");
+  assert(home.includes("/sld/exchange-act/current-reporting/"), "home links current reporting");
+  assert(!home.includes("/sld/tia/"), "home has no TIA link");
+  const section = readFileSync(path.join(dist, "securities-act/section-5/index.html"), "utf8");
   assert(section.includes("15 U.S.C. § 77e"), "section 5 cite");
   assert(section.includes("uscode.house.gov"), "section 5 official link");
   assert(section.includes('id="b"') || section.includes('href="#b"'), "section 5 subsection anchor");
   assert(section.includes("registration statement"), "section 5 operative text");
   assert(section.includes("<details"), "section 5 notes are collapsed");
-  const section10 = readFileSync(path.join(dist, "34-act/section-10/index.html"), "utf8");
+  const section10 = readFileSync(path.join(dist, "exchange-act/section-10/index.html"), "utf8");
   assert(section10.includes('id="b"'), "Exchange Act § 10(b) anchor");
   assert(section10.includes("purchase or sale"), "Exchange Act § 10(b) text");
-  assert(section10.includes('href="/sld/33-act/section-17/#a"'), "section 10 cross-reference stays under /sld/");
+  assert(section10.includes('href="/sld/securities-act/section-17/#a"'), "section 10 cross-reference stays under /sld/");
+  assert(section10.includes("Implementing rules and forms"), "§ 10 implementing heading");
+  assert(section10.includes("/sld/exchange-act/rules/17-cfr-240/rule-10b-5/"), "§ 10 links Rule 10b-5");
   assert(existsSync(path.join(dist, "pagefind/pagefind.js")), "pagefind bundle");
   assert(existsSync(path.join(dist, "edgar/aapl/index.html")), "AAPL page");
-  assert(existsSync(path.join(dist, "34-act/section-10/index.html")), "Exchange Act § 10");
-  assert(section10.includes("Implementing rules and forms"), "§ 10 implementing heading");
-  assert(section10.includes("/sld/rules/17-cfr-240/rule-10b-5/"), "§ 10 links Rule 10b-5");
+  assert(existsSync(path.join(dist, "exchange-act/section-10/index.html")), "Exchange Act § 10");
   assert(!home.includes("C&amp;DI") && !home.includes("C&DI"), "home says CFIs, not C&DIs");
-  assert(home.includes("/sld/rules/") && home.includes("/sld/forms/"), "home links rules and forms");
-  const rulePage = readFileSync(path.join(dist, "rules/17-cfr-240/rule-10b-5/index.html"), "utf8");
+  const oldRule = readFileSync(path.join(dist, "rules/17-cfr-240/rule-10b-5/index.html"), "utf8");
+  assert(oldRule.includes("/sld/exchange-act/rules/17-cfr-240/rule-10b-5/"), "old Rule 10b-5 URL redirects");
+  assert(oldRule.includes('http-equiv="refresh"') || oldRule.includes("location.replace"), "old Rule 10b-5 is a redirect");
+  const oldSection = readFileSync(path.join(dist, "33-act/section-5/index.html"), "utf8");
+  assert(oldSection.includes("/sld/securities-act/section-5/"), "old § 5 URL redirects");
+  assert(!existsSync(path.join(dist, "tia/index.html")), "TIA index is gone");
+  const rulePage = readFileSync(path.join(dist, "exchange-act/rules/17-cfr-240/rule-10b-5/index.html"), "utf8");
   assert(rulePage.includes('id="b"') && rulePage.includes("purchase or sale"), "built Rule 10b-5");
   assert(rulePage.includes("ecfr.gov") && rulePage.includes("govinfo.gov"), "built Rule 10b-5 official links");
-  const rule144page = readFileSync(path.join(dist, "rules/17-cfr-230/rule-144/index.html"), "utf8");
+  const rule144page = readFileSync(path.join(dist, "securities-act/rules/17-cfr-230/rule-144/index.html"), "utf8");
   assert(rule144page.includes('id="a-1"') || rule144page.includes('href="#a-1"'), "built Rule 144 (a)(1)");
-  const item402page = readFileSync(path.join(dist, "rules/17-cfr-229/item-402/index.html"), "utf8");
-  assert(item402page.includes("/sld/rules/17-cfr-229/item-402/a/"), "built Item 402 paragraph links");
+  const item402page = readFileSync(path.join(dist, "exchange-act/rules/17-cfr-229/item-402/index.html"), "utf8");
+  assert(item402page.includes("/sld/exchange-act/rules/17-cfr-229/item-402/a/"), "built Item 402 paragraph links");
+  const task8k = readFileSync(path.join(dist, "exchange-act/current-reporting/index.html"), "utf8");
+  assert(task8k.includes("Form 8-K") && task8k.includes("coming in phase 3"), "8-K task");
+  const task701 = readFileSync(path.join(dist, "securities-act/exempt-offerings/index.html"), "utf8");
+  assert(task701.includes("Rule 701") && task701.includes("/sld/securities-act/rules/17-cfr-230/rule-701/"), "701 task");
+  const task144 = readFileSync(path.join(dist, "securities-act/resales/index.html"), "utf8");
+  assert(task144.includes("Rule 144") && task144.includes("#d"), "144 task");
+  const taskFpi = readFileSync(path.join(dist, "exchange-act/foreign-private-issuers/index.html"), "utf8");
+  assert(taskFpi.includes("Rule 405") && taskFpi.includes("Rule 3b-4"), "FPI task");
   const form8k = readFileSync(path.join(dist, "forms/8-k/index.html"), "utf8");
   assert(form8k.includes(">1.05<") && form8k.includes("Material Cybersecurity Incidents"), "Form 8-K items");
   assert(form8k.includes("sec.gov/files/form8-k.pdf"), "Form 8-K PDF");
   const formS8 = readFileSync(path.join(dist, "forms/s-8/index.html"), "utf8");
   assert(formS8.includes("How this position developed"), "Form S-8 note");
   assert(formS8.includes("126.47") && formS8.includes("33-7646") && formS8.includes("cftelinterps_securitiesactforms.pdf"), "Form S-8 primary sources");
-  assert(formS8.includes("/sld/rules/17-cfr-230/rule-457/#h"), "Form S-8 links Rule 457(h)");
+  assert(formS8.includes("/sld/securities-act/rules/17-cfr-230/rule-457/#h"), "Form S-8 links Rule 457(h)");
   const aapl = readFileSync(path.join(dist, "edgar/aapl/index.html"), "utf8");
   assert(aapl.includes("10-K"), "AAPL lists a 10-K");
   assert(aapl.includes("sec.gov/Archives/edgar/data/"), "AAPL document link");
   const weight = (file) => statSync(path.join(dist, file)).size;
   console.log(
-    `weights: home ${weight("index.html")}B, §5 ${weight("33-act/section-5/index.html")}B, AAPL ${weight("edgar/aapl/index.html")}B`,
+    `weights: home ${weight("index.html")}B, §5 ${weight("securities-act/section-5/index.html")}B, AAPL ${weight("edgar/aapl/index.html")}B`,
   );
   const css = readdirSync(path.join(dist, "_astro")).filter((name) => name.endsWith(".css"));
   if (css[0]) console.log(`css ${statSync(path.join(dist, "_astro", css[0])).size}B`);

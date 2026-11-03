@@ -110,6 +110,22 @@ export function readingForRule(id: string): ReadingLink[] {
   return unique(links);
 }
 
+export function readingSet(name: string): ReadingLink[] {
+  const sets: Record<string, ReadingLink[]> = {
+    desk: [DESK, WOW],
+    "10b": [UC_10B],
+    "144": [UC_100, TCC_144],
+    d: [UC_D],
+    s: [UC_S],
+    sk: [UC_SK],
+    sx: [UC_SX],
+    "14a": [UC_14A],
+    "13a": [UC_13A, UC_15D],
+    "16": [WOW_16],
+  };
+  return sets[name] || [];
+}
+
 export function readingForForm(slug: string): ReadingLink[] {
   const links: ReadingLink[] = [];
   if (slug === "144") links.push(UC_100, TCC_144);

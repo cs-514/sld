@@ -1,9 +1,11 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Reading from "../../components/Reading.astro";
+import { halfForPart, rewritePath } from "../../lib/desk";
 import { findForm, formNeighbors, formSearchUrl, FORMS, type Pointer } from "../../lib/formCatalog";
 import { href } from "../../lib/paths";
 import { readingForForm } from "../../lib/reading";
+import { halfName, taskForForm, taskPath } from "../../lib/tasks";
 
 export function getStaticPaths() {
   return FORMS.map((form) => ({ params: { slug: form.slug }, props: { slug: form.slug } }));
@@ -13,11 +15,19 @@ const form = findForm(Astro.props.slug);
 if (!form) throw new Error(`Missing form ${Astro.props.slug}`);
 const adjacent = formNeighbors(form.slug);
 const description = `${form.name}. ${form.purpose}`;
-const link = (item: Pointer) => (item.href ? item.href : href(item.path || ""));
+const link = (item: Pointer) => (item.href ? item.href : href(rewritePath(item.path || "")));
 const external = (item: Pointer) => Boolean(item.href);
+const task = taskForForm(form.slug);
+const partMatch = `${form.cfr.path || ""} ${form.rules.map((item) => item.path || "").join(" ")}`.match(/17-cfr-(\d+)/);
+const half = task?.half || halfForPart(partMatch?.[1] || "240");
+const crumbs = [
+  { href: href(`${half}/`), label: halfName(half) },
+  ...(task ? [{ href: href(taskPath(task)), label: task.nav }] : [{ href: href("forms/"), label: "Forms" }]),
+  { label: form.name },
+];
 ---
 
-<Base title={form.name} description={description} crumbs={[{ href: href("forms/"), label: "Forms" }, { label: form.name }]}>
+<Base title={form.name} description={description} half={half} crumbs={crumbs}>
   <p class="kicker">{form.aka ? `${form.aka} · ` : ""}{form.cfr.label}</p>
   <h1 data-pagefind-weight="10">{form.name}</h1>
   <p class="lede">{form.purpose}</p>
@@ -89,7 +99,7 @@ const external = (item: Pointer) => Boolean(item.href);
           </thead>
           <tbody>
             {form.items.map((row) => (
-              <tr>
+              <tr id={`item-${row.item.replace(".", "-")}`}>
                 <td>{row.item}</td>
                 <td>{row.title}</td>
                 <td>
