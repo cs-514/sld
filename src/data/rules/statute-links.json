@@ -46,6 +46,14 @@
         "label": "Rule 501"
       },
       {
+        "path": "rules/17-cfr-232/rule-201/",
+        "label": "Rule 201"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-202/",
+        "label": "Rule 202"
+      },
+      {
         "path": "rules/17-cfr-240/rule-3a12-7/",
         "label": "Rule 3a12-7"
       },
@@ -88,14 +96,6 @@
       {
         "path": "rules/17-cfr-240/rule-15fb2-4/",
         "label": "Rule 15Fb2-4"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-19h-1/",
-        "label": "Rule 19h-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-21f-7/",
-        "label": "Rule 21F-7"
       }
     ],
     "forms": [
@@ -218,6 +218,14 @@
         "label": "Rule 2-01"
       },
       {
+        "path": "rules/17-cfr-227/rule-402/",
+        "label": "Rule 402"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-503/",
+        "label": "Rule 503"
+      },
+      {
         "path": "rules/17-cfr-229/item-401/",
         "label": "Item 401"
       },
@@ -258,6 +266,10 @@
         "label": "Rule 257"
       },
       {
+        "path": "rules/17-cfr-232/rule-405/",
+        "label": "Rule 405"
+      },
+      {
         "path": "rules/17-cfr-240/rule-3a1-1/",
         "label": "Rule 3a1-1"
       },
@@ -296,18 +308,6 @@
       {
         "path": "rules/17-cfr-240/rule-3a12-8/",
         "label": "Rule 3a12-8"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a12-11/",
-        "label": "Rule 3a12-11"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a40-1/",
-        "label": "Rule 3a40-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a44-2/",
-        "label": "Rule 3a44-2"
       }
     ],
     "forms": [
@@ -400,6 +400,10 @@
         "label": "Rule 1001"
       },
       {
+        "path": "rules/17-cfr-232/rule-101/",
+        "label": "Rule 101"
+      },
+      {
         "path": "rules/17-cfr-240/rule-3a55-1/",
         "label": "Rule 3a55-1"
       },
@@ -422,10 +426,6 @@
       {
         "path": "rules/17-cfr-240/rule-12g5-1/",
         "label": "Rule 12g5-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12h-6/",
-        "label": "Rule 12h-6"
       }
     ],
     "forms": [
@@ -548,6 +548,173 @@
     ],
     "forms": []
   },
+  "33-act/section-4": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-230/rule-144/",
+        "label": "Rule 144"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-144a/",
+        "label": "Rule 144A"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-506/",
+        "label": "Rule 506"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-701/",
+        "label": "Rule 701"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-501/",
+        "label": "Regulation D (Rule 501)"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-901/",
+        "label": "Regulation S (Rule 901)"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-100/",
+        "label": "Rule 100"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-201/",
+        "label": "Rule 201"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-202/",
+        "label": "Rule 202"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-203/",
+        "label": "Rule 203"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-204/",
+        "label": "Rule 204"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-205/",
+        "label": "Rule 205"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-300/",
+        "label": "Rule 300"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-301/",
+        "label": "Rule 301"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-302/",
+        "label": "Rule 302"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-303/",
+        "label": "Rule 303"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-305/",
+        "label": "Rule 305"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-402/",
+        "label": "Rule 402"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-501/",
+        "label": "Rule 501"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-503/",
+        "label": "Rule 503"
+      },
+      {
+        "path": "rules/17-cfr-229/item-502/",
+        "label": "Item 502"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-133/",
+        "label": "Rule 133"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-136/",
+        "label": "Rule 136"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-152/",
+        "label": "Rule 152"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-152a/",
+        "label": "Rule 152a"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-172/",
+        "label": "Rule 172"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-173/",
+        "label": "Rule 173"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-174/",
+        "label": "Rule 174"
+      }
+    ],
+    "forms": [
+      {
+        "path": "forms/d/",
+        "label": "Form D"
+      },
+      {
+        "path": "forms/144/",
+        "label": "Form 144"
+      },
+      {
+        "path": "forms/1-a/",
+        "label": "Form 1-A"
+      },
+      {
+        "path": "rules/17-cfr-239/section-500/",
+        "label": "Form D (§ 239.500)"
+      }
+    ]
+  },
+  "33-act/section-4a": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-227/rule-100/",
+        "label": "Rule 100"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-201/",
+        "label": "Rule 201"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-202/",
+        "label": "Rule 202"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-203/",
+        "label": "Rule 203"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-501/",
+        "label": "Rule 501"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-502/",
+        "label": "Rule 502"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-503/",
+        "label": "Rule 503"
+      }
+    ],
+    "forms": []
+  },
   "34-act/section-13": {
     "rules": [
       {
@@ -569,6 +736,14 @@
       {
         "path": "rules/17-cfr-240/rule-13d-102/",
         "label": "Rule 13d-102"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-100/",
+        "label": "Rule 100"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-202/",
+        "label": "Rule 202"
       },
       {
         "path": "rules/17-cfr-229/item-101/",
@@ -653,14 +828,6 @@
       {
         "path": "rules/17-cfr-230/rule-405/",
         "label": "Rule 405"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-430b/",
-        "label": "Rule 430B"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-430d/",
-        "label": "Rule 430D"
       }
     ],
     "forms": [
@@ -750,6 +917,663 @@
       }
     ]
   },
+  "34-act/section-15": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-240/rule-15d-1/",
+        "label": "Rule 15d-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15d-13/",
+        "label": "Rule 15d-13"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-202/",
+        "label": "Rule 202"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-300/",
+        "label": "Rule 300"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-401/",
+        "label": "Rule 401"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-503/",
+        "label": "Rule 503"
+      },
+      {
+        "path": "rules/17-cfr-229/item-1006/",
+        "label": "Item 1006"
+      },
+      {
+        "path": "rules/17-cfr-229/item-1010/",
+        "label": "Item 1010"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-139b/",
+        "label": "Rule 139b"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-144a/",
+        "label": "Rule 144A"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-257/",
+        "label": "Rule 257"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-405/",
+        "label": "Rule 405"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-428/",
+        "label": "Rule 428"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-902/",
+        "label": "Rule 902"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-101/",
+        "label": "Rule 101"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-0-8/",
+        "label": "Rule 0-8"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a4-1/",
+        "label": "Rule 3a4-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a12-4/",
+        "label": "Rule 3a12-4"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a12-5/",
+        "label": "Rule 3a12-5"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a51-1/",
+        "label": "Rule 3a51-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a55-4/",
+        "label": "Rule 3a55-4"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a67-10/",
+        "label": "Rule 3a67-10"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a68-1a/",
+        "label": "Rule 3a68-1a"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a68-1b/",
+        "label": "Rule 3a68-1b"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a71-3/",
+        "label": "Rule 3a71-3"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3b-8/",
+        "label": "Rule 3b-8"
+      }
+    ],
+    "forms": [
+      {
+        "path": "forms/10-k/",
+        "label": "Form 10-K"
+      },
+      {
+        "path": "forms/10-q/",
+        "label": "Form 10-Q"
+      },
+      {
+        "path": "forms/8-k/",
+        "label": "Form 8-K"
+      },
+      {
+        "path": "rules/17-cfr-239/section-13/",
+        "label": "Form S-3 (§ 239.13)"
+      },
+      {
+        "path": "rules/17-cfr-239/section-16b/",
+        "label": "Form S-8 (§ 239.16b)"
+      },
+      {
+        "path": "rules/17-cfr-239/section-33/",
+        "label": "Form F-3 (§ 239.33)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-208a/",
+        "label": "Form 8-A (§ 249.208a)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-240f/",
+        "label": "Form 40-F (§ 249.240f)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-323/",
+        "label": "Form 15 (§ 249.323)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-324/",
+        "label": "Form 15F (§ 249.324)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-501b/",
+        "label": "Form BD-N (§ 249.501b)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-507/",
+        "label": "Form 7-M (§ 249.507)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-508/",
+        "label": "Form 8-M (§ 249.508)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-509/",
+        "label": "Form 9-M (§ 249.509)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-510/",
+        "label": "Form 10-M (§ 249.510)"
+      },
+      {
+        "path": "rules/17-cfr-249/section-641/",
+        "label": "Form CRS (§ 249.641)"
+      }
+    ]
+  },
+  "34-act/section-15a": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-227/rule-300/",
+        "label": "Rule 300"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-400/",
+        "label": "Rule 400"
+      },
+      {
+        "path": "rules/17-cfr-229/item-407/",
+        "label": "Item 407"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-6h-1/",
+        "label": "Rule 6h-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10a-3/",
+        "label": "Rule 10A-3"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10c-1/",
+        "label": "Rule 10C-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10d-1/",
+        "label": "Rule 10D-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12d2-2/",
+        "label": "Rule 12d2-2"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12h-1/",
+        "label": "Rule 12h-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-13e-4/",
+        "label": "Rule 13e-4"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-14d-10/",
+        "label": "Rule 14d-10"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15a-10/",
+        "label": "Rule 15a-10"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15b11-1/",
+        "label": "Rule 15b11-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-17a-5/",
+        "label": "Rule 17a-5"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-17a-7/",
+        "label": "Rule 17a-7"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-17a-11/",
+        "label": "Rule 17a-11"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-17a-13/",
+        "label": "Rule 17a-13"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-19b-4/",
+        "label": "Rule 19b-4"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-19c-4/",
+        "label": "Rule 19c-4"
+      }
+    ],
+    "forms": []
+  },
+  "34-act/section-17a": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-227/rule-301/",
+        "label": "Rule 301"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-3a1-1/",
+        "label": "Rule 3a1-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-6h-1/",
+        "label": "Rule 6h-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10a-3/",
+        "label": "Rule 10A-3"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10c-1/",
+        "label": "Rule 10C-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10d-1/",
+        "label": "Rule 10D-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12a-9/",
+        "label": "Rule 12a-9"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12a-10/",
+        "label": "Rule 12a-10"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12d2-2/",
+        "label": "Rule 12d2-2"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12g-6/",
+        "label": "Rule 12g-6"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12g5-1/",
+        "label": "Rule 12g5-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12h-1/",
+        "label": "Rule 12h-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-14a-1/",
+        "label": "Rule 14a-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-14a-13/",
+        "label": "Rule 14a-13"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-14c-1/",
+        "label": "Rule 14c-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-14c-7/",
+        "label": "Rule 14c-7"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15c3-3/",
+        "label": "Rule 15c3-3"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15c3-3a/",
+        "label": "Rule 15c3-3a"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15c3-3b/",
+        "label": "Rule 15c3-3b"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15fi-3/",
+        "label": "Rule 15fi-3"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15fi-4/",
+        "label": "Rule 15Fi-4"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15fi-5/",
+        "label": "Rule 15Fi-5"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-17ab2-1/",
+        "label": "Rule 17ab2-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-17ac2-1/",
+        "label": "Rule 17Ac2-1"
+      }
+    ],
+    "forms": []
+  },
+  "33-act/section-5": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-230/rule-135/",
+        "label": "Rule 135"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-144/",
+        "label": "Rule 144"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-163/",
+        "label": "Rule 163"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-415/",
+        "label": "Rule 415"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-501/",
+        "label": "Regulation D (Rule 501)"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-901/",
+        "label": "Regulation S (Rule 901)"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-502/",
+        "label": "Rule 502"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-503/",
+        "label": "Rule 503"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-133/",
+        "label": "Rule 133"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-134b/",
+        "label": "Rule 134b"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-135a/",
+        "label": "Rule 135a"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-135b/",
+        "label": "Rule 135b"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-135c/",
+        "label": "Rule 135c"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-135d/",
+        "label": "Rule 135d"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-135e/",
+        "label": "Rule 135e"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-144a/",
+        "label": "Rule 144A"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-147a/",
+        "label": "Rule 147A"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-153/",
+        "label": "Rule 153"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-153a/",
+        "label": "Rule 153a"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-153b/",
+        "label": "Rule 153b"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-154/",
+        "label": "Rule 154"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-162/",
+        "label": "Rule 162"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-163a/",
+        "label": "Rule 163A"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-163b/",
+        "label": "Rule 163B"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-164/",
+        "label": "Rule 164"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-165/",
+        "label": "Rule 165"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-166/",
+        "label": "Rule 166"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-167/",
+        "label": "Rule 167"
+      }
+    ],
+    "forms": [
+      {
+        "path": "forms/s-1/",
+        "label": "Form S-1"
+      },
+      {
+        "path": "forms/s-3/",
+        "label": "Form S-3"
+      }
+    ]
+  },
+  "33-act/section-17": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-227/rule-503/",
+        "label": "Rule 503"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-156/",
+        "label": "Rule 156"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-159/",
+        "label": "Rule 159"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-163/",
+        "label": "Rule 163"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-238/",
+        "label": "Rule 238"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-239/",
+        "label": "Rule 239"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-240/",
+        "label": "Rule 240"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-258/",
+        "label": "Rule 258"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-262/",
+        "label": "Rule 262"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-433/",
+        "label": "Rule 433"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-506/",
+        "label": "Rule 506"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-610/",
+        "label": "Rule 610"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15fh-1/",
+        "label": "Rule 15Fh-1"
+      }
+    ],
+    "forms": []
+  },
+  "34-act/section-10": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-240/rule-10b-5/",
+        "label": "Rule 10b-5 (§ 10(b))"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10b5-1/",
+        "label": "Rule 10b5-1"
+      },
+      {
+        "path": "rules/17-cfr-227/rule-503/",
+        "label": "Rule 503"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-156/",
+        "label": "Rule 156"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-262/",
+        "label": "Rule 262"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-506/",
+        "label": "Rule 506"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10b-1/",
+        "label": "Rule 10b-1"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10b-3/",
+        "label": "Rule 10b-3"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10b5-2/",
+        "label": "Rule 10b5-2"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10b-9/",
+        "label": "Rule 10b-9"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10b-16/",
+        "label": "Rule 10b-16"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10b-17/",
+        "label": "Rule 10b-17"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-10b-21/",
+        "label": "Rule 10b-21"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-11a1-2/",
+        "label": "Rule 11a1-2"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-11a2-2(t)/",
+        "label": "Rule 11a2-2(T)"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12h-3/",
+        "label": "Rule 12h-3"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-13a-11/",
+        "label": "Rule 13a-11"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-13e-102/",
+        "label": "Rule 13e-102"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-14d-102/",
+        "label": "Rule 14d-102"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-14d-103/",
+        "label": "Rule 14d-103"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-15d-11/",
+        "label": "Rule 15d-11"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-21f-8/",
+        "label": "Rule 21F-8"
+      },
+      {
+        "path": "rules/17-cfr-244/rule-102/",
+        "label": "Rule 102"
+      }
+    ],
+    "forms": []
+  },
+  "33-act/section-18": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-227/rule-504/",
+        "label": "Rule 504"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-146/",
+        "label": "Rule 146"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-256/",
+        "label": "Rule 256"
+      },
+      {
+        "path": "rules/17-cfr-230/rule-500/",
+        "label": "Rule 500"
+      }
+    ],
+    "forms": []
+  },
   "34-act/section-12": {
     "rules": [
       {
@@ -799,6 +1623,10 @@
       {
         "path": "rules/17-cfr-230/rule-251/",
         "label": "Rule 251"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-101/",
+        "label": "Rule 101"
       },
       {
         "path": "rules/17-cfr-240/rule-3a12-11/",
@@ -911,6 +1739,14 @@
         "label": "Item 407"
       },
       {
+        "path": "rules/17-cfr-232/rule-104/",
+        "label": "Rule 104"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-501/",
+        "label": "Rule 501"
+      },
+      {
         "path": "rules/17-cfr-240/rule-13a-13/",
         "label": "Rule 13a-13"
       },
@@ -961,19 +1797,6 @@
       {
         "path": "rules/17-cfr-240/rule-17h-2t/",
         "label": "Rule 17h-2T"
-      }
-    ],
-    "forms": []
-  },
-  "tia/section-305": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-229/item-202/",
-        "label": "Item 202"
-      },
-      {
-        "path": "rules/17-cfr-229/item-512/",
-        "label": "Item 512"
       }
     ],
     "forms": []
@@ -1204,212 +2027,17 @@
       {
         "path": "rules/17-cfr-230/rule-430d/",
         "label": "Rule 430D"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-104/",
+        "label": "Rule 104"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-501/",
+        "label": "Rule 501"
       }
     ],
     "forms": []
-  },
-  "34-act/section-15a": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-229/item-407/",
-        "label": "Item 407"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-6h-1/",
-        "label": "Rule 6h-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10a-3/",
-        "label": "Rule 10A-3"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10c-1/",
-        "label": "Rule 10C-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10d-1/",
-        "label": "Rule 10D-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12d2-2/",
-        "label": "Rule 12d2-2"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12h-1/",
-        "label": "Rule 12h-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-13e-4/",
-        "label": "Rule 13e-4"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-14d-10/",
-        "label": "Rule 14d-10"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15a-10/",
-        "label": "Rule 15a-10"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15b11-1/",
-        "label": "Rule 15b11-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-17a-5/",
-        "label": "Rule 17a-5"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-17a-7/",
-        "label": "Rule 17a-7"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-17a-11/",
-        "label": "Rule 17a-11"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-17a-13/",
-        "label": "Rule 17a-13"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-19b-4/",
-        "label": "Rule 19b-4"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-19c-4/",
-        "label": "Rule 19c-4"
-      }
-    ],
-    "forms": []
-  },
-  "33-act/section-4": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-230/rule-144/",
-        "label": "Rule 144"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-144a/",
-        "label": "Rule 144A"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-506/",
-        "label": "Rule 506"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-701/",
-        "label": "Rule 701"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-501/",
-        "label": "Regulation D (Rule 501)"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-901/",
-        "label": "Regulation S (Rule 901)"
-      },
-      {
-        "path": "rules/17-cfr-229/item-502/",
-        "label": "Item 502"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-133/",
-        "label": "Rule 133"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-136/",
-        "label": "Rule 136"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-152/",
-        "label": "Rule 152"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-152a/",
-        "label": "Rule 152a"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-172/",
-        "label": "Rule 172"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-173/",
-        "label": "Rule 173"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-174/",
-        "label": "Rule 174"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-481/",
-        "label": "Rule 481"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-500/",
-        "label": "Rule 500"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-502/",
-        "label": "Rule 502"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12b-10/",
-        "label": "Rule 12b-10"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12b-13/",
-        "label": "Rule 12b-13"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12b-14/",
-        "label": "Rule 12b-14"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12b-20/",
-        "label": "Rule 12b-20"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12b-36/",
-        "label": "Rule 12b-36"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12g-6/",
-        "label": "Rule 12g-6"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15c2-8/",
-        "label": "Rule 15c2-8"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15g-1/",
-        "label": "Rule 15g-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15g-9/",
-        "label": "Rule 15g-9"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-16e-1/",
-        "label": "Rule 16e-1"
-      }
-    ],
-    "forms": [
-      {
-        "path": "forms/d/",
-        "label": "Form D"
-      },
-      {
-        "path": "forms/144/",
-        "label": "Form 144"
-      },
-      {
-        "path": "forms/1-a/",
-        "label": "Form 1-A"
-      },
-      {
-        "path": "rules/17-cfr-239/section-500/",
-        "label": "Form D (§ 239.500)"
-      }
-    ]
   },
   "33-act/section-10": {
     "rules": [
@@ -1526,189 +2154,6 @@
       {
         "path": "forms/s-3/",
         "label": "Form S-3"
-      }
-    ]
-  },
-  "tia/section-310": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-229/item-512/",
-        "label": "Item 512"
-      }
-    ],
-    "forms": []
-  },
-  "34-act/section-15": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-240/rule-15d-1/",
-        "label": "Rule 15d-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15d-13/",
-        "label": "Rule 15d-13"
-      },
-      {
-        "path": "rules/17-cfr-229/item-1006/",
-        "label": "Item 1006"
-      },
-      {
-        "path": "rules/17-cfr-229/item-1010/",
-        "label": "Item 1010"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-139b/",
-        "label": "Rule 139b"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-144a/",
-        "label": "Rule 144A"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-257/",
-        "label": "Rule 257"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-405/",
-        "label": "Rule 405"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-428/",
-        "label": "Rule 428"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-902/",
-        "label": "Rule 902"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-0-8/",
-        "label": "Rule 0-8"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a4-1/",
-        "label": "Rule 3a4-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a12-4/",
-        "label": "Rule 3a12-4"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a12-5/",
-        "label": "Rule 3a12-5"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a51-1/",
-        "label": "Rule 3a51-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a55-4/",
-        "label": "Rule 3a55-4"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a67-10/",
-        "label": "Rule 3a67-10"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a68-1a/",
-        "label": "Rule 3a68-1a"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a68-1b/",
-        "label": "Rule 3a68-1b"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3a71-3/",
-        "label": "Rule 3a71-3"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-3b-8/",
-        "label": "Rule 3b-8"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b-3/",
-        "label": "Rule 10b-3"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b-10/",
-        "label": "Rule 10b-10"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-11d2-1/",
-        "label": "Rule 11d2-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12d2-2/",
-        "label": "Rule 12d2-2"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12f-4/",
-        "label": "Rule 12f-4"
-      }
-    ],
-    "forms": [
-      {
-        "path": "forms/10-k/",
-        "label": "Form 10-K"
-      },
-      {
-        "path": "forms/10-q/",
-        "label": "Form 10-Q"
-      },
-      {
-        "path": "forms/8-k/",
-        "label": "Form 8-K"
-      },
-      {
-        "path": "rules/17-cfr-239/section-13/",
-        "label": "Form S-3 (§ 239.13)"
-      },
-      {
-        "path": "rules/17-cfr-239/section-16b/",
-        "label": "Form S-8 (§ 239.16b)"
-      },
-      {
-        "path": "rules/17-cfr-239/section-33/",
-        "label": "Form F-3 (§ 239.33)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-208a/",
-        "label": "Form 8-A (§ 249.208a)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-240f/",
-        "label": "Form 40-F (§ 249.240f)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-323/",
-        "label": "Form 15 (§ 249.323)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-324/",
-        "label": "Form 15F (§ 249.324)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-501b/",
-        "label": "Form BD-N (§ 249.501b)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-507/",
-        "label": "Form 7-M (§ 249.507)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-508/",
-        "label": "Form 8-M (§ 249.508)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-509/",
-        "label": "Form 9-M (§ 249.509)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-510/",
-        "label": "Form 10-M (§ 249.510)"
-      },
-      {
-        "path": "rules/17-cfr-249/section-641/",
-        "label": "Form CRS (§ 249.641)"
       }
     ]
   },
@@ -2011,6 +2456,14 @@
       {
         "path": "rules/17-cfr-230/rule-131/",
         "label": "Rule 131"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-104/",
+        "label": "Rule 104"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-501/",
+        "label": "Rule 501"
       }
     ],
     "forms": []
@@ -2027,132 +2480,6 @@
       }
     ],
     "forms": []
-  },
-  "33-act/section-5": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-230/rule-135/",
-        "label": "Rule 135"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-144/",
-        "label": "Rule 144"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-163/",
-        "label": "Rule 163"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-415/",
-        "label": "Rule 415"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-501/",
-        "label": "Regulation D (Rule 501)"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-901/",
-        "label": "Regulation S (Rule 901)"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-133/",
-        "label": "Rule 133"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-134b/",
-        "label": "Rule 134b"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-135a/",
-        "label": "Rule 135a"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-135b/",
-        "label": "Rule 135b"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-135c/",
-        "label": "Rule 135c"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-135d/",
-        "label": "Rule 135d"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-135e/",
-        "label": "Rule 135e"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-144a/",
-        "label": "Rule 144A"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-147a/",
-        "label": "Rule 147A"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-153/",
-        "label": "Rule 153"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-153a/",
-        "label": "Rule 153a"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-153b/",
-        "label": "Rule 153b"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-154/",
-        "label": "Rule 154"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-162/",
-        "label": "Rule 162"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-163a/",
-        "label": "Rule 163A"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-163b/",
-        "label": "Rule 163B"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-164/",
-        "label": "Rule 164"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-165/",
-        "label": "Rule 165"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-166/",
-        "label": "Rule 166"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-167/",
-        "label": "Rule 167"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-168/",
-        "label": "Rule 168"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-169/",
-        "label": "Rule 169"
-      }
-    ],
-    "forms": [
-      {
-        "path": "forms/s-1/",
-        "label": "Form S-1"
-      },
-      {
-        "path": "forms/s-3/",
-        "label": "Form S-3"
-      }
-    ]
   },
   "34-act/section-19": {
     "rules": [
@@ -2232,23 +2559,6 @@
       }
     ]
   },
-  "33-act/section-18": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-230/rule-146/",
-        "label": "Rule 146"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-256/",
-        "label": "Rule 256"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-500/",
-        "label": "Rule 500"
-      }
-    ],
-    "forms": []
-  },
   "33-act/section-8a": {
     "rules": [
       {
@@ -2266,148 +2576,6 @@
     ],
     "forms": []
   },
-  "33-act/section-17": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-230/rule-156/",
-        "label": "Rule 156"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-159/",
-        "label": "Rule 159"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-163/",
-        "label": "Rule 163"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-238/",
-        "label": "Rule 238"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-239/",
-        "label": "Rule 239"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-240/",
-        "label": "Rule 240"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-258/",
-        "label": "Rule 258"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-262/",
-        "label": "Rule 262"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-433/",
-        "label": "Rule 433"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-506/",
-        "label": "Rule 506"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-610/",
-        "label": "Rule 610"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15fh-1/",
-        "label": "Rule 15Fh-1"
-      }
-    ],
-    "forms": []
-  },
-  "34-act/section-10": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-240/rule-10b-5/",
-        "label": "Rule 10b-5 (§ 10(b))"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b5-1/",
-        "label": "Rule 10b5-1"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-156/",
-        "label": "Rule 156"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-262/",
-        "label": "Rule 262"
-      },
-      {
-        "path": "rules/17-cfr-230/rule-506/",
-        "label": "Rule 506"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b-1/",
-        "label": "Rule 10b-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b-3/",
-        "label": "Rule 10b-3"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b5-2/",
-        "label": "Rule 10b5-2"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b-9/",
-        "label": "Rule 10b-9"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b-16/",
-        "label": "Rule 10b-16"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b-17/",
-        "label": "Rule 10b-17"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10b-21/",
-        "label": "Rule 10b-21"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-11a1-2/",
-        "label": "Rule 11a1-2"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-11a2-2(t)/",
-        "label": "Rule 11a2-2(T)"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12h-3/",
-        "label": "Rule 12h-3"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-13a-11/",
-        "label": "Rule 13a-11"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-13e-102/",
-        "label": "Rule 13e-102"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-14d-102/",
-        "label": "Rule 14d-102"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-14d-103/",
-        "label": "Rule 14d-103"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15d-11/",
-        "label": "Rule 15d-11"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-21f-8/",
-        "label": "Rule 21F-8"
-      }
-    ],
-    "forms": []
-  },
   "33-act/section-12": {
     "rules": [
       {
@@ -2417,6 +2585,10 @@
       {
         "path": "rules/17-cfr-230/rule-159a/",
         "label": "Rule 159A"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-104/",
+        "label": "Rule 104"
       }
     ],
     "forms": []
@@ -2497,6 +2669,10 @@
       {
         "path": "rules/17-cfr-230/rule-432/",
         "label": "Rule 432"
+      },
+      {
+        "path": "rules/17-cfr-232/rule-313/",
+        "label": "Rule 313"
       },
       {
         "path": "rules/17-cfr-240/rule-0-11/",
@@ -2581,10 +2757,6 @@
       {
         "path": "rules/17-cfr-240/rule-14d-102/",
         "label": "Rule 14d-102"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-14d-103/",
-        "label": "Rule 14d-103"
       }
     ],
     "forms": [
@@ -2593,6 +2765,19 @@
         "label": "Schedule 14A (DEF 14A)"
       }
     ]
+  },
+  "33-act/section-13": {
+    "rules": [
+      {
+        "path": "rules/17-cfr-232/rule-101/",
+        "label": "Rule 101"
+      },
+      {
+        "path": "rules/17-cfr-240/rule-12b-37/",
+        "label": "Rule 12b-37"
+      }
+    ],
+    "forms": []
   },
   "34-act/section-17": {
     "rules": [
@@ -2649,107 +2834,6 @@
       {
         "path": "rules/17-cfr-240/rule-24c-1/",
         "label": "Rule 24c-1"
-      }
-    ],
-    "forms": []
-  },
-  "34-act/section-17a": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-240/rule-3a1-1/",
-        "label": "Rule 3a1-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-6h-1/",
-        "label": "Rule 6h-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10a-3/",
-        "label": "Rule 10A-3"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10c-1/",
-        "label": "Rule 10C-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-10d-1/",
-        "label": "Rule 10D-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12a-9/",
-        "label": "Rule 12a-9"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12a-10/",
-        "label": "Rule 12a-10"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12d2-2/",
-        "label": "Rule 12d2-2"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12g-6/",
-        "label": "Rule 12g-6"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12g5-1/",
-        "label": "Rule 12g5-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-12h-1/",
-        "label": "Rule 12h-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-14a-1/",
-        "label": "Rule 14a-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-14a-13/",
-        "label": "Rule 14a-13"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-14c-1/",
-        "label": "Rule 14c-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-14c-7/",
-        "label": "Rule 14c-7"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15c3-3/",
-        "label": "Rule 15c3-3"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15c3-3a/",
-        "label": "Rule 15c3-3a"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15c3-3b/",
-        "label": "Rule 15c3-3b"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15fi-3/",
-        "label": "Rule 15fi-3"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15fi-4/",
-        "label": "Rule 15Fi-4"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-15fi-5/",
-        "label": "Rule 15Fi-5"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-17ab2-1/",
-        "label": "Rule 17ab2-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-17ac2-1/",
-        "label": "Rule 17Ac2-1"
-      },
-      {
-        "path": "rules/17-cfr-240/rule-17ac3-1/",
-        "label": "Rule 17Ac3-1"
       }
     ],
     "forms": []
@@ -3112,15 +3196,6 @@
       {
         "path": "rules/17-cfr-240/rule-10c-1/",
         "label": "Rule 10C-1"
-      }
-    ],
-    "forms": []
-  },
-  "33-act/section-13": {
-    "rules": [
-      {
-        "path": "rules/17-cfr-240/rule-12b-37/",
-        "label": "Rule 12b-37"
       }
     ],
     "forms": []
